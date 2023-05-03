@@ -1,0 +1,55 @@
+<script lang="ts">
+    import BoltMarkIcon from '$lib/elements/icons/BoltMark.svelte';
+    import BarsIcon from '$lib/elements/icons/Bars.svelte';
+    import { Menu, MenuButton, MenuItems, MenuItem } from '@rgossiaux/svelte-headlessui';
+</script>
+
+<div class="flex flex-row gap-6 items-center justify-between max-w-6xl mx-auto px-4 md:px-8">
+    <div class="flex flex-row items-end">
+        <!-- <img src="/images/ltng.png" alt="Lightning Ventures" class="w-[133px] h-[74px]" /> -->
+        <BoltMarkIcon klass="w-12 h-16" />
+        <a
+            href="/"
+            class="text-ltngYellow font-bold tracking-tight uppercase leading-none font-josefin-sans-italic text-2xl"
+        >
+            Lightning<br />Ventures
+        </a>
+    </div>
+
+    <!-- Desktop nav -->
+    <nav
+        class="hidden md:flex flex-row items-center gap-4 justify-center font-josefin-sans-italic text-base uppercase font-semibold text-ltngYellow"
+    >
+        <a href="/about" class="hover">About</a>
+        <a href="/investments" class="hover">Portfolio</a>
+        <a href="/investors" class="hover">Investors</a>
+        <a href="/founders" class="hover">Founders</a>
+        <a href="/team" class="hover">Team</a>
+    </nav>
+
+    <!-- Mobile nav -->
+    <Menu class="md:hidden relative">
+        <MenuButton>
+            <BarsIcon klass="text-ltngYellow w-6 h-6" />
+        </MenuButton>
+        <MenuItems
+            class="absolute top-10 right-0 font-josefin-sans-italic uppercase bold text-ltngYellow bg-slate-900 p-6 border border-slate-900 shadow-md flex flex-col gap-4 z-50"
+        >
+            <MenuItem>
+                <a href="/about" class="navLink">About</a>
+            </MenuItem>
+            <MenuItem>
+                <a href="/investments" class="navLink">Portfolio</a>
+            </MenuItem>
+            <MenuItem>
+                <a href="/investors" class="navLink">Investors</a>
+            </MenuItem>
+            <MenuItem>
+                <a href="/founders" class="navLink">Founders</a>
+            </MenuItem>
+            <MenuItem>
+                <a href="/team" class="navLink">Team</a>
+            </MenuItem>
+        </MenuItems>
+    </Menu>
+</div>
