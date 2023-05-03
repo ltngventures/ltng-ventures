@@ -42,17 +42,19 @@
                 Are you building for a future based on the Bitcoin Standard? We want to talk.
             </p>
         </a>
-        <!-- <a href="/investments" class="ctaGridItem hoverCard">
-            <h2>Our Investments</h2>
-            <p>
+        <!-- <a href="/investments" class="hoverCard">
+            <h2 class="text-lg md:text-2xl font-josefin-sans-italic uppercase font-semibold mb-4">
+                Our Investments
+            </h2>
+            <p class="text-sm md:text-lg">
+                We're proud to support companies building the future of Bitcoin.
             </p>
         </a>
-        <a href="/team" class="ctaGridItem hoverCard">
-            <h2>The Team</h2>
-            <p>
-                Interested in investing and supporting Bitcoin companies? This helps us understand
-                how you best fit into our group and can help take these companies to the moon!
-            </p>
+        <a href="/team" class="hoverCard">
+            <h2 class="text-lg md:text-2xl font-josefin-sans-italic uppercase font-semibold mb-4">
+                The Team
+            </h2>
+            <p class="text-sm md:text-lg">Get to know the team</p>
         </a> -->
     </div>
     <!-- <div class="flex flex-row gap-8 items-center justify-center text-ltngWhite">
