@@ -10,9 +10,11 @@
     inject({ mode: dev ? 'development' : 'production' });
 </script>
 
-<div class="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-    <BoltIcon />
-</div>
+{#if $page.url.pathname !== '/'}
+    <div class="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+        <BoltIcon />
+    </div>
+{/if}
 <div class="relative">
     {#if $page.url.pathname === '/'}
         <LightningHero />

@@ -18,6 +18,7 @@ export default {
             backgroundImage: {
                 lightning: "url('/images/lightning-volcano.webp')",
                 lightning1: "url('/images/lightning1.webp')",
+                'lightning1-chill': "url('/images/lightning1-chill.png')",
                 lightning2: "url('/images/lightning2.webp')"
             },
             dropShadow: {

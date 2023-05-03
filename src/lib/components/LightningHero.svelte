@@ -5,7 +5,7 @@
     import YoutubeIcon from '$lib/elements/icons/Youtube.svelte';
 </script>
 
-<div class="bg-cover bg-center md:bg-top bg-no-repeat bg-lightning1 py-8">
+<div class="bg-cover bg-center md:bg-top bg-no-repeat bg-lightning1-chill py-8">
     <Header />
     <!-- Desktop version -->
     <div class="px-4 md:px-8 max-w-6xl mx-auto w-full my-32">
