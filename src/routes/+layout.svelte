@@ -16,12 +16,9 @@
     </div>
 {/if}
 <div class="relative">
+    <Header />
     {#if $page.url.pathname === '/'}
         <LightningHero />
-    {:else}
-        <div class="py-8">
-            <Header />
-        </div>
     {/if}
 
     <div class="mx-auto">

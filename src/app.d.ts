@@ -9,9 +9,9 @@ declare global {
         }
         interface Teammate {
             name: string;
-            img: string;
+            img: string | null;
             title: string;
-            description: string;
+            description: string | null;
         }
         // interface Error {}
         // interface Locals {}

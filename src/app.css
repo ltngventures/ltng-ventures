@@ -22,8 +22,7 @@ a.navLink {
 
 .hover {
     border: 4px solid;
-    @apply border-btcOrange px-2 py-1;
-    /* border-image: repeating-linear-gradient(135deg, #f8ca00 0 10px, #e97f02 0 20px, #bd1550 0 30px) 4; */
+    @apply border-btcOrange px-2 pt-2 pb-1;
     -webkit-mask: conic-gradient(from 180deg at top 2px right 4px, #0000 90deg, #000 0)
             var(--_i, 200%) 0 /200% var(--_i, 4px) border-box no-repeat,
         conic-gradient(at bottom 4px left 2px, #0000 90deg, #000 0) 0 var(--_i, 200%) /
@@ -37,8 +36,14 @@ a.navLink {
     transition: 0.15s, -webkit-mask-size 0.15s 0.15s;
 }
 
+.active {
+    --_i: 100%;
+    @apply text-ltngYellow hover:text-ltngYellow border-ltngYellow;
+    transition: 0.15s, -webkit-mask-size 0.15s 0.15s;
+}
+
 .hoverCard {
-    @apply border p-4 backdrop-blur-lg bg-ltngYellow/5 hover:bg-ltngYellow/10;
+    @apply border backdrop-blur-lg bg-ltngYellow/5 hover:bg-ltngYellow/10;
     border-image: linear-gradient(
             to right,
             rgba(247, 147, 26, 0.15),
@@ -77,4 +82,21 @@ a.navLink {
 
 .innerShadow {
     box-shadow: inset 0 0 8px 0 rgb(0 0 0 / 0.8);
+}
+
+.formGroup {
+    @apply flex flex-col gap-4;
+}
+
+input[type='text'],
+select {
+    @apply bg-slate-700/50;
+}
+
+label {
+    @apply text-lg md:text-xl;
+}
+
+.sublabel {
+    @apply text-base md:text-lg italic -mt-4;
 }
