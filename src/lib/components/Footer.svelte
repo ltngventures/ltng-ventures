@@ -5,7 +5,7 @@
     import AngellistIcon from '$lib/elements/icons/Angellist.svelte';
 </script>
 
-<div class="my-20 max-w-6xl mx-auto px-8">
+<div class="mt-20 pb-20 max-w-6xl mx-auto px-8">
     <div class="flex flex-col md:flex-row gap-4 items-center justify-center text-sm">
         <div class="px-2">©️ 2023 Lightning Ventures</div>
         <div class="flex flex-row gap-4 items-center justify-center">
