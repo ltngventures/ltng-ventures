@@ -1,5 +1,6 @@
 <script lang="ts">
-    import BoltMarkIcon from '$lib/elements/icons/BoltMark.svelte';
+    import BoltMarkOrangeIcon from '$lib/elements/icons/BoltMarkOrange.svelte';
+    import BoltMarkOrangeDarkIcon from '$lib/elements/icons/BoltMarkOrangeDark.svelte';
     import BarsIcon from '$lib/elements/icons/Bars.svelte';
     import { Menu, MenuButton, MenuItems, MenuItem } from '@rgossiaux/svelte-headlessui';
     import { page } from '$app/stores';
@@ -11,10 +12,10 @@
     <div class="flex flex-row gap-6 items-center justify-between max-w-6xl mx-auto px-4 md:px-8">
         <div class="flex flex-row items-end">
             <!-- <img src="/images/ltng.png" alt="Lightning Ventures" class="w-[133px] h-[74px]" /> -->
-            <BoltMarkIcon klass="w-12 h-16" />
+            <BoltMarkOrangeDarkIcon klass="w-12 h-16" />
             <a
                 href="/"
-                class="text-ltngYellow font-bold tracking-tight uppercase leading-none font-josefin-sans-italic text-2xl"
+                class="text-btcOrange font-bold tracking-tight uppercase leading-none font-josefin-sans-italic text-2xl"
             >
                 Lightning<br />Ventures
             </a>
@@ -22,7 +23,7 @@
 
         <!-- Desktop nav -->
         <nav
-            class="hidden md:flex flex-row items-center gap-4 justify-center font-josefin-sans-italic text-base uppercase font-semibold text-ltngYellow"
+            class="hidden md:flex flex-row items-center gap-4 justify-center font-josefin-sans-italic text-base uppercase font-semibold text-btcOrange"
         >
             <a href="/about" class="hover {$page.url.pathname === '/about' ? 'active' : ''}">
                 About

@@ -89,7 +89,8 @@ a.navLink {
 }
 
 input[type='text'],
-select {
+select,
+textarea {
     @apply bg-slate-700/50;
 }
 
@@ -99,4 +100,39 @@ label {
 
 .sublabel {
     @apply text-base md:text-lg italic -mt-4;
+}
+
+.pageHeader {
+    @apply tracking-tight pb-1 mb-12 text-2xl md:text-4xl font-bold;
+}
+
+.founders {
+    animation: founders 25s linear infinite;
+}
+
+@keyframes founders {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(-51.35%, 0, 0);
+    }
+}
+
+.investors {
+    animation: investors 25s linear infinite;
+}
+
+@keyframes investors {
+    0% {
+        transform: translate3d(-51.3%, 0, 0);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.founders:hover,
+.investors:hover {
+    animation-play-state: paused;
 }

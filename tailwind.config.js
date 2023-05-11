@@ -20,7 +20,10 @@ export default {
                 lightning1: "url('/images/lightning1.webp')",
                 'lightning1-chill': "url('/images/lightning1-chill.png')",
                 'lightning1-chill2': "url('/images/lightning1-chill2.png')",
-                lightning2: "url('/images/lightning2.webp')"
+                lightning2: "url('/images/lightning2.webp')",
+                'mt-fuji': "url('/images/sunset-mt-fuji.webp')",
+                'mt-fuji20': "url('/images/sunset-mt-fuji-a20.webp')",
+                'mt-fuji40': "url('/images/sunset-mt-fuji-a40.webp')"
             },
             dropShadow: {
                 hard: '4px 4px 0px #0d579b',

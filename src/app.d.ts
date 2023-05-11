@@ -12,6 +12,16 @@ declare global {
             img: string | null;
             title: string;
             description: string | null;
+            socials: SocialLink[];
+        }
+        interface SocialLink {
+            type: string;
+            url: string;
+        }
+        interface Founder {
+            img: string;
+            blurb: string;
+            nameAndRole: string;
         }
         // interface Error {}
         // interface Locals {}

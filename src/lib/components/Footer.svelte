@@ -3,9 +3,14 @@
     import TelegramIcon from '$lib/elements/icons/Telegram.svelte';
     import YoutubeIcon from '$lib/elements/icons/Youtube.svelte';
     import AngellistIcon from '$lib/elements/icons/Angellist.svelte';
+    import EmailCollector from '$lib/components/EmailCollector.svelte';
 </script>
 
+
 <div class="mt-20 pb-20 max-w-6xl mx-auto px-8">
+    <div class="flex flex-row items-center justify-center mb-8">
+        <EmailCollector />
+    </div>
     <div class="flex flex-col md:flex-row gap-4 items-center justify-center text-sm">
         <div class="px-2">©️ 2023 Lightning Ventures</div>
         <div class="flex flex-row gap-4 items-center justify-center">
@@ -42,6 +47,5 @@
         <span class="px-2">New York</span>
         <span class="px-2">Miami</span>
         <span class="px-2">Phoenix</span>
-        <span class="px-2">Santa Fe</span>
     </div>
 </div>

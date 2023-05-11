@@ -1,7 +1,11 @@
 <script lang="ts">
 </script>
 
-<div class="my-16 max-w-6xl mx-auto px-8 prose prose-invert prose-xl mt-28">
+<div class="mb-16 pt-32 pb-12 max-w-6xl mx-auto px-8 prose prose-invert md:prose-xl">
+    <h2 class="pageHeader gradientHeader">
+        Bitcoin-focused Investors,<br>
+        Bitcoin-only Companies.
+    </h2>
     <p>
         <span class="gradientHeader font-bold">Lightning Ventures</span> is one of few pure-play Bitcoin-focused
         venture capital firms. The fund is uniquely positioned to invest in and partner with the most

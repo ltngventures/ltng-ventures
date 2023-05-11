@@ -2,7 +2,7 @@
     import PortfolioGrid from '$lib/components/PortfolioGrid.svelte';
 </script>
 
-<div class="my-16 py-12 bg-slate-50/10 innerShadow">
+<div class="mb-16 pt-24 pb-12 bg-slate-50/10 innerShadow">
     <div class="max-w-6xl mx-auto px-4 md:px-8 mt-8">
         <h2
             class="tracking-tight pb-1 mb-12 text-3xl md:text-4xl text-ltngWhite font-bold gradientHeader inline-block"
