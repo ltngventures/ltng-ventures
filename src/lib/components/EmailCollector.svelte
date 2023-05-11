@@ -1,5 +1,5 @@
 <script lang="ts">
-
+    export const prerender = true;
 </script>
 
 <form method="POST" class="flex flex-col gap-2 items-center" name="emailCollector" data-netlify="true">

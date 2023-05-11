@@ -6,18 +6,19 @@
     import AngellistIcon from '$lib/elements/icons/Angellist.svelte';
 </script>
 
-<div class="bg-cover bg-center md:bg-top bg-no-repeat bg-mt-fuji40 py-8">
+<div class="bg-cover bg-center md:bg-top bg-no-repeat bg-mt-fuji240 py-8">
     <!-- <Header /> -->
     <!-- Desktop version -->
     <div class="px-4 md:px-8 max-w-6xl mx-auto w-full my-32">
         <div class="tracking-tight text-5xl text-ltngWhite font-bold hidden md:block">
-            <p class="mb-2">
+            <p><span class="gradientHeader">Our mission</span> is to invest in and support the next generation of market-defining Bitcoin companies.</p>
+            <!-- <p class="mb-2">
                 <span class="gradientHeader">Lightning⚡Ventures</span> is a group of exclusively
             </p>
             <p class="mb-2">
                 <span class="gradientHeader">Bitcoin-focused</span> investors supporting
             </p>
-            <p class="mb-2"><span class="gradientHeader">Bitcoin-only</span> companies.</p>
+            <p class="mb-2"><span class="gradientHeader">Bitcoin-only</span> companies.</p> -->
         </div>
         <!-- Mobile version -->
         <div class="tracking-tight text-2xl text-ltngWhite font-bold block md:hidden my-10">
