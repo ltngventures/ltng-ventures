@@ -87,7 +87,7 @@
         </div>
     </div>
 
-    <div class="py-12">
+    <div class="py-12 bg-indigo-800/10 innerShadow">
         <div class="max-w-6xl mx-auto px-4 md:px-8">
             <h2
                 class="tracking-tight pb-1 mb-12 text-3xl md:text-4xl text-ltngWhite font-bold gradientHeader inline-block"

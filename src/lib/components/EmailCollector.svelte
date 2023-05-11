@@ -2,7 +2,7 @@
 
 </script>
 
-<form method="POST" class="flex flex-col gap-2 items-center" name="emailCollector" netlify>
+<form method="POST" class="flex flex-col gap-2 items-center" name="emailCollector" data-netlify="true">
     <label for="email" class="text-center">Subscribe for Updates</label>
     <div class="flex flex-col md:flex-row gap-2 items-center">
     <input name="email" id="email" type="text" placeholder="satoshin@gmx.com" class="w-72 py-1.5" />

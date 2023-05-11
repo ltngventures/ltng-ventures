@@ -17,7 +17,7 @@
 
     <div>
 
-        <form name="founders" method="POST" netlify class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <form name="founders" method="POST" data-netlify="true" class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <h3 class="md:col-span-2">Tell us about your company</h3>
             <fieldset class="formGroup">
                 <label for="companyType">What sector is your company in? *</label>
