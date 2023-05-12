@@ -7,8 +7,8 @@
 </script>
 
 
-<div class="mt-20 pb-20 max-w-6xl mx-auto px-8">
-    <div class="flex flex-row items-center justify-center mb-8">
+<div class="flex flex-col items-center gap-4 mt-20 pb-20 max-w-6xl mx-auto px-8">
+    <div class="flex flex-row items-center justify-center">
         <EmailCollector />
     </div>
     <div class="flex flex-col md:flex-row gap-4 items-center justify-center text-sm">
@@ -43,7 +43,8 @@
             </a>
         </div>
     </div>
-    <div class="flex flex-row divide-x items-center justify-center mt-6 text-sm">
+
+    <div class="flex flex-row divide-x items-center justify-center text-sm">
         <span class="px-2">New York</span>
         <span class="px-2">Miami</span>
         <span class="px-2">Phoenix</span>

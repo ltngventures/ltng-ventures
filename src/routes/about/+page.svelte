@@ -1,6 +1,11 @@
 <script lang="ts">
 </script>
 
+<svelte:head>
+    <title>About Us | Lightning Ventures</title>
+    <meta name="description" content="Learn more about Lightning Ventures unique approach to investing in Bitcoin companies." />
+</svelte:head>
+
 <div class="pt-32 pb-12 max-w-6xl mx-auto px-4 md:px-8 prose prose-invert md:prose-xl">
     <h2 class="pageHeader gradientHeader">
         Bitcoin-focused Investors,<br>
@@ -87,7 +92,7 @@
             <li>Total capital raised in 2022 was $343,000,000, compared to $301,000,000 in 2021 (+14%).</li>
         </ul>
 
-        <p>We're still early. Growth in founding and funding of Bitcoin startups continues is accelerating.</p>
+        <p>We're still early. Growth in founding and funding of Bitcoin startups continues is accelerating. <a href="/investors">Ready to invest?</a></p>
     </div>
 </div>
 
@@ -100,7 +105,7 @@
             About the General Partners
         </h2>
 
-        <p>The General Partners of the Node 2 Fund, Mike Jarmuz and Alex McShane, bring unique expertise and dedication to the Bitcoin ecosystem. Their elite team of advisors and supporting staff bring unmatched hustle and unwavering commitment to Bitcoin. This positions Lightning Ventures as a strong force in supporting Bitcoin startups.</p>
+        <p>The General Partners of the Node 2 Fund, Mike Jarmuz and Alex McShane, bring unique expertise and dedication to the Bitcoin ecosystem. Their elite team of advisors and supporting staff bring unmatched hustle and unwavering commitment to Bitcoin. This positions Lightning Ventures as a strong force in supporting Bitcoin startups. Have a general question? <a href="/contact">Get in touch</a>.</p>
 
         <p><strong>Michael Jarmuz</strong> is the Managing Partner and Co-Founder of Lightning Ventures. He currently advises Bitcoin companies Azteco, Slice, and Cloaked Wireless. Mike also organizes the annual Unconfiscatable Conference. He has made over 2,000 personal angel investments and loves to share his learnings. Mike is obsessed with Bitcoin, and early-stage technology funding, with a passion for democratizing retail access to private markets. A longtime music industry veteran with a broad spectrum of experience, he previously owned a bar on the Lower East Side and installed Manhattan's second Bitcoin ATM. From living on a plantation farm to sleeping on a tour bus, he has many fascinating stories. Mike splits his time between New York City and Miami Beach. Frequently seen at Bitcoin conferences with his amazing orange-pilling wife, Anastasia, while their ragdoll cat Cannoli patiently awaits their return.</p>
 

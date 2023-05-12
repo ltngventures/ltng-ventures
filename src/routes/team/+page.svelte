@@ -1,7 +1,12 @@
 <script lang="ts">
     import TeammateCard from '$lib/components/TeammateCard.svelte';
-    import { teammates } from '$lib/config/teammates';
+    import { teammates } from '$lib/data/teammates';
 </script>
+
+<svelte:head>
+    <title>The Team | Lightning Ventures</title>
+    <meta name="description" content="The team behind Lightning Ventures." />
+</svelte:head>
 
 <div class="mb-16 pt-32 pb-12 max-w-6xl mx-auto px-8">
     <h2 class="gradientHeader pageHeader">

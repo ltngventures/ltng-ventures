@@ -23,7 +23,7 @@
             showSuccess = true;
             setTimeout(() => {
                 showSuccess = false;
-            }, 2500);
+            }, 3500);
         })
         .catch((error) => {
             isSubmitting = false;
@@ -33,6 +33,11 @@
     }
 
 </script>
+
+<svelte:head>
+    <title>Pitch Us | Lightning Ventures</title>
+    <meta name="description" content="Are you a Bitcoin founder looking for early stage funding? Get in touch with Lightning Ventures." />
+</svelte:head>
 
 <div class="mb-16 pt-32 pb-12 max-w-6xl mx-auto px-8 prose prose-invert md:prose-xl">
     <h2 class="pageHeader gradientHeader">

@@ -1,9 +1,13 @@
 <script lang="ts">
     import PortfolioGrid from '$lib/components/PortfolioGrid.svelte';
-    import { founders } from '$lib/config/founders';
-    import { investors } from '$lib/config/investors';
-
+    import { founders } from '$lib/data/founders';
+    import { investors } from '$lib/data/investors';
 </script>
+
+<svelte:head>
+    <title>Lightning Ventures</title>
+    <meta name="description" content="Lighting Ventures is a Bitcoin focused venture capital firm. We invest in software, hardware, and mining & energy companies in the Bitcoin space." />
+</svelte:head>
 
 <div class="flex flex-col">
     <div class="py-12 bg-slate-50/10 innerShadow">

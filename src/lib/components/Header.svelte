@@ -29,7 +29,7 @@
                 About
             </a>
             <a
-                href="/investments"
+                href="/portfolio"
                 class="hover {$page.url.pathname === '/investments' ? 'active' : ''}"
             >
                 Portfolio
@@ -60,7 +60,7 @@
                     <a href="/about" class="navLink">About</a>
                 </MenuItem>
                 <MenuItem>
-                    <a href="/investments" class="navLink">Portfolio</a>
+                    <a href="/portfolio" class="navLink">Portfolio</a>
                 </MenuItem>
                 <MenuItem>
                     <a href="/investors" class="navLink">Join Us</a>

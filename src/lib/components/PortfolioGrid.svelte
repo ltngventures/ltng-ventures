@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { investments } from '$lib/config/investments';
+    import { investments } from '$lib/data/investments';
     import { getRandomSubarray } from '$lib/utils/helpers';
 
     export let displayCount: number = 10;
