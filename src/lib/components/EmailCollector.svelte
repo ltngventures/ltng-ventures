@@ -37,7 +37,6 @@
     name="Email Collector"
     netlify
     netlify-honeypot="bot-field"
-    on:submit|preventDefault={handleSubmit}
 >
     <input type="hidden" name="form-name" value="Email Collector" />
     <label class="hidden">
@@ -52,12 +51,11 @@
         <input name="email" id="email" type="text" placeholder="satoshin@gmx.com" class="w-72 py-1.5" />
         <button id="emailSubmitButton" type="submit" class="font-semibold font-josefin-sans-italic uppercase text-ltngYellow bg-ltngWhite/20 hover">Subscribe</button>
     </div>
+    {#if showSuccess}
+        <div class="text-green-500">Thanks! You're now subscribed.</div>
+    {/if}
+
+    {#if showError}
+        <div class="text-red-500">{errorMessage}</div>
+    {/if}
 </form>
-
-{#if showSuccess}
-    <div class="text-green-500">Thanks! You're now subscribed.</div>
-{/if}
-
-{#if showError}
-    <div class="text-red-500">{errorMessage}</div>
-{/if}
