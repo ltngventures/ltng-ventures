@@ -23,7 +23,8 @@ export default {
                 lightning2: "url('/images/lightning2.webp')",
                 'mt-fuji': "url('/images/sunset-mt-fuji.webp')",
                 'mt-fuji40': "url('/images/sunset-mt-fuji-a40.webp')",
-                'mt-fuji240': "url('/images/sunset-mt-fuji-2-a40.webp')"
+                'mt-fuji240': "url('/images/sunset-mt-fuji-2-a40.webp')",
+                'mt-fuji240mobile': "url('/images/sunset-mt-fuji-2-a40-mobile.webp')"
             },
             dropShadow: {
                 hard: '4px 4px 0px #0d579b',

@@ -5,9 +5,6 @@
     import LightningHero from '$lib/components/LightningHero.svelte';
     import BoltIcon from '$lib/elements/icons/Bolt.svelte';
     import { page } from '$app/stores';
-    import { dev } from '$app/environment';
-    import { inject } from '@vercel/analytics';
-    inject({ mode: dev ? 'development' : 'production' });
 </script>
 
 {#if $page.url.pathname !== '/'}

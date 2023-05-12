@@ -6,33 +6,19 @@
     import AngellistIcon from '$lib/elements/icons/Angellist.svelte';
 </script>
 
-<div class="bg-cover bg-center md:bg-top bg-no-repeat bg-mt-fuji240 py-8">
-    <!-- <Header /> -->
-    <!-- Desktop version -->
-    <div class="px-4 md:px-8 max-w-6xl mx-auto w-full my-32">
-        <div class="tracking-tight text-5xl text-ltngWhite font-bold hidden md:block">
+<div class="bg-cover bg-center md:bg-top bg-no-repeat bg-mt-fuji240mobile md:bg-mt-fuji240 py-8">
+    <div class="px-4 md:px-8 max-w-6xl mx-auto w-full mt-24 mb-12 md:my-32">
+        <div class="tracking-tight text-2xl md:text-5xl text-ltngWhite font-bold">
             <p><span class="gradientHeader">Our mission</span> is to invest in and support the next generation of market-defining Bitcoin companies.</p>
-            <!-- <p class="mb-2">
-                <span class="gradientHeader">Lightning⚡Ventures</span> is a group of exclusively
-            </p>
-            <p class="mb-2">
-                <span class="gradientHeader">Bitcoin-focused</span> investors supporting
-            </p>
-            <p class="mb-2"><span class="gradientHeader">Bitcoin-only</span> companies.</p> -->
-        </div>
-        <!-- Mobile version -->
-        <div class="tracking-tight text-2xl text-ltngWhite font-bold block md:hidden my-10">
-            <span class="gradientHeader">Bitcoin-focused</span> investors.<br />
-            <span class="gradientHeader">Bitcoin-only</span> companies.
         </div>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto px-4 md:px-8 pb-24">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto px-4 md:px-8 pb-12 md:pb-24">
         <a href="/investors" class="p-4 hoverCard">
             <h2 class="text-lg md:text-2xl font-josefin-sans-italic uppercase font-semibold mb-4">
                 Invest with us
             </h2>
             <p class="text-sm md:text-lg">
-                Looking to invest in & support Bitcoin companies? Learn more about our Bitcoin startup investing opportunities.
+                Want to invest in & support Bitcoin companies? Learn more about our investing opportunities.
             </p>
         </a>
         <a href="/founders" class="p-4 hoverCard">
@@ -40,7 +26,7 @@
                 Pitch Us
             </h2>
             <p class="text-sm md:text-lg">
-                Are you building a Bitcoin related product, service or company? Let’s chat, we’d love to help you!
+                Are you building for Bitcoin? Let's chat, we'd love to help you!
             </p>
         </a>
         <a href="/investors" class="p-4 hoverCard">
@@ -48,7 +34,7 @@
                 Lightning Syndicate
             </h2>
             <p class="text-sm md:text-lg">
-                The hottest deal flow in Bitcoin, straight to your inbox. Learn more about our syndicate deals and low minimums.
+                The hottest deal flow in Bitcoin. Start investing in Bitcoin companies with low minimums.
             </p>
         </a>
         <a href="/investors" class="p-4 hoverCard">

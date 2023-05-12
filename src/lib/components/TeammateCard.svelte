@@ -11,28 +11,28 @@
             <img
                 src={teammate.img}
                 alt={teammate.name}
-                class="rounded-full w-20 h-20 border border-slate-200/20 shadow-md"
+                class="rounded-full w-24 h-24 border border-slate-200/20 shadow-md"
             />
         {:else}
             <div
-                class="rounded-full w-20 h-20 bg-slate-100/30 flex flex-row justify-center items-center"
+                class="rounded-full w-24 h-24 bg-slate-100/30 flex flex-row justify-center items-center"
             >
-                <BoltMarkIcon klass="w-16 h-16" />
+                <BoltMarkIcon klass="w-20 h-20" />
             </div>
         {/if}
 
-        <div class="flex flex-col">
-            <h3 class="font-josefin-sans-italic uppercase text-2xl font-bold flex flex-row gap-8 items-center">
+        <div class="flex flex-col gap-1">
+            <h3 class="font-josefin-sans-italic uppercase text-lg md:text-2xl font-bold -mb-2">
                 {teammate.name}
-                {#if teammate.socials}
-                    <div class="flex flex-row gap-4 items-center -mt-1.5">
-                        {#each teammate.socials as social}
-                            <TeammateSocialLink {social} />
-                        {/each}
-                    </div>
-                {/if}
             </h3>
             <div class="font-medium text-lg">{teammate.title}</div>
+            {#if teammate.socials}
+                <div class="flex flex-row gap-4 items-center">
+                    {#each teammate.socials as social}
+                        <TeammateSocialLink {social} />
+                    {/each}
+                </div>
+            {/if}
         </div>
     </div>
     {#if teammate.description}

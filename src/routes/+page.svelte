@@ -35,8 +35,8 @@
             <div class="founders flex flex-nowrap flex-row gap-32 items-center">
                 {#each founders as founder, i}
                     <div class="flex shrink-0 grow-0 flex-row gap-6 items-center w-[600px]">
-                        <img src={founder.img} alt="founder{i}" class="w-64 h-64 rounded-full shadow-lg" />
-                        <div class="prose dark:prose-invert md:prose-xl text-lg w-96">
+                        <img src={founder.img} alt="founder{i}" class="w-36 md:w-64 h-36 md:h-64 rounded-full shadow-lg" />
+                        <div class="prose dark:prose-invert md:prose-xl text-lg w-64 md:w-96">
                             <p>&ldquo;{founder.blurb}&rdquo;</p>
                             <p class="text-base">&ndash; {founder.nameAndRole}</p>
                         </div>
@@ -44,8 +44,8 @@
                 {/each}
                 {#each founders as founder, i}
                     <div class="flex shrink-0 grow-0 flex-row gap-6 items-center w-[600px]">
-                        <img src={founder.img} alt="founder{i}" class="w-64 h-64 rounded-full shadow-lg" />
-                        <div class="prose dark:prose-invert md:prose-xl text-lg w-96">
+                        <img src={founder.img} alt="founder{i}" class="w-36 md:w-64 h-36 md:h-64 rounded-full shadow-lg" />
+                        <div class="prose dark:prose-invert md:prose-xl text-lg w-64 md:w-96">
                             <p>&ldquo;{founder.blurb}&rdquo;</p>
                             <p class="text-base">&ndash; {founder.nameAndRole}</p>
                         </div>
@@ -67,8 +67,8 @@
             <div class="investors flex flex-nowrap flex-row gap-32 items-center">
                 {#each investors as investor, i}
                     <div class="flex shrink-0 grow-0 flex-row gap-6 items-center w-[600px]">
-                        <img src={investor.img} alt="investor{i}" class="w-64 h-64 rounded-full shadow-lg" />
-                        <div class="prose dark:prose-invert md:prose-xl text-lg w-96">
+                        <img src={investor.img} alt="investor{i}" class="w-36 md:w-64 h-36 md:h-64 rounded-full shadow-lg" />
+                        <div class="prose dark:prose-invert md:prose-xl text-lg w-64 md:w-96">
                             <p>&ldquo;{investor.blurb}&rdquo;</p>
                             <p class="text-base">&ndash; {investor.nameAndRole}</p>
                         </div>
@@ -76,8 +76,8 @@
                 {/each}
                 {#each investors as investor, i}
                     <div class="flex shrink-0 grow-0 flex-row gap-6 items-center w-[600px]">
-                        <img src={investor.img} alt="investor{i}" class="w-64 h-64 rounded-full shadow-lg" />
-                        <div class="prose dark:prose-invert md:prose-xl text-lg w-96">
+                        <img src={investor.img} alt="investor{i}" class="w-36 md:w-64 h-36 md:h-64 rounded-full shadow-lg" />
+                        <div class="prose dark:prose-invert md:prose-xl text-lg w-64 md:w-96">
                             <p>&ldquo;{investor.blurb}&rdquo;</p>
                             <p class="text-base">&ndash; {investor.nameAndRole}</p>
                         </div>
@@ -94,8 +94,8 @@
             >
                 Upcoming Events
             </h2>
-            <div class="flex flex-row gap-12">
-                <img src="/images/satoshi-rockamoto2.webp" alt="event" class="w-1/2" />
+            <div class="flex flex-col md:flex-row gap-6 md:gap-12">
+                <img src="/images/satoshi-rockamoto2.webp" alt="event" class="md:w-1/2" />
                 <div class="prose dark:prose-invert md:prose-lg">
                     <h3>Satoshi Rockamoto</h3>
                     <p>Rock out with the Bitcoin all-star band. Live music from the Satoshi Shredders.</p>

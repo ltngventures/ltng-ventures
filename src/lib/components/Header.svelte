@@ -51,10 +51,10 @@
         <!-- Mobile nav -->
         <Menu class="md:hidden relative">
             <MenuButton>
-                <BarsIcon klass="text-ltngYellow w-6 h-6" />
+                <BarsIcon klass="text-btcOrange w-6 h-6" />
             </MenuButton>
             <MenuItems
-                class="absolute top-10 right-0 font-josefin-sans-italic uppercase bold text-ltngYellow bg-slate-900 p-6 border border-slate-900 shadow-md flex flex-col gap-4 z-50"
+                class="absolute top-10 right-0 font-josefin-sans-italic uppercase bold text-btcOrange bg-slate-900 p-6 border border-slate-900 shadow-md flex flex-col gap-4 z-50"
             >
                 <MenuItem>
                     <a href="/about" class="navLink">About</a>
