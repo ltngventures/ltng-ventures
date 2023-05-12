@@ -1,8 +1,35 @@
 <script lang="ts">
-    let investorType: string;
+    let isSubmitting = false;
+    let showSuccess = false;
+    let showError = false;
+    let errorMessage = "";
 
-    let institution: boolean = false;
-    $: institutional = investorType === 'institutional';
+    function handleSubmit(event: Event) {
+        const form = event.target as HTMLFormElement;
+        const formData = new FormData(form);
+        const urlParamsString = new URLSearchParams(formData as any).toString();
+
+        isSubmitting = true;
+        errorMessage = "";
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: urlParamsString
+        })
+        .then(() => {
+            form.reset();
+            isSubmitting = false;
+            showSuccess = true;
+            setTimeout(() => {
+                showSuccess = false;
+            }, 3500);
+        })
+        .catch((error) => {
+            isSubmitting = false;
+            showError = true;
+            errorMessage = error;
+        });
+    }
 </script>
 
 <svelte:head>
@@ -12,8 +39,7 @@
 
 <div class="mb-16 pt-32 pb-12 max-w-6xl mx-auto px-8 prose prose-invert md:prose-xl">
     <h2 class="gradientHeader pageHeader">
-        Invest with us in the best<br>
-        Bitcoin-only companies.
+        Invest with us in the best Bitcoin companies.
     </h2>
     <p>
         <span class="gradientHeader font-bold">Lightning Ventures</span> is one of few pure-play Bitcoin-focused
@@ -23,27 +49,14 @@
     </p>
     <p>Any information disclosed here will be kept strictly confidential.</p>
 
-    <div>
+    <!-- <div>
         <h3>Tell us about yourself</h3>
         <form
-            name="investors_lp"
+            name="Investors Intake"
             method="POST"
             data-netlify="true"
             class="grid grid-cols-1 md:grid-cols-2 gap-8"
         >
-            <fieldset class="formGroup">
-                <label for="investorType">How are you interested in investing? *</label>
-                <select name="investorType" bind:value={investorType} id="investorType">
-                    <option value="individual">Individual investor</option>
-                    <option value="institutional">Institutional investor</option>
-                </select>
-            </fieldset>
-            <fieldset class="formGroup">
-                {#if institutional}
-                    <label for="institution">What's the name of the institution? *</label>
-                    <input type="text" name="institution" id="institution" />
-                {/if}
-            </fieldset>
             <fieldset class="formGroup">
                 <label for="firstName">First name *</label>
                 <input type="text" name="firstName" id="firstName" />
@@ -52,137 +65,44 @@
                 <label for="lastName">Last name *</label>
                 <input type="text" name="lastName" id="lastName" />
             </fieldset>
-
             <fieldset class="formGroup">
                 <label for="email">Email *</label>
                 <input type="text" name="email" id="email" />
             </fieldset>
-            <fieldset class="formGroup">
-                <label for="twitter">Twitter handle</label>
-                <input type="text" name="twitter" id="twitter" />
-            </fieldset>
-            <fieldset class="formGroup">
-                <label for="linkedin">LinkedIn profile URL</label>
-                <input type="text" name="linkedin" id="linkedin" />
-            </fieldset>
-            <fieldset class="formGroup">
-                <label for="telegram">Telegram username</label>
-                <input type="text" name="telegram" id="telegram" />
-            </fieldset>
-            <fieldset class="formGroup">
-                <label for="howDidYouHear">How did you hear about Lightning Ventures? *</label>
-                <input type="text" name="howDidYouHear" id="howDidYouHear" />
-            </fieldset>
-            <fieldset class="formGroup">
-                <label for="syndicate">Are you already investing with us in the syndicate?</label>
-                <div class="flex flex-row items-center gap-4">
-                    <input type="radio" name="syndicate" value="true" />
-                    <label for="syndicate">Yes</label>
-                    <input type="radio" name="syndicate" value="false" />
-                    <label for="syndicate">No</label>
-                </div>
-            </fieldset>
-            <div class="flex flex-col gap-8">
-                <fieldset class="formGroup">
-                    <label for="bitcoiner">What kind of Bitcoiner are you? *</label>
-                    <span class="sublabel">Check all that apply</span>
-                    <div>
-                        <div class="flex flex-row items-center gap-4">
-                            <input type="checkbox" name="bitcoinerNoob" id="bitcoinerNoob" />
-                            <label for="bitcoinerNoob">New to the space but excited!</label>
-                        </div>
-                        <div class="flex flex-row items-center gap-4">
-                            <input
-                                type="checkbox"
-                                name="bitcoinerBitcoinNode"
-                                id="bitcoinerBitcoinNode"
-                            />
-                            <label for="bitcoinerBitcoinNode">I run a Bitcoin full node</label>
-                        </div>
-                        <div class="flex flex-row items-center gap-4">
-                            <input
-                                type="checkbox"
-                                name="bitcoinerLightningNode"
-                                id="bitcoinerLightningNode"
-                            />
-                            <label for="bitcoinerLightningNode">I run a Lightning node</label>
-                        </div>
-                        <div class="flex flex-row items-center gap-4">
-                            <input type="checkbox" name="bitcoinerOg" id="bitcoinerOg" />
-                            <label for="bitcoinerOg">I've been in Bitcoin for 6+ years</label>
-                        </div>
-                        <div class="flex flex-row items-center gap-4">
-                            <input type="checkbox" name="bitcoinerMaxi" id="bitcoinerMaxi" />
-                            <label for="bitcoinerMaxi">I'm a Bitcoin maximalist</label>
-                        </div>
-                    </div>
-                </fieldset>
-                <fieldset class="formGroup">
-                    <label for="syndicate"
-                        >Are you already investing in the Lightning Ventures syndicate?</label
-                    >
-                    <div class="flex flex-row items-center gap-4">
-                        <input type="radio" name="syndicate" value="true" />
-                        <label for="syndicate">Yes</label>
-                        <input type="radio" name="syndicate" value="false" />
-                        <label for="syndicate">No</label>
-                    </div>
-                </fieldset>
-            </div>
-            <fieldset class="formGroup">
-                <label for="strengths">In what areas are you or your fund exceptional? *</label>
-                <span class="sublabel">Check all that apply</span>
-                <div>
-                    <div class="flex flex-row items-center gap-4">
-                        <input type="checkbox" name="strengthsLegal" id="strengthsLegal" />
-                        <label for="strengthsLegal">Legal & compliance</label>
-                    </div>
-                    <div class="flex flex-row items-center gap-4">
-                        <input type="checkbox" name="strengthsMarketing" id="strengthsMarketing" />
-                        <label for="strengthsMarketing">Marketing & PR</label>
-                    </div>
-                    <div class="flex flex-row items-center gap-4">
-                        <input type="checkbox" name="strengthsBizDev" id="strengthsBizDev" />
-                        <label for="strengthsBizDev">Business Development & Sales</label>
-                    </div>
-                    <div class="flex flex-row items-center gap-4">
-                        <input
-                            type="checkbox"
-                            name="strengthsProductDesign"
-                            id="strengthsProductDesign"
-                        />
-                        <label for="strengthsProductDesign">Product & Design</label>
-                    </div>
-                    <div class="flex flex-row items-center gap-4">
-                        <input
-                            type="checkbox"
-                            name="strengthsEngineering"
-                            id="strengthsEngineering"
-                        />
-                        <label for="strengthsEngineering">Software Engineering</label>
-                    </div>
-                    <div class="flex flex-row items-center gap-4">
-                        <input type="checkbox" name="strengthsFinance" id="strengthsFinance" />
-                        <label for="strengthsFinance">Finance & Accounting</label>
-                    </div>
-                    <div class="flex flex-row items-center gap-4">
-                        <input
-                            type="checkbox"
-                            name="strengthsDataScience"
-                            id="strengthsDataScience"
-                        />
-                        <label for="strengthsDataScience">Data Science & Analytics</label>
-                    </div>
-                    <div class="flex flex-row items-center gap-4">
-                        <input type="checkbox" name="strengthsHR" id="strengthsHR" />
-                        <label for="strengthsHR">HR & Recruiting</label>
-                    </div>
-                </div>
-            </fieldset>
-            <fieldset class="formGroup col-span-2">
-                <label for="otherStrengths">Anything else you'd like to mention?</label>
-                <input type="text" name="otherStrengths" id="otherStrengths" />
-            </fieldset>
         </form>
+    </div> -->
+</div>
+
+<div class="mb-4 pt-4 pb-12 bg-btcOrange/20 innerShadow">
+    <div class="max-w-6xl mx-auto px-4 md:px-8 mt-8 prose prose-invert md:prose-xl">
+        <h2
+            id="node-2-fund"
+            class="tracking-tight pb-1 mb-12 text-3xl md:text-4xl text-ltngWhite font-bold gradientHeader inline-block scroll-mt-24"
+        >
+            Node Fund 2
+        </h2>
+
+        <p>The newest flagship fund from Lightning Ventures. The future of Bitcoin venture capital looks bright. Lightning Ventures' Node 2 Fund is uniquely positioned to invest in the emerging Bitcoin-native landscape, with an exclusive focus on Bitcoin and an extensive network of industry connections. We are committed to supporting and fostering innovation in the Bitcoin ecosystem, aiming to capitalize on the unparalleled opportunities presented by this transformative technology. Lightning Ventures aims to foster innovation in the space, helping to shape the future of finance and technology while creating value for our investors and the broader ecosystem.</p>
+
+        <p>If you are an accredited investor looking to join our Node 2 Fund please <a href="/contact">get in touch</a> with any questions.</p>
+    </div>
+</div>
+
+<div class="mb-4 pt-4 pb-12">
+    <div class="max-w-6xl mx-auto px-4 md:px-8 mt-8 prose prose-invert md:prose-xl">
+        <h2
+            id="syndicate"
+            class="tracking-tight pb-1 mb-12 text-3xl md:text-4xl text-ltngWhite font-bold gradientHeader inline-block scroll-mt-24"
+        >
+            Lightning Ventures Syndicate
+        </h2>
+
+        <p>In addition to our Node Series funds, Lightning Ventures manages an active syndicate of accomplished, talented, and unique investors. This group, which includes founders of successful Bitcoin companies and influential figures in the Bitcoin ecosystem, further enhances our ability to support founders and portfolio companies. This robust network provides value-added resources, mentorship, and connections that can propel our investments. We provide our startups with access to strategic partnerships, market insights, and growth opportunities.</p>
+
+        <p>For newer investors, Syndicates are a perfect place to start your angel investing journey. The minimums are much lower than being an LP in a more traditional fund (like our Node 2 fund) and you get to see a lot of deal flow to hone your skills.</p>
+
+        <h3>How can I join?</h3>
+        <p>The Syndicate is managed through Angellist. You can join our syndicate and start receiving dealflow for free, by filling out the <a href="https://venture.angellist.com/lightningventures/syndicate">short form on this page</a>. If we're offering a Bitcoin deal you like, and you decide you want to invest, the minimum investment is $1,000.</p>
+
     </div>
 </div>

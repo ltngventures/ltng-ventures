@@ -25,7 +25,7 @@
                 Are you building for Bitcoin? Let's chat, we'd love to help you!
             </p>
         </a>
-        <a href="/investors" class="p-4 hoverCard">
+        <a href="/investors#syndicate" class="p-4 hoverCard">
             <h2 class="text-lg md:text-2xl font-josefin-sans-italic uppercase font-semibold mb-4">
                 Lightning Syndicate
             </h2>
@@ -33,7 +33,7 @@
                 The hottest deal flow in Bitcoin. Start investing in Bitcoin companies with low minimums.
             </p>
         </a>
-        <a href="/investors" class="p-4 hoverCard">
+        <a href="/investors#node-2-fund" class="p-4 hoverCard">
             <h2 class="text-lg md:text-2xl font-josefin-sans-italic uppercase font-semibold mb-4">
                 Node 2 Fund
             </h2>
