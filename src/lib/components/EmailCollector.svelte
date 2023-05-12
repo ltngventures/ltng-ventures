@@ -7,8 +7,8 @@
 
     function handleSubmit(event: Event) {
         const form = event.target as HTMLFormElement;
-        const emailField = document.getElementById("email") as HTMLInputElement;
-        const urlParamsString = new URLSearchParams(`email=${emailField.value}`).toString();
+        const formData = new FormData(form);
+        const urlParamsString = new URLSearchParams(formData as any).toString();
 
         isSubmitting = true;
         errorMessage = "";
@@ -21,6 +21,9 @@
             form.reset();
             isSubmitting = false;
             showSuccess = true;
+            setTimeout(() => {
+                showSuccess = false;
+            }, 2500);
         })
         .catch((error) => {
             isSubmitting = false;
@@ -37,13 +40,14 @@
     name="Email Collector"
     netlify
     netlify-honeypot="bot-field"
+    on:submit|preventDefault={handleSubmit}
 >
     <input type="hidden" name="form-name" value="Email Collector" />
     <label class="hidden">
         Don't fill this out if you're human: <input name="bot-field" />
     </label>
 
-    <label for="emailAddress" class="text-center">
+    <label for="email" class="text-center">
         Subscribe for Updates
     </label>
 
