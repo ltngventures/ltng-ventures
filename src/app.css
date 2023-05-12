@@ -136,3 +136,7 @@ label {
 .investors:hover {
     animation-play-state: paused;
 }
+
+.socialIconsContainer > a {
+    @apply hover:opacity-70;
+}
