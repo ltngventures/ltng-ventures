@@ -35,7 +35,6 @@
 
 <form
     method="POST"
-    id="emailCollector"
     class="flex flex-col gap-2 items-center"
     name="Email Collector"
     netlify
@@ -53,7 +52,7 @@
 
     <div class="flex flex-col md:flex-row gap-2 items-center">
         <input name="email" id="email" type="text" placeholder="satoshin@gmx.com" class="w-72 py-1.5" />
-        <button id="emailSubmitButton" type="submit" class="font-semibold font-josefin-sans-italic uppercase text-ltngYellow bg-ltngWhite/20 hover">Subscribe</button>
+        <button id="emailSubmitButton" type="submit" class="font-semibold font-josefin-sans-italic uppercase text-ltngYellow bg-ltngWhite/20 hover" disabled={isSubmitting}>Subscribe</button>
     </div>
     {#if showSuccess}
         <div class="text-green-500">Thanks! You're now subscribed.</div>
