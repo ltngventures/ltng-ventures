@@ -7,14 +7,15 @@
 
     function handleSubmit(event: Event) {
         const form = event.target as HTMLFormElement;
-        const formData = new FormData(form);
+        const emailField = document.getElementById("email") as HTMLInputElement;
+        const urlParamsString = new URLSearchParams(`email=${emailField.value}`).toString();
 
         isSubmitting = true;
         errorMessage = "";
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: new URLSearchParams(formData.toString()).toString()
+            body: urlParamsString
         })
         .then(() => {
             form.reset();
@@ -31,6 +32,7 @@
 
 <form
     method="POST"
+    id="emailCollector"
     class="flex flex-col gap-2 items-center"
     name="Email Collector"
     netlify
@@ -42,7 +44,7 @@
         Don't fill this out if you're human: <input name="bot-field" />
     </label>
 
-    <label for="email" class="text-center">
+    <label for="emailAddress" class="text-center">
         Subscribe for Updates
     </label>
 
@@ -50,12 +52,12 @@
         <input name="email" id="email" type="text" placeholder="satoshin@gmx.com" class="w-72 py-1.5" />
         <button id="emailSubmitButton" type="submit" class="font-semibold font-josefin-sans-italic uppercase text-ltngYellow bg-ltngWhite/20 hover">Subscribe</button>
     </div>
-
-    {#if showSuccess}
-        <div class="text-green-500">Thanks! You're now subscribed.</div>
-    {/if}
-
-    {#if showError}
-        <div class="text-red-500">{errorMessage}</div>
-    {/if}
 </form>
+
+{#if showSuccess}
+    <div class="text-green-500">Thanks! You're now subscribed.</div>
+{/if}
+
+{#if showError}
+    <div class="text-red-500">{errorMessage}</div>
+{/if}
