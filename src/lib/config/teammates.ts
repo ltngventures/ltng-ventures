@@ -49,7 +49,7 @@ export const teammates: App.Teammate[] = [
     {
         name: 'Joe Dillon',
         img: '/images/team/joedillon.webp',
-        title: 'Mining & Energy',
+        title: 'Mining & Energy advisor',
         description: null,
         socials: [
             { type: 'twitter', url: 'https://twitter.com/joe_tulane' },
