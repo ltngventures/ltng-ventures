@@ -18,7 +18,7 @@ declare global {
             type: string;
             url: string;
         }
-        interface Founder {
+        interface Testimonial {
             img: string;
             blurb: string;
             nameAndRole: string;

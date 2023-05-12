@@ -117,7 +117,7 @@
                 <label for="social">Social profile link *</label>
                 <input type="text" name="social" id="social" placeholder="Twitter, LinkedIn, Nostr, Telegram, etc." required/>
             </fieldset>
-            <fieldset class="formGroup col-span-2">
+            <fieldset class="formGroup md:col-span-2">
                 <button type="submit" class="w-1/3 mx-auto font-semibold font-josefin-sans-italic uppercase text-ltngYellow bg-ltngWhite/20 hover" disabled={isSubmitting}>Submit</button>
                 {#if showSuccess}
                     <div class="text-green-500 text-center">Thanks! We'll reach out if once we've reviewed.</div>

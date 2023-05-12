@@ -1,4 +1,5 @@
 <script lang="ts">
+    import Carousel from '$lib/components/Carousel.svelte';
     import PortfolioGrid from '$lib/components/PortfolioGrid.svelte';
     import { founders } from '$lib/data/founders';
     import { investors } from '$lib/data/investors';
@@ -35,28 +36,7 @@
                 What Our Founders Say
             </h2>
         </div>
-        <div class="founderCarousel flex flex-nowrap flex-row items-center overflow-x-scroll w-screen">
-            <div class="founders flex flex-nowrap flex-row gap-32 items-center">
-                {#each founders as founder, i}
-                    <div class="flex shrink-0 grow-0 flex-row gap-6 items-center w-[600px]">
-                        <img src={founder.img} alt="founder{i}" class="w-36 md:w-64 h-36 md:h-64 rounded-full shadow-lg" />
-                        <div class="prose dark:prose-invert md:prose-xl text-lg w-64 md:w-96">
-                            <p>&ldquo;{founder.blurb}&rdquo;</p>
-                            <p class="text-base">&ndash; {founder.nameAndRole}</p>
-                        </div>
-                    </div>
-                {/each}
-                {#each founders as founder, i}
-                    <div class="flex shrink-0 grow-0 flex-row gap-6 items-center w-[600px]">
-                        <img src={founder.img} alt="founder{i}" class="w-36 md:w-64 h-36 md:h-64 rounded-full shadow-lg" />
-                        <div class="prose dark:prose-invert md:prose-xl text-lg w-64 md:w-96">
-                            <p>&ldquo;{founder.blurb}&rdquo;</p>
-                            <p class="text-base">&ndash; {founder.nameAndRole}</p>
-                        </div>
-                    </div>
-                {/each}
-            </div>
-        </div>
+        <Carousel testimonials={founders} direction="Right" />
     </div>
 
     <div class="py-12">
@@ -67,28 +47,7 @@
                 What Our Investors Say
             </h2>
         </div>
-        <div class="investorCarousel flex flex-nowrap flex-row items-center overflow-x-scroll w-screen">
-            <div class="investors flex flex-nowrap flex-row gap-32 items-center">
-                {#each investors as investor, i}
-                    <div class="flex shrink-0 grow-0 flex-row gap-6 items-center w-[600px]">
-                        <img src={investor.img} alt="investor{i}" class="w-36 md:w-64 h-36 md:h-64 rounded-full shadow-lg" />
-                        <div class="prose dark:prose-invert md:prose-xl text-lg w-64 md:w-96">
-                            <p>&ldquo;{investor.blurb}&rdquo;</p>
-                            <p class="text-base">&ndash; {investor.nameAndRole}</p>
-                        </div>
-                    </div>
-                {/each}
-                {#each investors as investor, i}
-                    <div class="flex shrink-0 grow-0 flex-row gap-6 items-center w-[600px]">
-                        <img src={investor.img} alt="investor{i}" class="w-36 md:w-64 h-36 md:h-64 rounded-full shadow-lg" />
-                        <div class="prose dark:prose-invert md:prose-xl text-lg w-64 md:w-96">
-                            <p>&ldquo;{investor.blurb}&rdquo;</p>
-                            <p class="text-base">&ndash; {investor.nameAndRole}</p>
-                        </div>
-                    </div>
-                {/each}
-            </div>
-        </div>
+        <Carousel testimonials={investors} direction="Left" />
     </div>
 
     <div class="py-12 bg-indigo-800/10 innerShadow">

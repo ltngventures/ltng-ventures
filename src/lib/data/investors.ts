@@ -1,4 +1,4 @@
-export const investors: App.Founder[] = [
+export const investors: App.Testimonial[] = [
     {
         img: '/images/founders/founder-placeholder-1.webp',
         blurb: "Lightning Ventures is the best fund we've worked with so far. They've consistentlty gone above and beyond to help us out.",

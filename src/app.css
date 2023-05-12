@@ -106,11 +106,11 @@ label {
     @apply tracking-tight pb-1 mb-12 text-2xl md:text-4xl font-bold;
 }
 
-.founders {
-    animation: founders 25s linear infinite;
+.testimonialsRight {
+    animation: testimonialsRight 25s linear infinite;
 }
 
-@keyframes founders {
+@keyframes testimonialsRight {
     0% {
         transform: translate3d(0, 0, 0);
     }
@@ -119,11 +119,11 @@ label {
     }
 }
 
-.investors {
-    animation: investors 25s linear infinite;
+.testimonialsLeft {
+    animation: testimonialsLeft 25s linear infinite;
 }
 
-@keyframes investors {
+@keyframes testimonialsLeft {
     0% {
         transform: translate3d(-51.3%, 0, 0);
     }
@@ -132,8 +132,8 @@ label {
     }
 }
 
-.founders:hover,
-.investors:hover {
+.testimonialsRight:hover,
+.testimonialsLeft:hover {
     animation-play-state: paused;
 }
 

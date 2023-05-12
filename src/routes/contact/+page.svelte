@@ -65,11 +65,11 @@
                 <label for="email">Email address *</label>
                 <input type="text" name="email" id="email" required/>
             </fieldset>
-            <fieldset class="formGroup col-span-2">
+            <fieldset class="formGroup md:col-span-2">
                 <label for="role">What's your question? *</label>
                 <textarea name="question" id="question" required/>
             </fieldset>
-            <fieldset class="formGroup col-span-2">
+            <fieldset class="formGroup md:col-span-2">
                 <button type="submit" class="w-1/3 mx-auto font-semibold font-josefin-sans-italic uppercase text-ltngYellow bg-ltngWhite/20 hover" disabled={isSubmitting}>Submit</button>
                 {#if showSuccess}
                     <div class="text-green-500 text-center">Thanks! We'll be in touch soon.</div>
