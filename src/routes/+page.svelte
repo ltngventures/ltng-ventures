@@ -20,7 +20,7 @@
             <PortfolioGrid displayCount={15} />
             <div class="w-full flex flex-row items-center justify-center pt-10">
                 <a
-                    href="/investments"
+                    href="/portfolio"
                     class="hover font-josefin-sans-italic text-base uppercase font-semibold text-ltngYellow bg-ltngWhite/20 hover:bg-transparent"
                     >Portfolio</a
                 >

@@ -30,7 +30,7 @@
             </a>
             <a
                 href="/portfolio"
-                class="hover {$page.url.pathname === '/investments' ? 'active' : ''}"
+                class="hover {$page.url.pathname === '/portfolio' ? 'active' : ''}"
             >
                 Portfolio
             </a>
