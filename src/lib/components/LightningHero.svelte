@@ -22,7 +22,7 @@
                 Pitch Us
             </h2>
             <p class="text-sm md:text-lg">
-                Are you building for Bitcoin? Let's chat, we'd love to help you!
+                Are you building for Bitcoin? Let's chat, we'd love to help you take your company to the next level.
             </p>
         </a>
         <a href="/investors#syndicate" class="p-4 hoverCard">

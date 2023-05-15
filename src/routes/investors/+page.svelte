@@ -47,30 +47,76 @@
         promising companies in the space. Our VC fund has a large network of Bitcoiner LPs, making us
         an attractive partner for Bitcoin-oriented tech founders.
     </p>
-    <p>Any information disclosed here will be kept strictly confidential.</p>
+    <p>There are several ways to invest with Lightning Ventures. Learn more below.</p>
 
-    <!-- <div>
-        <h3>Tell us about yourself</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto not-prose">
+        <a href="#node-2-fund" class="p-4 hoverCard no-underline">
+            <h2 class="text-lg md:text-2xl font-josefin-sans-italic uppercase font-semibold mb-4">
+                Node 2 Fund
+            </h2>
+            <p class="text-sm md:text-lg">
+                Learn more about becoming an LP in our new flagship fund dedicated to investing pre-seed to series A in the best Bitcoin companies and founders.
+            </p>
+        </a>
+        <a href="#syndicate" class="p-4 hoverCard">
+            <h2 class="text-lg md:text-2xl font-josefin-sans-italic uppercase font-semibold mb-4">
+                Lightning Syndicate
+            </h2>
+            <p class="text-sm md:text-lg">
+                The hottest deal flow in Bitcoin. Start investing in Bitcoin companies with low minimums. Great for new or experienced angel investors alike.
+            </p>
+        </a>
+        <a href="#scouts" class="p-4 hoverCard">
+            <h2 class="text-lg md:text-2xl font-josefin-sans-italic uppercase font-semibold mb-4">
+                Scout Program
+            </h2>
+            <p class="text-sm md:text-lg">
+                Lightning Ventures appreciates and rewards warm introductions! Break into the Bitcoin VC world and contribute to funding the ecosystem.
+            </p>
+        </a>
+        <a href="#node-1-fund" class="p-4 hoverCard">
+            <h2 class="text-lg md:text-2xl font-josefin-sans-italic uppercase font-semibold mb-4">
+                Node 1 Fund
+            </h2>
+            <p class="text-sm md:text-lg">
+                The original. Learn more about the Bitcoin and Lightning investments we've made so far.
+            </p>
+        </a>
+    </div>
+
+
+    <div>
+        <h3>Still have questions?</h3>
         <form
-            name="Investors Intake"
+            name="Investor Contact"
             method="POST"
             data-netlify="true"
             class="grid grid-cols-1 md:grid-cols-2 gap-8"
         >
             <fieldset class="formGroup">
-                <label for="firstName">First name *</label>
-                <input type="text" name="firstName" id="firstName" />
-            </fieldset>
-            <fieldset class="formGroup">
-                <label for="lastName">Last name *</label>
-                <input type="text" name="lastName" id="lastName" />
+                <label for="name">Full Name *</label>
+                <input type="text" name="name" id="name" required />
             </fieldset>
             <fieldset class="formGroup">
                 <label for="email">Email *</label>
-                <input type="text" name="email" id="email" />
+                <input type="text" name="email" id="email" required />
+            </fieldset>
+            <fieldset class="formGroup col-span-2">
+                <label for="question">Question *</label>
+                <textarea name="question" id="question" required />
+            </fieldset>
+            <fieldset class="formGroup md:col-span-2">
+                <button type="submit" class="w-1/3 mx-auto font-semibold font-josefin-sans-italic uppercase text-ltngYellow bg-ltngWhite/20 hover" disabled={isSubmitting}>Submit</button>
+                {#if showSuccess}
+                    <div class="text-green-500 text-center">Thanks! We'll be in touch soon.</div>
+                {/if}
+
+                {#if showError}
+                    <div class="text-red-500 text-center">{errorMessage}</div>
+                {/if}
             </fieldset>
         </form>
-    </div> -->
+    </div>
 </div>
 
 <div class="mb-4 pt-4 pb-12 bg-btcOrange/20 innerShadow">
@@ -104,5 +150,20 @@
         <h3>How can I join?</h3>
         <p>The Syndicate is managed through Angellist. You can join our syndicate and start receiving dealflow for free, by filling out the <a href="https://venture.angellist.com/lightningventures/syndicate">short form on this page</a>. If we're offering a Bitcoin deal you like, and you decide you want to invest, the minimum investment is $1,000.</p>
 
+    </div>
+</div>
+
+<div class="mb-4 pt-4 pb-12 bg-slate-50/10 innerShadow">
+    <div class="max-w-6xl mx-auto px-4 md:px-8 mt-8 prose prose-invert md:prose-xl">
+        <h2
+            id="scouts"
+            class="tracking-tight pb-1 mb-12 text-3xl md:text-4xl text-ltngWhite font-bold gradientHeader inline-block scroll-mt-24"
+        >
+            Scout Program
+        </h2>
+
+        <p>The rapid growth of the Bitcoin market, increasing institutional interest, and the emergence of new use cases present significant opportunities for investment in the Bitcoin ecosystem. The total market capitalization of Bitcoin has grown exponentially since its inception, reaching over $1 trillion in 2021 and demonstrating the potential for further growth and adoption.</p>
+
+        <p>We're still early. Growth in founding and funding of Bitcoin startups continues is accelerating. <a href="/investors">Ready to invest?</a></p>
     </div>
 </div>

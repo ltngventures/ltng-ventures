@@ -62,12 +62,12 @@
                 <input type="text" name="name" id="name" required/>
             </fieldset>
             <fieldset class="formGroup">
-                <label for="email">Email address *</label>
+                <label for="email">Email *</label>
                 <input type="text" name="email" id="email" required/>
             </fieldset>
             <fieldset class="formGroup md:col-span-2">
-                <label for="role">What's your question? *</label>
-                <textarea name="question" id="question" required/>
+                <label for="role">Message *</label>
+                <textarea name="message" id="message" required/>
             </fieldset>
             <fieldset class="formGroup md:col-span-2">
                 <button type="submit" class="w-1/3 mx-auto font-semibold font-josefin-sans-italic uppercase text-ltngYellow bg-ltngWhite/20 hover" disabled={isSubmitting}>Submit</button>
