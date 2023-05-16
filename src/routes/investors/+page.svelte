@@ -167,3 +167,17 @@
         <p>We're still early. Growth in founding and funding of Bitcoin startups continues is accelerating. <a href="/investors">Ready to invest?</a></p>
     </div>
 </div>
+
+<div class="mb-4 pt-4 pb-12">
+    <div class="max-w-6xl mx-auto px-4 md:px-8 mt-8 prose prose-invert md:prose-xl">
+        <h2
+            id="node-1-fund"
+            class="tracking-tight pb-1 mb-12 text-3xl md:text-4xl text-ltngWhite font-bold gradientHeader inline-block scroll-mt-24"
+        >
+            Node 1 Fund
+        </h2>
+
+        <p>In addition to our Node Series funds, Lightning Ventures manages an active syndicate of accomplished, talented, and unique investors. This group, which includes founders of successful Bitcoin companies and influential figures in the Bitcoin ecosystem, further enhances our ability to support founders and portfolio companies. This robust network provides value-added resources, mentorship, and connections that can propel our investments. We provide our startups with access to strategic partnerships, market insights, and growth opportunities.</p>
+
+    </div>
+</div>
