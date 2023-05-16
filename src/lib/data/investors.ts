@@ -1,22 +1,17 @@
 export const investors: App.Testimonial[] = [
     {
-        img: '/images/founders/founder-placeholder-1.webp',
-        blurb: "Lightning Ventures is the best fund we've worked with so far. They've consistentlty gone above and beyond to help us out.",
-        nameAndRole: 'Laura Stern, CEO utxoWorld'
+        img: '/images/investors/bobby-investor.webp',
+        blurb: 'I had the pleasure of meeting Mike and his team and have found some incredible deal flow into brands I use and love. I otherwise would have no access to these deals if it were not for Lightning Ventures.',
+        nameAndRole: 'Bobby Shell, Angel Investor & VP Marketing at Voltage'
     },
     {
-        img: '/images/founders/founder-placeholder-2.webp',
-        blurb: "They're my first call whenever I need anything.",
-        nameAndRole: 'Gary Bourne, CEO Stacks R Us'
+        img: '/images/investors/brad-investor.webp',
+        blurb: "As a well-connected early bitcoiner doing angel investing, I didn't feel the need to participate in Lightning Ventures. However, after watching Mike allocate capital over the years, I've been extremely impressed at his incredible strides in the early-stage bitcoin-only entrepreneur space.",
+        nameAndRole: 'Brad Mills, Bitcoiner & Angel Investor'
     },
     {
-        img: '/images/founders/founder-placeholder-3.webp',
-        blurb: 'The guys at Lightning Ventures were isntrumental in our successful series A earlier this year.',
-        nameAndRole: 'Tina Tomlin, CEO Base Chain Labs'
-    },
-    {
-        img: '/images/founders/founder-placeholder-4.webp',
-        blurb: "We've been really impressed with the network that Lightning Ventures has opened up for us.",
-        nameAndRole: 'Billy Song, CTO OP_STACK'
+        img: '/images/investors/delly-investor.webp',
+        blurb: 'I have really enjoyed working with Mike on Angellist syndicates! First, he finds and sees companies early on, and then he is very helpful and hands-on with founders. Look forward to many deals together in the future!',
+        nameAndRole: 'Matthew Dellavedova “Delly”, NBA Player, Syndicate Lead, Investor'
     }
 ];

@@ -107,7 +107,7 @@ label {
 }
 
 .testimonialsRight {
-    animation: testimonialsRight 25s linear infinite;
+    animation: testimonialsRight 95s linear infinite;
 }
 
 @keyframes testimonialsRight {
@@ -115,7 +115,7 @@ label {
         transform: translate3d(0, 0, 0);
     }
     100% {
-        transform: translate3d(-51.35%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
     }
 }
 
@@ -125,7 +125,7 @@ label {
 
 @keyframes testimonialsLeft {
     0% {
-        transform: translate3d(-51.3%, 0, 0);
+        transform: translate3d(-77%, 0, 0);
     }
     100% {
         transform: translate3d(0, 0, 0);
