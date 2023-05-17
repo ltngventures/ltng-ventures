@@ -35,7 +35,7 @@ export const teammates: App.Teammate[] = [
     },
     {
         name: 'Giacomo',
-        img: null,
+        img: '/images/team/giacomo.webp',
         title: 'Technical advisor',
         description: null,
         socials: [

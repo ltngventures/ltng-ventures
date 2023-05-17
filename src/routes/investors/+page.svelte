@@ -162,9 +162,9 @@
             Scout Program
         </h2>
 
-        <p>The rapid growth of the Bitcoin market, increasing institutional interest, and the emergence of new use cases present significant opportunities for investment in the Bitcoin ecosystem. The total market capitalization of Bitcoin has grown exponentially since its inception, reaching over $1 trillion in 2021 and demonstrating the potential for further growth and adoption.</p>
-
-        <p>We're still early. Growth in founding and funding of Bitcoin startups continues is accelerating. <a href="/investors">Ready to invest?</a></p>
+        <p>Lightning Ventures appreciates and rewards warm introductions! This is a chance to privately share any great startup or founder you think we should meet.</p>
+        <p>We will share 20% of our carry in that investment with you.  Find a great startup! Hook us up with them! Earn carry on that deal if we end up investing. Learn about Venture Capital and break into Bitcoin VC with our new program.</p>
+        <p>Don't hesitate to <a href="/contact">get in touch</a> with details on companies or to ask more questions.</p>
     </div>
 </div>
 
@@ -177,7 +177,9 @@
             Node 1 Fund
         </h2>
 
-        <p>In addition to our Node Series funds, Lightning Ventures manages an active syndicate of accomplished, talented, and unique investors. This group, which includes founders of successful Bitcoin companies and influential figures in the Bitcoin ecosystem, further enhances our ability to support founders and portfolio companies. This robust network provides value-added resources, mentorship, and connections that can propel our investments. We provide our startups with access to strategic partnerships, market insights, and growth opportunities.</p>
+        <p>Our Node 1 Fund portfolio companies include: Strike, Swan Bitcoin, Azteco, CoinCorner, Breez, Unchained Capital, Relai, Satsback.com, Bold, THNDR Games, Moon, Bitnob, Scarce City, Bitcoin Beach Wallet, Impervious.ai, Start9, Bitstack, DIGTL, Slice, Cloaked Wireless, Beaver Bitcoin, Wavlake, Federated Computer, Geyser, Orange Pill App, Fuji Labs, Vida Global, Jan3, and Ibex.</p>
+        <p>This fund invests in Bitcoin companies with an emphasis on Lightning Network technology. This fund has a strict thesis of investing in the Bitcoin ecosystem, with tremendous focus and interest specifically in companies who are building on the Lightning Network. We are investing in passionate, charismatic founders who are building real companies, potentially behemoths and ultimately are on a mission to make a sizable impact in the world and future. Through this fund, we have an opportunity to have an allocation or direct ownership of leading companies in this exciting and lucrative space. Node 1 Fund is not taking new investments.</p>
+        <p>Please see <a href="#node-2-fund">Node 2 Fund</a> for current investment opportunities.</p>
 
     </div>
 </div>
