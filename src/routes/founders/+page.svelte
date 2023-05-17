@@ -67,8 +67,17 @@
             <fieldset class="formGroup">
                 <label for="companyType">What sector is your company in? *</label>
                 <select name="companyType" id="companyType">
-                    <option value="software">Software & Hardware</option>
+                    <option value="communications">Communications</option>
+                    <option value="ecommerce">E-Commerce</option>
+                    <option value="exchange_financial">Exchanges / On Ramps / Financial</option>
+                    <option value="gaming_art">Gaming / Art</option>
+                    <option value="infrastructure">Infrastructure</option>
+                    <option value="lending_credit">Lending / Credit</option>
                     <option value="mining">Mining & Energy</option>
+                    <option value="payments_rewards">Payments / Rewards</option>
+                    <option value="social">Social</option>
+                    <option value="wallets">Wallets</option>
+                    <option value="other">Other</option>
                 </select>
             </fieldset>
             <fieldset class="formGroup">

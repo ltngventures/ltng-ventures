@@ -1,7 +1,7 @@
 export const investors: App.Testimonial[] = [
     {
         img: '/images/investors/bobby-investor.webp',
-        blurb: 'I had the pleasure of meeting Mike and his team and have found some incredible deal flow into brands I use and love. I otherwise would have no access to these deals if it were not for Lightning Ventures.',
+        blurb: 'I had the pleasure of meeting Mike and his team and have found some incredible dealflow into brands I use and love. I otherwise would have no access to these deals if it were not for Lightning Ventures.',
         nameAndRole: 'Bobby Shell, Angel Investor & VP Marketing at Voltage'
     },
     {

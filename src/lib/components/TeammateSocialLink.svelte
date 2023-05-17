@@ -1,6 +1,8 @@
 <script lang="ts">
     import TwitterIcon from "$lib/elements/icons/Twitter.svelte";
-
+    import LinkedinIcon from "$lib/elements/icons/Linkedin.svelte";
+    import VidaIcon from "$lib/elements/icons/vida.svelte";
+    import Vida from "$lib/elements/icons/vida.svelte";
     export let social: App.SocialLink;
 
 </script>
@@ -10,5 +12,9 @@
         <TwitterIcon />
     {:else if  social.type === 'nostr'}
         <img src="/images/nostr-white.webp" alt="nostr" />
+    {:else if  social.type === 'linkedin'}
+        <LinkedinIcon />
+    {:else if  social.type === 'vida'}
+        <VidaIcon />
     {/if}
 </a>

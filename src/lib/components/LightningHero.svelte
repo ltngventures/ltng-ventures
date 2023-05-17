@@ -30,7 +30,7 @@
                 Lightning Syndicate
             </h2>
             <p class="text-sm md:text-lg">
-                The hottest deal flow in Bitcoin. Start investing in Bitcoin companies with low minimums.
+                The hottest dealflow in Bitcoin. Start investing in Bitcoin companies with low minimums.
             </p>
         </a>
         <a href="/investors#node-2-fund" class="p-4 hoverCard">

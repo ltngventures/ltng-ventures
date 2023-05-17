@@ -4,8 +4,22 @@ export const teammates: App.Teammate[] = [
         img: '/images/team/muzz.webp',
         title: 'Managing Partner',
         description:
-            '<p>Mike Jarmuz is the Managing Partner and Co-Founder of Lightning Ventures. He advises Azteco and Slice and organizes the annual Unconfiscatable Conference.</p>',
-        socials: [{ type: 'twitter', url: 'https://twitter.com/MikeJarmuz' }]
+            '<p>Mike Jarmuz is the Managing Partner and Co-founder of Lightning Ventures. He advises Azteco and Slice and organizes the annual Unconfiscatable Conference.</p>',
+        socials: [
+            { type: 'twitter', url: 'https://twitter.com/MikeJarmuz' },
+            {
+                type: 'nostr',
+                url: 'https://primal.net/profile/npub1q3kyx6e22fg9npnmgrypu35mdkpsq9zzl3jnzty85l88404sytlstdg0vl'
+            },
+            {
+                type: 'linkedin',
+                url: 'https://www.linkedin.com/in/mike-jarmuz-573b5658'
+            },
+            {
+                type: 'vida',
+                url: 'https://vida.page/mikejarmuz'
+            }
+        ]
     },
     {
         name: 'Alex McShane',
@@ -49,7 +63,7 @@ export const teammates: App.Teammate[] = [
     {
         name: 'Joe Dillon',
         img: '/images/team/joedillon.webp',
-        title: 'Mining & Energy advisor',
+        title: 'Head of Mining & Energy',
         description: null,
         socials: [
             { type: 'twitter', url: 'https://twitter.com/joe_tulane' },
@@ -69,14 +83,14 @@ export const teammates: App.Teammate[] = [
     {
         name: 'Nate Burry',
         img: '/images/team/nate.webp',
-        title: 'Cofounder',
+        title: 'Co-founder emeritus',
         description: null,
         socials: []
     },
     {
         name: 'Sebtoshi',
         img: '/images/team/seb.webp',
-        title: 'Analyst',
+        title: 'Senior Analyst',
         description: null,
         socials: []
     },

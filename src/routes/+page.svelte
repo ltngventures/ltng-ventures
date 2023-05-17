@@ -11,7 +11,7 @@
 </svelte:head>
 
 <div class="flex flex-col">
-    <div class="py-12 bg-slate-50/10 innerShadow">
+    <div class="py-12 bg-slate-50/30 innerShadow">
         <div class="max-w-6xl mx-auto px-4 md:px-8">
             <h2
                 class="tracking-tight pb-1 mb-12 text-3xl md:text-4xl text-ltngWhite font-bold gradientHeader inline-block"

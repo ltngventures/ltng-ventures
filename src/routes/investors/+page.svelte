@@ -43,9 +43,9 @@
     </h2>
     <p>
         <span class="gradientHeader font-bold">Lightning Ventures</span> is one of few pure-play Bitcoin-focused
-        venture capital firms. The fund is uniquely positioned to invest in and partner with the most
-        promising companies in the space. Our VC fund has a large network of Bitcoiner LPs, making us
-        an attractive partner for Bitcoin-oriented tech founders.
+        venture capital firms. We have a fund that is uniquely positioned to invest in and partner with the most
+        promising companies in the space. We have a large network of Bitcoiner LPs, making us
+        an attractive partner for Bitcoin founders and BLDRS.
     </p>
     <p>There are several ways to invest with Lightning Ventures. Learn more below.</p>
 
@@ -63,7 +63,7 @@
                 Lightning Syndicate
             </h2>
             <p class="text-sm md:text-lg">
-                The hottest deal flow in Bitcoin. Start investing in Bitcoin companies with low minimums. Great for new or experienced angel investors alike.
+                The hottest dealflow in Bitcoin. Start investing in Bitcoin companies on a deal-by-deal basis with low minimums. Great for new or experienced angel investors.
             </p>
         </a>
         <a href="#scouts" class="p-4 hoverCard">
@@ -128,9 +128,9 @@
             Node 2 Fund
         </h2>
 
-        <p>The newest flagship fund from Lightning Ventures. The future of Bitcoin venture capital looks bright. Lightning Ventures' Node 2 Fund is uniquely positioned to invest in the emerging Bitcoin-native landscape, with an exclusive focus on Bitcoin and an extensive network of industry connections. We are committed to supporting and fostering innovation in the Bitcoin ecosystem, aiming to capitalize on the unparalleled opportunities presented by this transformative technology. Lightning Ventures aims to foster innovation in the space, helping to shape the future of finance and technology while creating value for our investors and the broader ecosystem.</p>
+        <p>The newest flagship fund from Lightning Ventures. The future of Bitcoin venture capital looks bright. Lightning Ventures' <a href="https://venture.angellist.com/funds/node-2-fund">Node 2 Fund</a> is uniquely positioned to invest in the emerging Bitcoin-native landscape, with an exclusive focus on Bitcoin and an extensive network of industry connections. We are committed to supporting and fostering innovation in the Bitcoin ecosystem, aiming to capitalize on the unparalleled opportunities presented by this transformative technology. Lightning Ventures aims to foster innovation in the space, helping to shape the future of finance and technology while creating value for our investors and the broader ecosystem.</p>
 
-        <p>If you are an accredited investor looking to join our Node 2 Fund please <a href="/contact">get in touch</a> with any questions.</p>
+        <p>If you want to invest in the next generation of Bitcoin companies with us, <a href="https://venture.angellist.com/funds/node-2-fund">Invest Here</a>, or <a href="/contact">get in touch</a> with any questions.</p>
     </div>
 </div>
 
@@ -145,10 +145,10 @@
 
         <p>In addition to our Node Series funds, Lightning Ventures manages an active syndicate of accomplished, talented, and unique investors. This group, which includes founders of successful Bitcoin companies and influential figures in the Bitcoin ecosystem, further enhances our ability to support founders and portfolio companies. This robust network provides value-added resources, mentorship, and connections that can propel our investments. We provide our startups with access to strategic partnerships, market insights, and growth opportunities.</p>
 
-        <p>For newer investors, Syndicates are a perfect place to start your angel investing journey. The minimums are much lower than being an LP in a more traditional fund (like our Node 2 fund) and you get to see a lot of deal flow to hone your skills.</p>
+        <p>For newer investors, Syndicates are a perfect place to start your angel investing journey. The minimums are much lower than being an LP in a more traditional fund (like our <a href="https://venture.angellist.com/funds/node-2-fund">Node 2 Fund</a>) and you get to see a lot of dealflow to hone your skills.</p>
 
         <h3>How can I join?</h3>
-        <p>The Syndicate is managed through Angellist. You can join our syndicate and start receiving dealflow for free, by filling out the <a href="https://venture.angellist.com/lightningventures/syndicate">short form on this page</a>. If we're offering a Bitcoin deal you like, and you decide you want to invest, the minimum investment is $1,000.</p>
+        <p>The Syndicate is managed through Angellist. You can join our syndicate and start receiving dealflow for free <a href="/contact">by filling out this short form</a>. If we're offering a Bitcoin deal you like, and you decide you want to invest, the minimum investment is $1,000. Be impactful, add value and join our network. If you are already on AngelList you can simply <a href="https://venture.angellist.com/lightningventures/syndicate">apply to join our syndicate here</a>.</p>
 
     </div>
 </div>
@@ -178,7 +178,7 @@
         </h2>
 
         <p>Our Node 1 Fund portfolio companies include: Strike, Swan Bitcoin, Azteco, CoinCorner, Breez, Unchained Capital, Relai, Satsback.com, Bold, THNDR Games, Moon, Bitnob, Scarce City, Bitcoin Beach Wallet, Impervious.ai, Start9, Bitstack, DIGTL, Slice, Cloaked Wireless, Beaver Bitcoin, Wavlake, Federated Computer, Geyser, Orange Pill App, Fuji Labs, Vida Global, Jan3, and Ibex.</p>
-        <p>This fund invests in Bitcoin companies with an emphasis on Lightning Network technology. This fund has a strict thesis of investing in the Bitcoin ecosystem, with tremendous focus and interest specifically in companies who are building on the Lightning Network. We are investing in passionate, charismatic founders who are building real companies, potentially behemoths and ultimately are on a mission to make a sizable impact in the world and future. Through this fund, we have an opportunity to have an allocation or direct ownership of leading companies in this exciting and lucrative space. Node 1 Fund is not taking new investments.</p>
+        <p>This fund invests in Bitcoin companies with an emphasis on Lightning Network technology. This fund has a strict thesis of investing in the Bitcoin ecosystem, with tremendous focus and interest specifically in companies who are building on the Lightning Network. We are investing in passionate, charismatic founders who are building real companies, potentially behemoths and ultimately are on a mission to make a sizable impact in the world and future. Through this fund, we have an opportunity to have an allocation or direct ownership of leading companies in this exciting and lucrative space. <strong>Node 1 Fund is closed.</strong></p>
         <p>Please see <a href="#node-2-fund">Node 2 Fund</a> for current investment opportunities.</p>
 
     </div>
