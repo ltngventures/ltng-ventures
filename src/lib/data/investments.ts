@@ -153,5 +153,10 @@ export const investments: App.Investment[] = [
         url: 'https://wavlake.com/',
         img: '/images/portcos/wavlake.svg',
         alt: 'wavlake'
+    },
+    {
+        url: 'https://www.beaverbitcoin.com/',
+        img: '/images/portcos/beaver_bitcoin.png',
+        alt: 'beaver bitcoin'
     }
 ];
