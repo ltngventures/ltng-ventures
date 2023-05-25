@@ -89,9 +89,10 @@ a.navLink {
 }
 
 input[type='text'],
+input[type='checkbox'],
 select,
 textarea {
-    @apply bg-slate-700/50;
+    @apply bg-slate-700/50 invalid:border-red-500;
 }
 
 label {
