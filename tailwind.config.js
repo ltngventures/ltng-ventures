@@ -19,15 +19,13 @@ export default {
                 50: '50%'
             },
             backgroundImage: {
-                lightning: "url('/images/lightning-volcano.webp')",
-                lightning1: "url('/images/lightning1.webp')",
-                'lightning1-chill': "url('/images/lightning1-chill.png')",
-                'lightning1-chill2': "url('/images/lightning1-chill2.png')",
-                lightning2: "url('/images/lightning2.webp')",
-                'mt-fuji': "url('/images/sunset-mt-fuji.webp')",
-                'mt-fuji40': "url('/images/sunset-mt-fuji-a40.webp')",
-                'mt-fuji240': "url('/images/sunset-mt-fuji-2-a40.webp')",
-                'mt-fuji240mobile': "url('/images/sunset-mt-fuji-2-a40-mobile.webp')"
+                ferns1: "url('/images/hero/ferns1.webp')",
+                jungle1: "url('/images/hero/jungle1.webp')",
+                beach1: "url('/images/hero/beach1.webp')",
+                field1: "url('/images/hero/field1.webp')",
+                patagonia1: "url('/images/hero/patagonia1.webp')",
+                'mt-fuji240': "url('/images/hero/sunset-mt-fuji-2-a40.webp')",
+                'mt-fuji240mobile': "url('/images/hero/sunset-mt-fuji-2-a40-mobile.webp')"
             },
             dropShadow: {
                 hard: '4px 4px 0px #0d579b',

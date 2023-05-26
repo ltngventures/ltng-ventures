@@ -39,88 +39,6 @@
     <meta name="description" content="Learn how to invest with Lighting Ventures in the best Bitcoin companies." />
 </svelte:head>
 
-<div class="mb-16 pt-32 pb-12 max-w-6xl mx-auto px-8 prose prose-invert md:prose-xl">
-    <h2 class="gradientHeader pageHeader">
-        Invest with us in the best Bitcoin companies.
-    </h2>
-    <p>
-        <span class="gradientHeader font-bold">Lightning Ventures</span> is one of few pure-play Bitcoin-focused
-        venture capital firms. We have a fund that is uniquely positioned to invest in and partner with the most
-        promising companies in the space. We have a large network of Bitcoiner LPs, making us
-        an attractive partner for Bitcoin founders and BLDRS.
-    </p>
-    <p>There are several ways to invest with Lightning Ventures. Learn more below.</p>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto not-prose">
-        <a href="#node-2-fund" class="p-4 hoverCard no-underline">
-            <h2 class="text-lg md:text-2xl font-josefin-sans-italic uppercase font-semibold mb-4">
-                Node 2 Fund
-            </h2>
-            <p class="text-sm md:text-lg">
-                Learn more about becoming an LP in our new flagship fund dedicated to investing pre-seed to series A in the best Bitcoin companies and founders.
-            </p>
-        </a>
-        <a href="#syndicate" class="p-4 hoverCard">
-            <h2 class="text-lg md:text-2xl font-josefin-sans-italic uppercase font-semibold mb-4">
-                Lightning Syndicate
-            </h2>
-            <p class="text-sm md:text-lg">
-                The hottest dealflow in Bitcoin. Start investing in Bitcoin companies on a deal-by-deal basis with low minimums. Great for new or experienced angel investors.
-            </p>
-        </a>
-        <a href="#scouts" class="p-4 hoverCard">
-            <h2 class="text-lg md:text-2xl font-josefin-sans-italic uppercase font-semibold mb-4">
-                Scout Program
-            </h2>
-            <p class="text-sm md:text-lg">
-                Lightning Ventures appreciates and rewards warm introductions! Break into the Bitcoin VC world and contribute to funding the ecosystem.
-            </p>
-        </a>
-        <a href="#node-1-fund" class="p-4 hoverCard">
-            <h2 class="text-lg md:text-2xl font-josefin-sans-italic uppercase font-semibold mb-4">
-                Node 1 Fund
-            </h2>
-            <p class="text-sm md:text-lg">
-                The original. Learn more about the Bitcoin and Lightning investments we've made so far.
-            </p>
-        </a>
-    </div>
-
-
-    <div>
-        <h3>Still have questions?</h3>
-        <form
-            name="Investor Contact"
-            method="POST"
-            data-netlify="true"
-            class="grid grid-cols-1 md:grid-cols-2 gap-8"
-        >
-            <fieldset class="formGroup">
-                <label for="name">Full Name *</label>
-                <input type="text" name="name" id="name" required />
-            </fieldset>
-            <fieldset class="formGroup">
-                <label for="email">Email *</label>
-                <input type="text" name="email" id="email" required />
-            </fieldset>
-            <fieldset class="formGroup col-span-2">
-                <label for="question">Question *</label>
-                <textarea name="question" id="question" required />
-            </fieldset>
-            <fieldset class="formGroup md:col-span-2">
-                <button type="submit" class="w-1/3 mx-auto font-semibold font-josefin-sans-italic uppercase text-ltngYellow bg-ltngWhite/20 hover" disabled={isSubmitting} on:click={setFormSubmitted}>Submit</button>
-                {#if showSuccess}
-                    <div class="text-green-500 text-center">Thanks! We'll be in touch soon.</div>
-                {/if}
-
-                {#if showError}
-                    <div class="text-red-500 text-center">{errorMessage}</div>
-                {/if}
-            </fieldset>
-        </form>
-    </div>
-</div>
-
 <div class="mb-4 pt-4 pb-12 bg-btcOrange/20 innerShadow">
     <div class="max-w-6xl mx-auto px-4 md:px-8 mt-8 prose prose-invert md:prose-xl">
         <h2
@@ -183,5 +101,40 @@
         <p>This fund invests in Bitcoin companies with an emphasis on Lightning Network technology. This fund has a strict thesis of investing in the Bitcoin ecosystem, with tremendous focus and interest specifically in companies who are building on the Lightning Network. We are investing in passionate, charismatic founders who are building real companies, potentially behemoths and ultimately are on a mission to make a sizable impact in the world and future. Through this fund, we have an opportunity to have an allocation or direct ownership of leading companies in this exciting and lucrative space. <strong>Node 1 Fund is closed.</strong></p>
         <p>Please see <a href="#node-2-fund">Node 2 Fund</a> for current investment opportunities.</p>
 
+    </div>
+</div>
+
+<div class="mb-16 pb-12 max-w-6xl mx-auto px-8 prose prose-invert md:prose-xl">
+    <div>
+        <h3>Still have questions?</h3>
+        <form
+            name="Investor Contact"
+            method="POST"
+            data-netlify="true"
+            class="grid grid-cols-1 md:grid-cols-2 gap-8"
+        >
+            <fieldset class="formGroup">
+                <label for="name">Full Name *</label>
+                <input type="text" name="name" id="name" required />
+            </fieldset>
+            <fieldset class="formGroup">
+                <label for="email">Email *</label>
+                <input type="text" name="email" id="email" required />
+            </fieldset>
+            <fieldset class="formGroup col-span-2">
+                <label for="question">Question *</label>
+                <textarea name="question" id="question" required />
+            </fieldset>
+            <fieldset class="formGroup md:col-span-2">
+                <button type="submit" class="w-1/3 mx-auto font-semibold font-josefin-sans-italic uppercase text-ltngYellow bg-ltngWhite/20 hover" disabled={isSubmitting} on:click={setFormSubmitted}>Submit</button>
+                {#if showSuccess}
+                    <div class="text-green-500 text-center">Thanks! We'll be in touch soon.</div>
+                {/if}
+
+                {#if showError}
+                    <div class="text-red-500 text-center">{errorMessage}</div>
+                {/if}
+            </fieldset>
+        </form>
     </div>
 </div>

@@ -6,14 +6,9 @@
     <meta name="description" content="Learn more about Lightning Ventures unique approach to investing in Bitcoin companies." />
 </svelte:head>
 
-<div class="pt-32 pb-12 max-w-6xl mx-auto px-4 md:px-8 prose prose-invert md:prose-xl">
-    <h2 class="pageHeader gradientHeader">
-        Bitcoin-focused Investors,<br>
-        Bitcoin-only Companies.
-    </h2>
-
-    <p>Lightning Ventures stands at the forefront of the emerging Bitcoin venture capital landscape. We believe that Bitcoin is the global monetary asset of the future, and we invest in companies that align with the success of Bitcoin.</p>
-
+<div class="mb-16 pb-12 max-w-6xl mx-auto px-8 prose prose-invert md:prose-xl">
+    <span></span>
+    <h3 class="">Our Vision</h3>
     <p>Our mission is to support and accelerate the growth of innovative Bitcoin-native companies through which the future of finance and technology is being built. We invest <strong>exclusively</strong> in startups focused on Bitcoin and its ecosystem, <strong>completely ignoring</strong> other cryptocurrencies, tokens, or coin offerings.</p>
 
     <p>Everyone who has sought to truly understand Bitcoin knows that that the rabbit hole is deep. If you're interested in going deeper on Bitcoin and why we've built our entire investment strategy around it, you'll find more below.</p>

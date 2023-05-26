@@ -45,19 +45,8 @@
     <meta name="description" content="Are you a Bitcoin founder looking for early stage funding? Get in touch with Lightning Ventures." />
 </svelte:head>
 
-<div class="h-96 bg-cover bg-center md:bg-top bg-no-repeat bg-mt-fuji240mobile md:bg-mt-fuji240 py-8" />
-<div class="mb-16 pt-32 pb-12 max-w-6xl mx-auto px-8 prose prose-invert md:prose-xl">
-    <h2 class="pageHeader gradientHeader">
-        Building on Bitcoin?<br>
-        We can't wait to hear more.
-    </h2>
-    <p>
-        <span class="gradientHeader font-bold">Lightning Ventures</span> is one of few pure-play Bitcoin-focused
-        venture capital firms. We invest in software, hardware, and mining & energy startups. If it helps drive the worldwide adpotion of Bitcoin and Lightning in some way, we want to know about it.
-    </p>
-
+<div class="mb-16 pb-12 max-w-6xl mx-auto px-8 prose prose-invert md:prose-xl">
     <div>
-
         <form
             name="Founders Intake"
             method="POST"

@@ -1,8 +1,8 @@
 <script lang="ts">
-    import SocialIconLinks from './SocialIconLinks.svelte';
+    import Socials from "$lib/components/heros/Socials.svelte";
 </script>
 
-<div class="bg-cover bg-center md:bg-top bg-no-repeat bg-mt-fuji240mobile md:bg-mt-fuji240 py-8">
+<div class="bg-cover bg-center md:bg-top bg-no-repeat py-8 bg-mt-fuji240mobile md:bg-mt-fuji240">
     <div class="px-4 md:px-8 max-w-6xl mx-auto w-full mt-24 mb-12 md:my-32">
         <div class="tracking-tight text-2xl md:text-5xl text-ltngWhite font-bold">
             <p><span class="gradientHeader">Our mission</span> is to invest in and support the next generation of market-defining Bitcoin companies.</p>
@@ -40,7 +40,7 @@
             <p class="text-sm md:text-lg">Our Flagship fund. Join us and invest in pre-seed to Series A Bitcoin startups worldwide.</p>
         </a>
     </div>
-    <div class="flex flex-col md:flex-row gap-4 items-center justify-center text-sm">
-        <SocialIconLinks />
-    </div>
+
+    <Socials />
 </div>
+

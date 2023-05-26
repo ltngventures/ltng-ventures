@@ -58,7 +58,7 @@
                 Upcoming Events
             </h2>
             <div class="flex flex-col md:flex-row gap-6 md:gap-12">
-                <img src="/images/satoshi-rockamoto2.webp" alt="event" class="md:w-1/2" />
+                <img src="/images/events/satoshi-rockamoto2.webp" alt="event" class="md:w-1/3" />
                 <div class="prose dark:prose-invert md:prose-lg">
                     <h3>Satoshi Rockamoto</h3>
                     <p>Rock out with the Bitcoin all-star band. Live music from the Satoshi Shredders.</p>
