@@ -105,6 +105,12 @@
         <p><strong>Michael Jarmuz</strong> is the Managing Partner and Co-founder of Lightning Ventures. He currently advises Bitcoin companies Azteco, Slice, and Cloaked Wireless. Mike also organizes the annual Unconfiscatable Conference. He has made over 2,000 personal angel investments and loves to share his learnings. Mike is obsessed with Bitcoin, and early-stage technology funding, with a passion for democratizing retail access to private markets. A longtime music industry veteran with a broad spectrum of experience, he previously owned a bar on the Lower East Side and installed Manhattan's second Bitcoin ATM. From living on a plantation farm to sleeping on a tour bus, he has many fascinating stories. Mike splits his time between New York City and Miami Beach. Frequently seen at Bitcoin conferences with his amazing orange-pilling wife, Anastasia, while their ragdoll cat Cannoli patiently awaits their return.</p>
 
         <p><strong>Alex McShane</strong> is the General Partner for Lightning Ventures <a href="https://venture.angellist.com/funds/node-2-fund">Node 2 Fund</a>. He is also the Director of Programming for The Bitcoin Conference, the world's largest Bitcoin & finance event. He previously served as the Director of Multimedia for Bitcoin Magazine, scaling the company's media operations, partnerships, and global reach. Alex is also the lead organizer for Jack Dorsey's NOSTR conference series. He was previously a journalist at Bitcoin Magazine and has written over 200 Bitcoin articles and essays, appeared on and produced dozens of podcasts, and ghostwritten for many prominent Bitcoiners. He began his Bitcoin career editing all three of Saifedean Ammous' Bitcoin and economics books, The Bitcoin Standard, The Fiat Standard, and The Principles of Economics. Alex lives on a ranch with his wife, Alexandra, and their dog Zoey.</p>
-
+        <div class="w-full flex flex-row items-center justify-center pt-10">
+            <a
+                href="/team"
+                class="hover no-underline font-josefin-sans-italic text-base uppercase font-semibold text-ltngYellow bg-ltngWhite/20 hover:bg-transparent"
+                >Learn more about the team</a
+            >
+        </div>
     </div>
 </div>
