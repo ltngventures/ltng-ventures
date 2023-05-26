@@ -92,7 +92,13 @@ input[type='text'],
 input[type='checkbox'],
 select,
 textarea {
-    @apply bg-slate-700/50 invalid:border-red-500;
+    @apply bg-slate-700/50;
+}
+
+form.submitted input,
+form.submitted select,
+form.submitted textbox {
+    @apply invalid:required:border-red-500;
 }
 
 label {

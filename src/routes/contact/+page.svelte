@@ -5,6 +5,12 @@
     let showError = false;
     let errorMessage = "";
 
+    function setFormSubmitted(event: Event) {
+        const button = event.target as HTMLElement
+        const form = button.parentElement?.parentElement;
+        form?.classList.add("submitted");
+    }
+
     function handleSubmit(event: Event) {
         const form = event.target as HTMLFormElement;
         const formData = new FormData(form);
@@ -43,6 +49,7 @@
     <h2 class="pageHeader gradientHeader">
         Get in touch
     </h2>
+    <p>Have a general enquiry? Get in touch and we'll get back to you as soon as we can.</p>
 
     <div>
         <form
@@ -70,7 +77,14 @@
                 <textarea name="message" id="message" required/>
             </fieldset>
             <fieldset class="formGroup md:col-span-2">
-                <button type="submit" class="w-1/3 mx-auto font-semibold font-josefin-sans-italic uppercase text-ltngYellow bg-ltngWhite/20 hover" disabled={isSubmitting}>Submit</button>
+                <button
+                    type="submit"
+                    class="w-1/3 mx-auto font-semibold font-josefin-sans-italic uppercase text-ltngYellow bg-ltngWhite/20 hover"
+                    disabled={isSubmitting}
+                    on:click={setFormSubmitted}
+                >
+                    Submit
+                </button>
                 {#if showSuccess}
                     <div class="text-green-500 text-center">Thanks! We'll be in touch soon.</div>
                 {/if}

@@ -12,10 +12,4 @@
         <div class="px-2">©️ 2023 Lightning Ventures</div>
         <SocialIconLinks />
     </div>
-
-    <div class="flex flex-row divide-x items-center justify-center text-sm">
-        <span class="px-2">New York</span>
-        <span class="px-2">Miami</span>
-        <span class="px-2">Phoenix</span>
-    </div>
 </div>

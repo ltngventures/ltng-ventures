@@ -10,3 +10,10 @@ export function getRandomSubarray(arr: unknown[], size: number): unknown[] {
     }
     return shuffled.slice(0, size);
 }
+
+// Generalized form helpers
+export function setFormSubmitted(event: Event) {
+    const button = event.target as HTMLElement;
+    const form = button.parentElement?.parentElement;
+    form?.classList.add('submitted');
+}

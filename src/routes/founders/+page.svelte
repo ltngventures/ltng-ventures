@@ -1,7 +1,7 @@
 <script lang="ts">
     import BitcoinSoftwareIntake from "$lib/components/intakes/BitcoinSoftwareIntake.svelte";
-import MiningEnergyIntake from "$lib/components/intakes/MiningEnergyIntake.svelte";
-
+    import MiningEnergyIntake from "$lib/components/intakes/MiningEnergyIntake.svelte";
+    import { setFormSubmitted } from "$lib/utils/helpers";
 
     let isSubmitting = false;
     let showSuccess = false;
@@ -45,6 +45,7 @@ import MiningEnergyIntake from "$lib/components/intakes/MiningEnergyIntake.svelt
     <meta name="description" content="Are you a Bitcoin founder looking for early stage funding? Get in touch with Lightning Ventures." />
 </svelte:head>
 
+<div class="h-96 bg-cover bg-center md:bg-top bg-no-repeat bg-mt-fuji240mobile md:bg-mt-fuji240 py-8" />
 <div class="mb-16 pt-32 pb-12 max-w-6xl mx-auto px-8 prose prose-invert md:prose-xl">
     <h2 class="pageHeader gradientHeader">
         Building on Bitcoin?<br>
@@ -63,6 +64,7 @@ import MiningEnergyIntake from "$lib/components/intakes/MiningEnergyIntake.svelt
             class="grid grid-cols-1 md:grid-cols-2 gap-8"
             netlify
             netlify-honeypot="bot-field"
+            enctype="multipart/form-data"
             on:submit|preventDefault={handleSubmit}
         >
             <input type="hidden" name="form-name" value="Founders Intake" />
@@ -153,6 +155,10 @@ import MiningEnergyIntake from "$lib/components/intakes/MiningEnergyIntake.svelt
                 <label for="companyDeck">Pitch deck link</label>
                 <input type="text" name="companyDeck" id="companyDeck" placeholder="https://..."/>
             </fieldset>
+            <fieldset class="formGroup">
+                <label for="companyDeckFile">Pitch deck</label>
+                <input type="file" name="companyDeckFile" id="companyDeckFile" class="text-base file:prose file:rounded-md file:px-4 file:py-2 file:font-semibold file:mr-4 file:border-0 file:hover:bg-slate-600/50 file:bg-slate-700/50 file:text-white" />
+            </fieldset>
 
             <h4 class="md:col-span-2">Company finances</h4>
             <fieldset class="formGroup">
@@ -235,7 +241,7 @@ import MiningEnergyIntake from "$lib/components/intakes/MiningEnergyIntake.svelt
             </fieldset>
 
             <fieldset class="formGroup md:col-span-2">
-                <button type="submit" class="w-1/3 mx-auto font-semibold font-josefin-sans-italic uppercase text-ltngYellow bg-ltngWhite/20 hover" disabled={isSubmitting}>Submit</button>
+                <button type="submit" class="w-1/3 mx-auto font-semibold font-josefin-sans-italic uppercase text-ltngYellow bg-ltngWhite/20 hover" disabled={isSubmitting} on:click={setFormSubmitted}>Submit</button>
                 {#if showSuccess}
                     <div class="text-green-500 text-center">Thanks! We'll reach out if once we've reviewed.</div>
                 {/if}

@@ -18,7 +18,7 @@
 
     <p>Everyone who has sought to truly understand Bitcoin knows that that the rabbit hole is deep. If you're interested in going deeper on Bitcoin and why we've built our entire investment strategy around it, you'll find more below.</p>
 
-    <ul>
+    <ul class="md:prose-lg">
         <li><a href="#bitcoins-promise">Bitcoin's Promise</a></li>
         <li><a href="#our-investment-thesis">Our Investment Thesis</a></li>
         <li><a href="#investment-focus">Investment Focus</a></li>

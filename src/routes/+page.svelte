@@ -18,7 +18,7 @@
             >
                 Featured Investments
             </h2>
-            <PortfolioGrid displayCount={15} />
+            <PortfolioGrid displayCount={16} />
             <div class="w-full flex flex-row items-center justify-center pt-10">
                 <a
                     href="/portfolio"

@@ -1,4 +1,6 @@
 <script lang="ts">
+    import { setFormSubmitted } from "$lib/utils/helpers";
+
     let isSubmitting = false;
     let showSuccess = false;
     let showError = false;
@@ -106,7 +108,7 @@
                 <textarea name="question" id="question" required />
             </fieldset>
             <fieldset class="formGroup md:col-span-2">
-                <button type="submit" class="w-1/3 mx-auto font-semibold font-josefin-sans-italic uppercase text-ltngYellow bg-ltngWhite/20 hover" disabled={isSubmitting}>Submit</button>
+                <button type="submit" class="w-1/3 mx-auto font-semibold font-josefin-sans-italic uppercase text-ltngYellow bg-ltngWhite/20 hover" disabled={isSubmitting} on:click={setFormSubmitted}>Submit</button>
                 {#if showSuccess}
                     <div class="text-green-500 text-center">Thanks! We'll be in touch soon.</div>
                 {/if}

@@ -16,9 +16,7 @@
         >
             We're proud early-stage investors in<br />companies building the future of Bitcoin.
         </h2>
-        <div class="max-w-6xl mx-auto px-4 md:px-8">
-            <PortfolioGrid displayAll={true} />
-        </div>
+        <PortfolioGrid displayAll={true} />
     </div>
 </div>
 

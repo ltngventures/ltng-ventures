@@ -15,6 +15,9 @@ export default {
                     }
                 ]
             },
+            grayscale: {
+                50: '50%'
+            },
             backgroundImage: {
                 lightning: "url('/images/lightning-volcano.webp')",
                 lightning1: "url('/images/lightning1.webp')",
