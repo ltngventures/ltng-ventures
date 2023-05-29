@@ -6,6 +6,8 @@
     let showError = false;
     let errorMessage = "";
 
+    let investmentInterest:string;
+
     function handleSubmit(event: Event) {
         const form = event.target as HTMLFormElement;
         const formData = new FormData(form);
@@ -50,7 +52,7 @@
 
         <p>The newest flagship fund from Lightning Ventures. The future of Bitcoin venture capital looks bright. Lightning Ventures' <a href="https://venture.angellist.com/funds/node-2-fund">Node 2 Fund</a> is uniquely positioned to invest in the emerging Bitcoin-native landscape, with an exclusive focus on Bitcoin and an extensive network of industry connections. We are committed to supporting and fostering innovation in the Bitcoin ecosystem, aiming to capitalize on the unparalleled opportunities presented by this transformative technology. Lightning Ventures aims to foster innovation in the space, helping to shape the future of finance and technology while creating value for our investors and the broader ecosystem.</p>
 
-        <p>If you want to invest in the next generation of Bitcoin companies with us, <a href="https://venture.angellist.com/funds/node-2-fund">Invest Here</a>, or <a href="/contact">get in touch</a> with any questions.</p>
+        <p>If you want to invest in the next generation of Bitcoin companies with us, <a href="#investor-contact">apply to invest here</a>.</p>
     </div>
 </div>
 
@@ -68,7 +70,7 @@
         <p>For newer investors, Syndicates are a perfect place to start your angel investing journey. The minimums are much lower than being an LP in a more traditional fund (like our <a href="https://venture.angellist.com/funds/node-2-fund">Node 2 Fund</a>) and you get to see a lot of dealflow to hone your skills.</p>
 
         <h3>How can I join?</h3>
-        <p>The Syndicate is managed through Angellist. You can join our syndicate and start receiving dealflow for free <a href="/contact">by filling out this short form</a>. If we're offering a Bitcoin deal you like, and you decide you want to invest, the minimum investment is $1,000. Be impactful, add value and join our network. If you are already on AngelList you can simply <a href="https://venture.angellist.com/lightningventures/syndicate">apply to join our syndicate here</a>.</p>
+        <p>The Syndicate is managed through Angellist. You can join our syndicate and start receiving dealflow for free <a href="#investor-contact">by filling out this short form</a>. If we're offering a Bitcoin deal you like, and you decide you want to invest, the minimum investment is $1,000. Be impactful, add value and join our network. If you are already on AngelList you can simply <a href="https://venture.angellist.com/lightningventures/syndicate">apply to join our syndicate here</a>.</p>
 
     </div>
 </div>
@@ -84,7 +86,7 @@
 
         <p>Lightning Ventures appreciates and rewards warm introductions! This is a chance to privately share any great startup or founder you think we should meet.</p>
         <p>We will share 20% of our carry in that investment with you.  Find a great startup! Hook us up with them! Earn carry on that deal if we end up investing. Learn about Venture Capital and break into Bitcoin VC with our new program.</p>
-        <p>Don't hesitate to <a href="/contact">get in touch</a> with details on companies or to ask more questions.</p>
+        <p>Don't hesitate to <a href="#investor-contact">get in touch</a> below to tell us more about how you can help.</p>
     </div>
 </div>
 
@@ -106,13 +108,32 @@
 
 <div class="mb-16 pb-12 max-w-6xl mx-auto px-8 prose prose-invert md:prose-xl">
     <div>
-        <h3>Still have questions?</h3>
+        <h3>Investing with Lightning Ventures</h3>
         <form
             name="Investor Contact"
+            id="investor-contact"
             method="POST"
             data-netlify="true"
-            class="grid grid-cols-1 md:grid-cols-2 gap-8"
+            class="grid grid-cols-1 md:grid-cols-2 gap-8 scroll-m-36"
         >
+            <fieldset class="formGroup">
+                <label for="investmentInterest">What are you interested in? *</label>
+                <select bind:value={investmentInterest} name="investmentInterest" id="investmentInterest">
+                    <option value="node-2-fund">Become an LP in Node 2 Fund</option>
+                    <option value="syndicate">Invest via the Syndicate</option>
+                    <option value="scout">Submit a Scout Deal</option>
+                    <option value="other">Other</option>
+                </select>
+            </fieldset>
+            <fieldset class="formGroup">
+                {#if investmentInterest !== 'syndicate' && investmentInterest !== 'scout'}
+                    <label for="syndicateMember">Are you already in the Lightning Ventures syndicate? *</label>
+                    <select name="syndicateMember" id="syndicateMember">
+                        <option value="no">No</option>
+                        <option value="yes">Yes</option>
+                    </select>
+                {/if}
+            </fieldset>
             <fieldset class="formGroup">
                 <label for="name">Full Name *</label>
                 <input type="text" name="name" id="name" required />
@@ -121,10 +142,103 @@
                 <label for="email">Email *</label>
                 <input type="text" name="email" id="email" required />
             </fieldset>
-            <fieldset class="formGroup col-span-2">
-                <label for="question">Question *</label>
-                <textarea name="question" id="question" required />
+            <fieldset class="formGroup">
+                <label for="socialLink">Social link (Twitter, Telegram, LinkedIn, etc.) *</label>
+                <input type="text" name="socialLink" id="socialLink" required/>
             </fieldset>
+            <fieldset class="formGroup">
+                <label for="source">How'd you hear about Lightning Ventures *</label>
+                <input type="text" name="source" id="source" required/>
+            </fieldset>
+            {#if investmentInterest === 'scout'}
+                <fieldset class="formGroup">
+                    <label for="scoutInvestment">What company would you like to tell us about? *</label>
+                    <input type="text" name="scoutInvestment" id="scoutInvestment" required />
+                </fieldset>
+                <fieldset class="formGroup">
+                    <label for="scoutUrl">What's the URL of the company? *</label>
+                    <input type="text" name="scoutUrl" id="scoutUrl" placeholder="https://..." required />
+                </fieldset>
+                <fieldset class="formGroup col-span-2">
+                    <label for="scoutInvestmentMission">What does the company do? *</label>
+                    <textarea name="scoutInvestmentMission" id="scoutInvestmentMission" required />
+                </fieldset>
+                <fieldset class="formGroup col-span-2">
+                    <label for="scoutInvestmentReason">Why do you think this is a good investment? *</label>
+                    <textarea name="scoutInvestmentReason" id="scoutInvestmentReason" required />
+                </fieldset>
+                <fieldset class="formGroup col-span-2">
+                    <label for="scoutSource">How did you source this deal? *</label>
+                    <textarea name="scoutSource" id="scoutSource" placeholder="Friend, Social Media, Conference, etc." required />
+                </fieldset>
+                <fieldset class="formGroup">
+                    <label for="scoutFounder">Company founder's name *</label>
+                    <input type="text" name="scoutFounder" id="scoutFounder" required />
+                </fieldset>
+                <fieldset class="formGroup">
+                    <label for="scoutFounderEmail">Company founder's email <span class="italic text-base">Or yours if you don't know</span>*</label>
+                    <input type="text" name="scoutFounderEmail" id="scoutFounderEmail" required />
+                </fieldset>
+            {:else}
+                <fieldset class="formGroup col-span-2">
+                    <label for="previousInvestments">Have you previously invested in Bitcoin companies? If so, which? *</label>
+                    <textarea name="previousInvestments" id="previousInvestments" required />
+                </fieldset>
+                <fieldset class="formGroup">
+                    <legend class="">Which kind of Bitcoiner are you? *</legend>
+                    <span class="text-base italic">Check all that apply</span>
+                    <div class="flex flex-row gap-4 items-center">
+                        <input type="checkbox" name="newBitcoiner" >
+                        <label for="newBitcoiner">Total newbie but I'm obsessed with Bitcoin!</label>
+                    </div>
+                    <div class="flex flex-row gap-4 items-center">
+                        <input type="checkbox" name="nodeRunner" >
+                        <label for="nodeRunner">I run a Bitcoin and/or Lightning node</label>
+                    </div>
+                    <div class="flex flex-row gap-4 items-center">
+                        <input type="checkbox" name="bitcoinOG" >
+                        <label for="bitcoinOG">Bitcoin OG</label>
+                    </div>
+                    <div class="flex flex-row gap-4 items-center">
+                        <input type="checkbox" name="bitcoinMaxi" >
+                        <label for="bitcoinMaxi">Bitcoin maximalist</label>
+                    </div>
+                    <div class="flex flex-row gap-4 items-center">
+                        <input type="checkbox" name="shitcoiner" >
+                        <label for="shitcoiner">I love Crypto, NFTs, Web3, and Blockchain tech</label>
+                    </div>
+                </fieldset>
+                <fieldset class="formGroup">
+                    <legend class="">How can you help our portfolio? *</legend>
+                    <span class="text-base italic">Check all that apply</span>
+                    <div class="flex flex-row gap-4 items-center">
+                        <input type="checkbox" name="goToMarket" >
+                        <label for="goToMarket">Marketing, Sales, PR, Social Media</label>
+                    </div>
+                    <div class="flex flex-row gap-4 items-center">
+                        <input type="checkbox" name="productDesign" >
+                        <label for="productDesign">Product and/or Design</label>
+                    </div>
+                    <div class="flex flex-row gap-4 items-center">
+                        <input type="checkbox" name="engineering" >
+                        <label for="engineering">Engineering</label>
+                    </div>
+                    <div class="flex flex-row gap-4 items-center">
+                        <input type="checkbox" name="legalCompliance" >
+                        <label for="legalCompliance">Legal & Compliance</label>
+                    </div>
+                    <div class="flex flex-row gap-4 items-center">
+                        <input type="checkbox" name="financeAcctData" >
+                        <label for="financeAcctData">Finance, Accounting, and/or Data Analytics</label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="formGroup col-span-2">
+                    <label for="otherPowers">Any other special powers? *</label>
+                    <textarea name="otherPowers" id="otherPowers" required />
+                </fieldset>
+            {/if}
+
             <fieldset class="formGroup md:col-span-2">
                 <button type="submit" class="w-1/3 mx-auto font-semibold font-josefin-sans-italic uppercase text-ltngYellow bg-ltngWhite/20 hover" disabled={isSubmitting} on:click={setFormSubmitted}>Submit</button>
                 {#if showSuccess}
