@@ -8,7 +8,7 @@
             <p><span class="gradientHeader font-bold">Deeply committed</span> to the<br>Bitcoin & Lightning Ecosystem</p>
         </div>
         <div class="prose prose-2xl prose-invert font-medium">
-            <p>Copy needed.</p>
+            <p>You won't find a more committed or connected group of Bitcoin and Lightning investors.</p>
         </div>
     </div>
 
