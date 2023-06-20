@@ -56,6 +56,7 @@
             enctype="multipart/form-data"
             on:submit|preventDefault={handleSubmit}
         >
+            <input type="hidden" name="form-name" value="Founders Intake" />
             <label class="hidden">
                 Don't fill this out if you're human: <input name="bot-field" />
             </label>

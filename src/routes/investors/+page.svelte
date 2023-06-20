@@ -118,6 +118,7 @@
             netlify-honeypot="bot-field"
             on:submit|preventDefault={handleSubmit}
         >
+            <input type="hidden" name="form-name" value="Investor Contact">
             <label class="hidden">
                 Don't fill this out if you're human: <input name="bot-field" />
             </label>
