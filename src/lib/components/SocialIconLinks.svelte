@@ -33,7 +33,7 @@
         <img src="/images/linkedin.png" class="w-5 h-5" alt="LinkedIn" />
     </a>
     <a
-        href="nostr:nprofile1qqsr0hscuzxdcqww0nk3sz9jg8kqkjnfua2d2akwpcy0pnenwkas56cpzemhxue69uhhyetvv9ujumn0wd68ytnzv9hxgs8tehl"
+        href="https://primal.net/profile/npub1xl0p3cyvmsquul8drqytys0vpd9xne6564mvursg7r8nxadmpf4sc4gcep"
         class="w-5 h-5"
     >
         <img src="/images/nostr-white.webp" class="w-5 h-5" alt="Nostr" />
