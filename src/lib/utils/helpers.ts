@@ -17,9 +17,3 @@ export function setFormSubmitted(event: Event) {
     const form = button.parentElement?.parentElement;
     form?.classList.add('submitted');
 }
-
-export function unsetFormSubmitted(event: Event) {
-    const button = event.target as HTMLElement;
-    const form = button.parentElement?.parentElement;
-    form?.classList.remove('submitted');
-}

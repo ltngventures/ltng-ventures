@@ -1,7 +1,7 @@
 <script lang="ts">
     import BitcoinSoftwareIntake from "$lib/components/intakes/BitcoinSoftwareIntake.svelte";
     import MiningEnergyIntake from "$lib/components/intakes/MiningEnergyIntake.svelte";
-    import { setFormSubmitted, unsetFormSubmitted } from "$lib/utils/helpers";
+    import { setFormSubmitted } from "$lib/utils/helpers";
 
     let isSubmitting = false;
     let showSuccess = false;
@@ -24,10 +24,10 @@
             body: urlParamsString
         })
         .then(() => {
+            form.classList.remove('submitted');
             form.reset();
             isSubmitting = false;
             showSuccess = true;
-            unsetFormSubmitted(event);
             setTimeout(() => {
                 showSuccess = false;
             }, 3500);
