@@ -111,6 +111,7 @@
         <h3>Investing with Lightning Ventures</h3>
         <form
             name="Investor Contact"
+            id="investor-contact"
             method="POST"
             class="grid grid-cols-1 md:grid-cols-2 gap-8 scroll-m-36"
             netlify
