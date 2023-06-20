@@ -1,15 +1,10 @@
 <script lang="ts">
+    import { setFormSubmitted, unsetFormSubmitted } from "$lib/utils/helpers";
 
     let isSubmitting = false;
     let showSuccess = false;
     let showError = false;
     let errorMessage = "";
-
-    function setFormSubmitted(event: Event) {
-        const button = event.target as HTMLElement
-        const form = button.parentElement?.parentElement;
-        form?.classList.add("submitted");
-    }
 
     function handleSubmit(event: Event) {
         const form = event.target as HTMLFormElement;
@@ -27,6 +22,7 @@
             form.reset();
             isSubmitting = false;
             showSuccess = true;
+            unsetFormSubmitted(event);
             setTimeout(() => {
                 showSuccess = false;
             }, 3500);
