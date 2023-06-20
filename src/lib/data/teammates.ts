@@ -90,9 +90,14 @@ export const teammates: App.Teammate[] = [
     {
         name: 'Sebtoshi',
         img: '/images/team/seb.webp',
-        title: 'Senior Analyst',
+        title: 'Scouting',
         description: null,
-        socials: []
+        socials: [
+            {
+                type: 'nostr',
+                url: 'https://primal.net/profile/npub1nc3tcnvz8k6ldmwu8s3mxus25lnh54h8a0csk25hlrl3fynedeusqqexyn'
+            }
+        ]
     },
     {
         name: 'Vivek Sen',
