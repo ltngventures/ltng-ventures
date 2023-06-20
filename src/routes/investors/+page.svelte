@@ -113,9 +113,14 @@
             name="Investor Contact"
             id="investor-contact"
             method="POST"
-            data-netlify="true"
+            netlify
+            netlify-honeypot="bot-field"
+            on:submit|preventDefault={handleSubmit}
             class="grid grid-cols-1 md:grid-cols-2 gap-8 scroll-m-36"
         >
+            <label class="hidden">
+                Don't fill this out if you're human: <input name="bot-field" />
+            </label>
             <fieldset class="formGroup">
                 <label for="investmentInterest">What are you interested in? *</label>
                 <select bind:value={investmentInterest} name="investmentInterest" id="investmentInterest">
