@@ -158,5 +158,50 @@ export const investments: App.Investment[] = [
         url: 'https://www.beaverbitcoin.com/',
         img: '/images/portcos/svg/beaver_bitcoin.svg',
         alt: 'beaver bitcoin'
+    },
+    {
+        url: 'https://www.joincrowdhealth.com/',
+        img: '/images/portcos/svg/crowd-health.svg',
+        alt: 'crowd health'
+    },
+    {
+        url: 'https://www.federated.computer/',
+        img: '/images/portcos/svg/federated-computer.svg',
+        alt: 'federated computer'
+    },
+    {
+        url: 'https://fuji.money/',
+        img: '/images/portcos/svg/fuji-labs.svg',
+        alt: 'fuji labs'
+    },
+    {
+        url: 'https://www.poweredbyibex.io/',
+        img: '/images/portcos/svg/ibex.svg',
+        alt: 'ibex'
+    },
+    {
+        url: 'https://jan3.com',
+        img: '/images/portcos/svg/jan3.svg',
+        alt: 'jan3'
+    },
+    {
+        url: 'https://ordinalsbot.com/',
+        img: '/images/portcos/svg/ordinals-bot.svg',
+        alt: 'ordinals bot'
+    },
+    {
+        url: 'https://www.theya.us/',
+        img: '/images/portcos/svg/theya.svg',
+        alt: 'theya'
+    },
+    {
+        url: 'https://zaprite.com/',
+        img: '/images/portcos/svg/zaprite.svg',
+        alt: 'zaprite'
+    },
+    {
+        url: 'https://pnkfrg.com/',
+        img: '/images/portcos/svg/pnkfrg.svg',
+        alt: 'pnkfrg studios'
     }
 ];
