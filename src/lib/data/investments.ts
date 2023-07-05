@@ -170,11 +170,6 @@ export const investments: App.Investment[] = [
         alt: 'federated computer'
     },
     {
-        url: 'https://fuji.money/',
-        img: '/images/portcos/svg/fuji-labs.svg',
-        alt: 'fuji labs'
-    },
-    {
         url: 'https://www.poweredbyibex.io/',
         img: '/images/portcos/svg/ibex.svg',
         alt: 'ibex'
@@ -183,11 +178,6 @@ export const investments: App.Investment[] = [
         url: 'https://jan3.com',
         img: '/images/portcos/svg/jan3.svg',
         alt: 'jan3'
-    },
-    {
-        url: 'https://ordinalsbot.com/',
-        img: '/images/portcos/svg/ordinals-bot.svg',
-        alt: 'ordinals bot'
     },
     {
         url: 'https://www.theya.us/',
