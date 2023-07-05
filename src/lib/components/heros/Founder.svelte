@@ -8,7 +8,7 @@
             <p><span class="gradientHeader font-bold">Building on Bitcoin?</span><br>We can't wait to hear more.</p>
         </div>
         <div class="prose prose-2xl prose-invert font-medium">
-            <p>Lightning Ventures is actively seeking companies who are building on Bitcoing or who are involved in the Bitcoin mining and/or energy space.</p>
+            <p>Lightning Ventures is actively seeking companies who are building on Bitcoin or who are involved in the Bitcoin mining and/or energy space.</p>
             <p>If you are a startup or early-stage company that is building on or integrating with Bitcoin or the Lightning Network please fill this out so we can learn more.</p>
         </div>
     </div>
