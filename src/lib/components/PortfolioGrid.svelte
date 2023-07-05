@@ -21,6 +21,7 @@
         <a
             href={investment.url}
             class="h-20 text-black justify-self-center justify-items-center flex flex-row p-4 md:p-0 hover:opacity-70"
+            target="_blank"
         >
             <img
                 src={investment.img}
