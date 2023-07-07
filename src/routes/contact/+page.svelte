@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { setFormSubmitted } from "$lib/utils/helpers";
+    import { setFormSubmitted, formattedDateForForms } from "$lib/utils/helpers";
 
     let isSubmitting = false;
     let showSuccess = false;
@@ -7,16 +7,20 @@
     let errorMessage = "";
 
     function handleSubmit(event: Event) {
-        const form = event.target as HTMLFormElement;
-        const formData = new FormData(form);
-        const urlParamsString = new URLSearchParams(formData as any).toString();
-
         isSubmitting = true;
         errorMessage = "";
-        fetch("/", {
+
+        const form = event.target as HTMLFormElement;
+        const formData = new FormData(form);
+        const payload = Object.fromEntries(formData)
+        payload.formName = "Contact us";
+        payload.submissionTime = formattedDateForForms();
+        const jsonData = JSON.stringify(payload);
+
+        fetch("https://hooks.zapier.com/hooks/catch/11343292/3dpy7t1/", {
             method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: urlParamsString
+            headers: { "Accept": "application/json" },
+            body: jsonData
         })
         .then(() => {
             form.classList.remove('submitted');
@@ -52,14 +56,8 @@
             name="Contact Us"
             method="POST"
             class="grid grid-cols-1 md:grid-cols-2 gap-8"
-            netlify
-            netlify-honeypot="bot-field"
             on:submit|preventDefault={handleSubmit}
         >
-            <input type="hidden" name="form-name" value="Contact Us" />
-            <label class="hidden">
-                Don't fill this out if you're human: <input name="bot-field" />
-            </label>
             <fieldset class="formGroup">
                 <label for="name">Full name *</label>
                 <input type="text" name="name" id="name" required/>

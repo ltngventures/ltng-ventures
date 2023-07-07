@@ -5,56 +5,56 @@
 <fieldset class="formGroup">
     <legend class="mb-2">Which best describes you? *</legend>
     <div class="flex flex-row gap-4 items-center">
-        <input type="checkbox" name="haveMiners" >
-        <label for="haveMiners">I have a ton of miners</label>
+        <input type="checkbox" name="miningSituation" value="Have miners" >
+        <label for="Have miners">I have a ton of miners</label>
     </div>
     <div class="flex flex-row gap-4 items-center">
-        <input type="checkbox" name="needMiners" >
-        <label for="needMiners">I need a ton of miners</label>
+        <input type="checkbox" name="miningSituation" value="Need miners" >
+        <label for="Need miners">I need a ton of miners</label>
     </div>
     <div class="flex flex-row gap-4 items-center">
-        <input type="checkbox" name="havePower" >
-        <label for="havePower">I have a ton of power</label>
+        <input type="checkbox" name="miningSituation" value="Have power" >
+        <label for="Have power">I have a ton of power</label>
     </div>
     <div class="flex flex-row gap-4 items-center">
-        <input type="checkbox" name="needPower" >
-        <label for="needPower">I need a ton of power</label>
+        <input type="checkbox" name="miningSituation" value="Need power" >
+        <label for="Need power">I need a ton of power</label>
     </div>
     <div class="flex flex-row gap-4 items-center">
-        <input type="checkbox" name="somethingElse" >
-        <label for="somethingElse">Something else</label>
+        <input type="checkbox" name="miningSituation" value="Something else" >
+        <label for="Something else">Something else</label>
     </div>
 </fieldset>
 
 <fieldset class="formGroup">
     <legend class="mb-2">Which best describes what you need? *</legend>
     <div class="flex flex-row gap-4 items-center">
-        <input type="checkbox" name="needFinancing" >
-        <label for="needFinancing">Financing</label>
+        <input type="checkbox" name="miningNeeds" value="Financing" >
+        <label for="Financing">Financing</label>
     </div>
     <div class="flex flex-row gap-4 items-center">
-        <input type="checkbox" name="needPower" >
-        <label for="needPower">Power</label>
+        <input type="checkbox" name="miningNeeds" value="Power" >
+        <label for="Power">Power</label>
     </div>
     <div class="flex flex-row gap-4 items-center">
-        <input type="checkbox" name="needInfra" >
-        <label for="needInfra">Infrastructure</label>
+        <input type="checkbox" name="miningNeeds" value="Infrastructure" >
+        <label for="Infrastructure">Infrastructure</label>
     </div>
     <div class="flex flex-row gap-4 items-center">
-        <input type="checkbox" name="needServices" >
-        <label for="needServices">Services</label>
+        <input type="checkbox" name="miningNeeds" value="Services" >
+        <label for="Services">Services</label>
     </div>
     <div class="flex flex-row gap-4 items-center">
-        <input type="checkbox" name="needDemandResponse" >
-        <label for="needDemandResponse">Demand response</label>
+        <input type="checkbox" name="miningNeeds" value="Demand response" >
+        <label for="Demand response">Demand response</label>
     </div>
     <div class="flex flex-row gap-4 items-center">
-        <input type="checkbox" name="needBuySell" >
-        <label for="needBuySell">Buy or Sell</label>
+        <input type="checkbox" name="miningNeeds" value="Buy & Sell" >
+        <label for="Buy & Sell">Buy or Sell</label>
     </div>
     <div class="flex flex-row gap-4 items-center">
-        <input type="checkbox" name="needConsulting" >
-        <label for="needConsulting">Consulting</label>
+        <input type="checkbox" name="miningNeeds" value="Consulting" >
+        <label for="Consulting">Consulting</label>
     </div>
 </fieldset>
 
