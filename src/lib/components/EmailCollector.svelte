@@ -1,5 +1,4 @@
 <script lang="ts">
-    import { formattedDateForForms } from "$lib/utils/helpers";
 
     let isSubmitting = false;
     let showSuccess = false;
@@ -14,7 +13,7 @@
         const formData = new FormData(form);
         const payload = Object.fromEntries(formData)
         payload.formName = "Email collector";
-        payload.submissionTime = formattedDateForForms();
+        payload.submissionTime = new Date().toISOString();
         const jsonData = JSON.stringify(payload);
 
         fetch("https://hooks.zapier.com/hooks/catch/11343292/3d7luii/", {
