@@ -23,6 +23,14 @@ declare global {
             blurb: string;
             nameAndRole: string;
         }
+        interface Event {
+            image1: string;
+            image2: string;
+            title: string;
+            description: string;
+            date: string;
+            location: string;
+        }
         // interface Error {}
         // interface Locals {}
         // interface PageData {}

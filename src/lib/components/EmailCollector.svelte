@@ -13,7 +13,7 @@
         const formData = new FormData(form);
         const payload = Object.fromEntries(formData)
         payload.formName = "Email collector";
-        payload.submissionTime = new Date().toISOString();
+        payload.rawSubmissionTime = new Date().toISOString();
         const jsonData = JSON.stringify(payload);
 
         fetch("https://hooks.zapier.com/hooks/catch/11343292/3d7luii/", {

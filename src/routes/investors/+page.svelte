@@ -30,11 +30,13 @@
         const payload = {
             formName: formData.investmentInterest === 'Scout' ? "Scout Intake" : "Investor Intake",
             submissionTime: formattedDateForForms(),
+            rawSubmissionTime: new Date().toISOString(),
             name: formData.name,
             email: formData.email,
             investmentInterest: formData.investmentInterest,
             syndicateInvestor: formData.syndicateMember,
             source: formData.source,
+            previousInvestments: formData.previousInvestments,
             socialLink: formData.socialLink,
             otherPowers: formData.otherPowers,
             bitcoiner: bitcoinerValues.length > 0 ? bitcoinerValues.join(", ") : undefined,
@@ -148,7 +150,7 @@
             name="Investor Contact"
             id="investor-contact"
             method="POST"
-            class="grid grid-cols-1 md:grid-cols-2 gap-8 scroll-m-36"
+            class="flex flex-col md:grid md:grid-cols-2 gap-8 scroll-m-36"
             on:submit|preventDefault={handleSubmit}
         >
             <fieldset class="formGroup">
@@ -160,15 +162,15 @@
                     <option value="Other">Other</option>
                 </select>
             </fieldset>
-            <fieldset class="formGroup">
-                {#if investmentInterest !== 'Syndicate' && investmentInterest !== 'Scout'}
+            {#if investmentInterest !== 'Syndicate' && investmentInterest !== 'Scout'}
+                <fieldset class="formGroup">
                     <label for="syndicateMember">Are you already in the Lightning Ventures syndicate? *</label>
                     <select name="syndicateMember" id="syndicateMember">
                         <option value="no">No</option>
                         <option value="yes">Yes</option>
                     </select>
-                {/if}
-            </fieldset>
+                </fieldset>
+            {/if}
             <fieldset class="formGroup">
                 <label for="name">Full Name *</label>
                 <input type="text" name="name" id="name" required />
@@ -194,15 +196,15 @@
                     <label for="scoutUrl">What's the URL of the company? *</label>
                     <input type="text" name="scoutUrl" id="scoutUrl" placeholder="https://..." required />
                 </fieldset>
-                <fieldset class="formGroup col-span-2">
+                <fieldset class="formGroup md:col-span-2">
                     <label for="scoutInvestmentMission">What does the company do? *</label>
                     <textarea name="scoutInvestmentMission" id="scoutInvestmentMission" required />
                 </fieldset>
-                <fieldset class="formGroup col-span-2">
+                <fieldset class="formGroup md:col-span-2">
                     <label for="scoutInvestmentReason">Why do you think this is a good investment? *</label>
                     <textarea name="scoutInvestmentReason" id="scoutInvestmentReason" required />
                 </fieldset>
-                <fieldset class="formGroup col-span-2">
+                <fieldset class="formGroup md:col-span-2">
                     <label for="scoutSource">How did you source this deal? *</label>
                     <textarea name="scoutSource" id="scoutSource" placeholder="Friend, Social Media, Conference, etc." required />
                 </fieldset>
@@ -215,7 +217,7 @@
                     <input type="text" name="scoutFounderEmail" id="scoutFounderEmail" required />
                 </fieldset>
             {:else}
-                <fieldset class="formGroup col-span-2">
+                <fieldset class="formGroup md:col-span-2">
                     <label for="previousInvestments">Have you previously invested in Bitcoin companies? If so, which? *</label>
                     <textarea name="previousInvestments" id="previousInvestments" required />
                 </fieldset>
@@ -268,7 +270,7 @@
                     </div>
                 </fieldset>
 
-                <fieldset class="formGroup col-span-2">
+                <fieldset class="formGroup md:col-span-2">
                     <label for="otherPowers">Any other special powers? *</label>
                     <textarea name="otherPowers" id="otherPowers" required />
                 </fieldset>

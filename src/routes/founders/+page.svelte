@@ -33,7 +33,8 @@
         payload.miningNeeds = miningNeedsValues.join(", ");
         payload.miningSituation = miningSituationValues.join(", ");
         payload.submissionTime = formattedDateForForms();
-
+        payload.rawSubmissionTime = new Date().toISOString();
+        console.log(payload)
         const webhookUrl = formData.companySector === 'Mining & Energy' ? 'https://hooks.zapier.com/hooks/catch/11343292/3d7fxkd/' : 'https://hooks.zapier.com/hooks/catch/11343292/3dpa7ae/'
 
         const jsonData = JSON.stringify(payload);
@@ -70,7 +71,7 @@
         <form
             name="Founders Intake"
             method="POST"
-            class="grid grid-cols-1 md:grid-cols-2 gap-8"
+            class="flex flex-col md:grid md:grid-cols-2 gap-8"
             enctype="multipart/form-data"
             on:submit|preventDefault={handleSubmit}
         >
@@ -125,7 +126,7 @@
                 </select>
             </fieldset>
             {#if companyIncorporated}
-                <div class="col-span-2 grid-cols-1 md:grid-cols-2 gap-8 {companyIncorporated ? 'grid' : 'hidden'}">
+                <div class="md:col-span-2 grid-cols-1 md:grid-cols-2 gap-8 {companyIncorporated ? 'grid' : 'hidden'}">
                     <fieldset class="formGroup">
                         <label for="companyLegalName">What's the legal name of the company?</label>
                         <input type="text" name="companyLegalName" id="companyLegalName"/>
@@ -146,8 +147,8 @@
                     <fieldset class="formGroup">
                         <label for="companyOptionsPool">Have you set up an options pool?</label>
                         <select name="companyOptionsPool" id="companyOptionsPool">
-                            <option value="No">No</option>
-                            <option value="Yes">Yes</option>
+                            <option value={false}>No</option>
+                            <option value={true}>Yes</option>
                         </select>
                     </fieldset>
                 </div>
@@ -159,10 +160,6 @@
             <fieldset class="formGroup">
                 <label for="companyDeck">Pitch deck link</label>
                 <input type="text" name="companyDeck" id="companyDeck" placeholder="https://..."/>
-            </fieldset>
-            <fieldset class="formGroup">
-                <label for="companyDeckFile">Pitch deck</label>
-                <input type="file" name="companyDeckFile" id="companyDeckFile" class="text-base file:prose file:rounded-md file:px-4 file:py-2 file:font-semibold file:mr-4 file:border-0 file:hover:bg-slate-600/50 file:bg-slate-700/50 file:text-white" />
             </fieldset>
 
             <h4 class="md:col-span-2">Company finances</h4>
@@ -203,14 +200,14 @@
                 <label for="dataRoom">If you have a link to a dataroom, please share</label>
                 <input type="text" name="dataRoom" id="dataRoom" placeholder="https://..."/>
             </fieldset>
-            <fieldset class="formGroup col-span-2">
+            <fieldset class="formGroup md:col-span-2">
                 <label for="previousFunding">If you've previously raised, please tell us the month/year you raised each round and all investors in those rounds.</label>
                 <span class="sublabel">Please include SAFEs, Angels, and Syndicates as well</span>
                 <textarea name="previousFunding" id="previousFunding" />
             </fieldset>
 
             <h3 class="md:col-span-2">Tell us about what you're building</h3>
-            <fieldset class="formGroup col-span-2">
+            <fieldset class="formGroup md:col-span-2">
                 <label for="companyMission">What do you do and why does it matter? *</label>
                 <span class="sublabel">2-3 paragraphs max</span>
                 <textarea name="companyMission" id="companyMission" required/>
@@ -222,25 +219,25 @@
                 <BitcoinSoftwareIntake />
             {/if}
 
-            <fieldset class="formGroup col-span-2">
+            <fieldset class="formGroup md:col-span-2">
                 <label for="exitStrategies">What are some possible exit strategies? Have their been any recent comparable exits in your industry? Who might be a potential acquirer in the future? *</label>
                 <span class="sublabel">2-3 paragraphs max</span>
                 <textarea name="exitStrategies" id="exitStrategies" required/>
             </fieldset>
 
-            <fieldset class="formGroup col-span-2">
+            <fieldset class="formGroup md:col-span-2">
                 <label for="risks">What risks are you facing? What is the biggest threat to your survival? *</label>
                 <span class="sublabel">2-3 paragraphs max</span>
                 <textarea name="risks" id="risks" required/>
             </fieldset>
 
-            <fieldset class="formGroup col-span-2">
+            <fieldset class="formGroup md:col-span-2">
                 <label for="traction">What does your traction look like so far? Any high level KPIs that you can share? *</label>
                 <span class="sublabel">2-3 paragraphs max</span>
                 <textarea name="traction" id="traction" required/>
             </fieldset>
 
-            <fieldset class="formGroup col-span-2">
+            <fieldset class="formGroup md:col-span-2">
                 <label for="press">Press, Blogs, Interviews, Podcasts, Media, or anything else to share?</label>
                 <textarea name="press" id="press" />
             </fieldset>

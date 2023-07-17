@@ -2,7 +2,7 @@
     import Socials from "$lib/components/heros/Socials.svelte";
 </script>
 
-<div class="bg-cover bg-center md:bg-top bg-no-repeat py-8 bg-mt-fuji240mobile md:bg-beach1">
+<div class="bg-cover bg-center md:bg-top bg-no-repeat py-8 bg-beach1">
     <div class="px-4 md:px-8 max-w-6xl mx-auto w-full mt-24 mb-12 md:my-32">
         <div class="tracking-tight text-2xl md:text-5xl text-ltngWhite font-bold mb-6">
             <p><span class="gradientHeader font-bold">We're proud early-stage investors</span><br> in companies building the future of Bitcoin.</p>
