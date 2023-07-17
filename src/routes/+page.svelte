@@ -3,6 +3,8 @@
     import PortfolioGrid from '$lib/components/PortfolioGrid.svelte';
     import { founders } from '$lib/data/founders';
     import { investors } from '$lib/data/investors';
+    import { events } from '$lib/data/events';
+    import Event from '$lib/components/Event.svelte';
 </script>
 
 <svelte:head>
@@ -55,18 +57,12 @@
             <h2
                 class="tracking-tight pb-1 mb-12 text-3xl md:text-4xl text-ltngWhite font-bold gradientHeader inline-block"
             >
-                Upcoming Events
+                Events
             </h2>
-            <div class="flex flex-col md:flex-row gap-6 md:gap-12">
-                <img src="/images/events/satoshi-rockamoto2.webp" alt="event" class="md:w-1/3" />
-                <div class="prose dark:prose-invert md:prose-lg">
-                    <h3>Satoshi Rockamoto</h3>
-                    <p>Rock out with the Bitcoin all-star band. Live music from the Satoshi Shredders.</p>
-                    <p>
-                        Wednesday May 17th, 8pm Doors<br>
-                        222 Española Way Miami Beach, FL
-                    </p>
-                </div>
+            <div class="flex flex-col gap-8">
+                {#each events as event}
+                    <Event {event} />
+                {/each}
             </div>
         </div>
     </div>

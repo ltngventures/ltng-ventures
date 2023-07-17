@@ -19,6 +19,7 @@ export default {
                 50: '50%'
             },
             backgroundImage: {
+                alps1: "url('/images/hero/alps1.webp')",
                 ferns1: "url('/images/hero/ferns1.webp')",
                 jungle1: "url('/images/hero/jungle1.webp')",
                 jungle2: "url('/images/hero/jungle2.webp')",

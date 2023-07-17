@@ -17,3 +17,17 @@ export function setFormSubmitted(event: Event) {
     const form = button.parentElement?.parentElement;
     form?.classList.add('submitted');
 }
+
+export function formattedDateForForms(): string {
+    const event = new Date();
+    const options = {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        hour: 'numeric',
+        minute: 'numeric',
+        timeZoneName: 'short',
+        timeZone: 'UTC'
+    };
+    return event.toLocaleString('en-US', options);
+}

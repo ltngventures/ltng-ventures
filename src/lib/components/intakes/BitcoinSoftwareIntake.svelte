@@ -27,12 +27,6 @@
 </fieldset>
 
 <fieldset class="formGroup col-span-2">
-    <label for="vision">What is your vision? How do you see the future for your company and this industry? *</label>
-    <span class="sublabel">2-3 paragraphs max</span>
-    <textarea name="vision" id="vision" required/>
-</fieldset>
-
-<fieldset class="formGroup col-span-2">
     <label for="tam">What is the TAM for your industry? *</label>
     <span class="sublabel">2-3 paragraphs max (it's ok if you haven't thought about it yet)</span>
     <textarea name="tam" id="tam" required/>

@@ -1,5 +1,4 @@
 <script lang="ts">
-    import SocialIconLinks from './SocialIconLinks.svelte';
     import HomeHero from '$lib/components/heros/Home.svelte'
     import FounderHero from '$lib/components/heros/Founder.svelte';
     import InvestorHero from '$lib/components/heros/Investor.svelte';

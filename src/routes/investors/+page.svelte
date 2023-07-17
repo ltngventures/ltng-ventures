@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { setFormSubmitted } from "$lib/utils/helpers";
+    import { setFormSubmitted, formattedDateForForms } from "$lib/utils/helpers";
 
     let isSubmitting = false;
     let showSuccess = false;
@@ -9,16 +9,52 @@
     let investmentInterest:string;
 
     function handleSubmit(event: Event) {
-        const form = event.target as HTMLFormElement;
-        const formData = new FormData(form);
-        const urlParamsString = new URLSearchParams(formData as any).toString();
-
         isSubmitting = true;
         errorMessage = "";
-        fetch("/", {
+
+        const form = event.target as HTMLFormElement;
+        const rawFormData = new FormData(form);
+        const formData = Object.fromEntries(rawFormData)
+
+        const bitcoinerCheckboxes = document.getElementsByName("bitcoiner");
+        const skillsCheckboxes = document.getElementsByName("skills");
+        const bitcoinerValues: string[] = [];
+        const skillsValues: string[] = [];
+
+        bitcoinerCheckboxes.forEach(el => el.checked && bitcoinerValues.push(el.value));
+        skillsCheckboxes.forEach(el => el.checked && skillsValues.push(el.value));
+
+        const webhookUrl = formData.investmentInterest === 'Scout' ? 'https://hooks.zapier.com/hooks/catch/11343292/3dpf1zn/' : 'https://hooks.zapier.com/hooks/catch/11343292/3dprd28/'
+
+        // Do some formatting of the data we'll send to Zapier
+        const payload = {
+            formName: formData.investmentInterest === 'Scout' ? "Scout Intake" : "Investor Intake",
+            submissionTime: formattedDateForForms(),
+            rawSubmissionTime: new Date().toISOString(),
+            name: formData.name,
+            email: formData.email,
+            investmentInterest: formData.investmentInterest,
+            syndicateInvestor: formData.syndicateMember,
+            source: formData.source,
+            previousInvestments: formData.previousInvestments,
+            socialLink: formData.socialLink,
+            otherPowers: formData.otherPowers,
+            bitcoiner: bitcoinerValues.length > 0 ? bitcoinerValues.join(", ") : undefined,
+            skills: skillsValues.length > 0 ? skillsValues.join(", ") : undefined,
+            scoutFounder: formData.scoutFounder,
+            scoutFounderEmail: formData.scoutFounderEmail,
+            scoutInvestment: formData.scoutInvestment,
+            scoutInvestmentMission: formData.scoutInvestmentMission,
+            scoutInvestmentReason: formData.scoutInvestmentReason,
+            scoutSource: formData.scoutSource,
+            scoutUrl: formData.scoutUrl
+        }
+
+        const jsonData = JSON.stringify(payload);
+        fetch(webhookUrl, {
             method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: urlParamsString
+            headers: { "Accept": "application/json" },
+            body: jsonData
         })
         .then(() => {
             form.classList.remove('submitted');
@@ -114,33 +150,27 @@
             name="Investor Contact"
             id="investor-contact"
             method="POST"
-            class="grid grid-cols-1 md:grid-cols-2 gap-8 scroll-m-36"
-            netlify
-            netlify-honeypot="bot-field"
+            class="flex flex-col md:grid md:grid-cols-2 gap-8 scroll-m-36"
             on:submit|preventDefault={handleSubmit}
         >
-            <input type="hidden" name="form-name" value="Investor Contact">
-            <label class="hidden">
-                Don't fill this out if you're human: <input name="bot-field" />
-            </label>
             <fieldset class="formGroup">
                 <label for="investmentInterest">What are you interested in? *</label>
                 <select bind:value={investmentInterest} name="investmentInterest" id="investmentInterest">
-                    <option value="node-2-fund">Become an LP in Node 2 Fund</option>
-                    <option value="syndicate">Invest via the Syndicate</option>
-                    <option value="scout">Submit a Scout Deal</option>
-                    <option value="other">Other</option>
+                    <option value="Node 2 Fund">Become an LP in Node 2 Fund</option>
+                    <option value="Syndicate">Invest via the Syndicate</option>
+                    <option value="Scout">Submit a Scout Deal</option>
+                    <option value="Other">Other</option>
                 </select>
             </fieldset>
-            <fieldset class="formGroup">
-                {#if investmentInterest !== 'syndicate' && investmentInterest !== 'scout'}
+            {#if investmentInterest !== 'Syndicate' && investmentInterest !== 'Scout'}
+                <fieldset class="formGroup">
                     <label for="syndicateMember">Are you already in the Lightning Ventures syndicate? *</label>
                     <select name="syndicateMember" id="syndicateMember">
                         <option value="no">No</option>
                         <option value="yes">Yes</option>
                     </select>
-                {/if}
-            </fieldset>
+                </fieldset>
+            {/if}
             <fieldset class="formGroup">
                 <label for="name">Full Name *</label>
                 <input type="text" name="name" id="name" required />
@@ -157,7 +187,7 @@
                 <label for="source">How'd you hear about Lightning Ventures *</label>
                 <input type="text" name="source" id="source" required/>
             </fieldset>
-            {#if investmentInterest === 'scout'}
+            {#if investmentInterest === 'Scout'}
                 <fieldset class="formGroup">
                     <label for="scoutInvestment">What company would you like to tell us about? *</label>
                     <input type="text" name="scoutInvestment" id="scoutInvestment" required />
@@ -166,15 +196,15 @@
                     <label for="scoutUrl">What's the URL of the company? *</label>
                     <input type="text" name="scoutUrl" id="scoutUrl" placeholder="https://..." required />
                 </fieldset>
-                <fieldset class="formGroup col-span-2">
+                <fieldset class="formGroup md:col-span-2">
                     <label for="scoutInvestmentMission">What does the company do? *</label>
                     <textarea name="scoutInvestmentMission" id="scoutInvestmentMission" required />
                 </fieldset>
-                <fieldset class="formGroup col-span-2">
+                <fieldset class="formGroup md:col-span-2">
                     <label for="scoutInvestmentReason">Why do you think this is a good investment? *</label>
                     <textarea name="scoutInvestmentReason" id="scoutInvestmentReason" required />
                 </fieldset>
-                <fieldset class="formGroup col-span-2">
+                <fieldset class="formGroup md:col-span-2">
                     <label for="scoutSource">How did you source this deal? *</label>
                     <textarea name="scoutSource" id="scoutSource" placeholder="Friend, Social Media, Conference, etc." required />
                 </fieldset>
@@ -187,7 +217,7 @@
                     <input type="text" name="scoutFounderEmail" id="scoutFounderEmail" required />
                 </fieldset>
             {:else}
-                <fieldset class="formGroup col-span-2">
+                <fieldset class="formGroup md:col-span-2">
                     <label for="previousInvestments">Have you previously invested in Bitcoin companies? If so, which? *</label>
                     <textarea name="previousInvestments" id="previousInvestments" required />
                 </fieldset>
@@ -195,52 +225,52 @@
                     <legend class="">Which kind of Bitcoiner are you? *</legend>
                     <span class="text-base italic">Check all that apply</span>
                     <div class="flex flex-row gap-4 items-center">
-                        <input type="checkbox" name="newBitcoiner" >
-                        <label for="newBitcoiner">Total newbie but I'm obsessed with Bitcoin!</label>
+                        <input type="checkbox" name="bitcoiner" value="New Bitcoiner" >
+                        <label for="New Bitcoiner">Total newbie but I'm obsessed with Bitcoin!</label>
                     </div>
                     <div class="flex flex-row gap-4 items-center">
-                        <input type="checkbox" name="nodeRunner" >
-                        <label for="nodeRunner">I run a Bitcoin and/or Lightning node</label>
+                        <input type="checkbox" name="bitcoiner" value="Node Runner" >
+                        <label for="Node Runner">I run a Bitcoin and/or Lightning node</label>
                     </div>
                     <div class="flex flex-row gap-4 items-center">
-                        <input type="checkbox" name="bitcoinOG" >
-                        <label for="bitcoinOG">Bitcoin OG</label>
+                        <input type="checkbox" name="bitcoiner" value="Bitcoin OG" >
+                        <label for="Bitcoin OG">Bitcoin OG</label>
                     </div>
                     <div class="flex flex-row gap-4 items-center">
-                        <input type="checkbox" name="bitcoinMaxi" >
-                        <label for="bitcoinMaxi">Bitcoin maximalist</label>
+                        <input type="checkbox" name="bitcoiner" value="Bitcoin Maxi" >
+                        <label for="Bitcoin Maxi">Bitcoin maximalist</label>
                     </div>
                     <div class="flex flex-row gap-4 items-center">
-                        <input type="checkbox" name="shitcoiner" >
-                        <label for="shitcoiner">I love Crypto, NFTs, Web3, and Blockchain tech</label>
+                        <input type="checkbox" name="bitcoiner" value="Shitcoiner" >
+                        <label for="Shitcoiner">I love Crypto, NFTs, Web3, and Blockchain tech</label>
                     </div>
                 </fieldset>
                 <fieldset class="formGroup">
                     <legend class="">How can you help our portfolio? *</legend>
                     <span class="text-base italic">Check all that apply</span>
                     <div class="flex flex-row gap-4 items-center">
-                        <input type="checkbox" name="goToMarket" >
-                        <label for="goToMarket">Marketing, Sales, PR, Social Media</label>
+                        <input type="checkbox" name="skills" value="Go to market" >
+                        <label for="Go to market">Marketing, Sales, PR, Social Media</label>
                     </div>
                     <div class="flex flex-row gap-4 items-center">
-                        <input type="checkbox" name="productDesign" >
-                        <label for="productDesign">Product and/or Design</label>
+                        <input type="checkbox" name="skills" value="Product & Design" >
+                        <label for="Product & Design">Product and/or Design</label>
                     </div>
                     <div class="flex flex-row gap-4 items-center">
-                        <input type="checkbox" name="engineering" >
-                        <label for="engineering">Engineering</label>
+                        <input type="checkbox" name="skills" value="Engineering" >
+                        <label for="Engineering">Engineering</label>
                     </div>
                     <div class="flex flex-row gap-4 items-center">
-                        <input type="checkbox" name="legalCompliance" >
-                        <label for="legalCompliance">Legal & Compliance</label>
+                        <input type="checkbox" name="skills" value="Legal & Compliance" >
+                        <label for="Legal & Compliance">Legal & Compliance</label>
                     </div>
                     <div class="flex flex-row gap-4 items-center">
-                        <input type="checkbox" name="financeAcctData" >
-                        <label for="financeAcctData">Finance, Accounting, and/or Data Analytics</label>
+                        <input type="checkbox" name="skills" value="Finance, Accounting, and/or Data Analytics" >
+                        <label for="Finance, Accounting, and/or Data Analytics">Finance, Accounting, and/or Data Analytics</label>
                     </div>
                 </fieldset>
 
-                <fieldset class="formGroup col-span-2">
+                <fieldset class="formGroup md:col-span-2">
                     <label for="otherPowers">Any other special powers? *</label>
                     <textarea name="otherPowers" id="otherPowers" required />
                 </fieldset>
