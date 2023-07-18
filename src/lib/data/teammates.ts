@@ -88,8 +88,8 @@ export const teammates: App.Teammate[] = [
         socials: []
     },
     {
-        name: 'Sebtoshi',
-        img: '/images/team/seb.webp',
+        name: 'STOSHI',
+        img: '/images/team/stoshi.webp',
         title: 'Scouting',
         description: null,
         socials: [
