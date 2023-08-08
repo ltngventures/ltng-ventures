@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { setFormSubmitted, formattedDateForForms } from "$lib/utils/helpers";
+    import { setFormSubmitted } from "$lib/utils/helpers";
 
     let isSubmitting = false;
     let showSuccess = false;
@@ -24,13 +24,10 @@
         bitcoinerCheckboxes.forEach(el => el.checked && bitcoinerValues.push(el.value));
         skillsCheckboxes.forEach(el => el.checked && skillsValues.push(el.value));
 
-        const webhookUrl = formData.investmentInterest === 'Scout' ? 'https://hooks.zapier.com/hooks/catch/11343292/3dpf1zn/' : 'https://hooks.zapier.com/hooks/catch/11343292/3dprd28/'
-
-        // Do some formatting of the data we'll send to Zapier
+        // Do some formatting of the data we'll send
         const payload = {
             formName: formData.investmentInterest === 'Scout' ? "Scout Intake" : "Investor Intake",
-            submissionTime: formattedDateForForms(),
-            rawSubmissionTime: new Date().toISOString(),
+            submissionTime: new Date().toLocaleString('en-US'),
             name: formData.name,
             email: formData.email,
             investmentInterest: formData.investmentInterest,
@@ -51,7 +48,7 @@
         }
 
         const jsonData = JSON.stringify(payload);
-        fetch(webhookUrl, {
+        fetch("/api/investors", {
             method: "POST",
             headers: { "Accept": "application/json" },
             body: jsonData

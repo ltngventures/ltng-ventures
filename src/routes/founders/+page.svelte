@@ -1,7 +1,7 @@
 <script lang="ts">
     import BitcoinSoftwareIntake from "$lib/components/intakes/BitcoinSoftwareIntake.svelte";
     import MiningEnergyIntake from "$lib/components/intakes/MiningEnergyIntake.svelte";
-    import { setFormSubmitted, formattedDateForForms } from "$lib/utils/helpers";
+    import { setFormSubmitted } from "$lib/utils/helpers";
 
     let isSubmitting = false;
     let showSuccess = false;
@@ -32,13 +32,11 @@
         const payload = Object.fromEntries(filtered);
         payload.miningNeeds = miningNeedsValues.join(", ");
         payload.miningSituation = miningSituationValues.join(", ");
-        payload.submissionTime = formattedDateForForms();
-        payload.rawSubmissionTime = new Date().toISOString();
-        console.log(payload)
-        const webhookUrl = formData.companySector === 'Mining & Energy' ? 'https://hooks.zapier.com/hooks/catch/11343292/3d7fxkd/' : 'https://hooks.zapier.com/hooks/catch/11343292/3dpa7ae/'
+        payload.submissionTime = new Date().toLocaleString('en-US');
+
 
         const jsonData = JSON.stringify(payload);
-        fetch(webhookUrl, {
+        fetch("/api/founders", {
             method: "POST",
             headers: { "Accept": "application/json" },
             body: jsonData
@@ -72,7 +70,6 @@
             name="Founders Intake"
             method="POST"
             class="flex flex-col md:grid md:grid-cols-2 gap-8"
-            enctype="multipart/form-data"
             on:submit|preventDefault={handleSubmit}
         >
             <h3 class="md:col-span-2">Tell us about yourself</h3>
