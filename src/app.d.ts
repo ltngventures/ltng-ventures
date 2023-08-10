@@ -24,10 +24,8 @@ declare global {
             nameAndRole: string;
         }
         interface Event {
-            image1: string;
-            image2: string;
             title: string;
-            description: string;
+            url: string;
             date: string;
             location: string;
         }
