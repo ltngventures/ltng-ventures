@@ -42,7 +42,7 @@
     on:submit|preventDefault={handleSubmit}
 >
     <div class="flex flex-col md:flex-row gap-2 items-center">
-        <input name="email" id="email" type="text" placeholder="Subscribe for email updates..." class="w-72 py-1.5" />
+        <input name="email" id="email" type="text" required placeholder="Subscribe for email updates..." class="w-72 py-1.5" />
         <button id="emailSubmitButton" type="submit" class="font-semibold font-josefin-sans-italic uppercase text-ltngYellow bg-ltngWhite/20 hover" disabled={isSubmitting}>Subscribe</button>
     </div>
     {#if showSuccess}

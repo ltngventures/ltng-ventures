@@ -1,20 +1,44 @@
 export const events: App.Event[] = [
     {
-        image1: '/images/events/rockamoto-prague1.webp',
-        image2: '/images/events/rockamoto-prague2.webp',
-        title: 'Satoshi Rockamoto: BTC Prague 2023',
-        description:
-            'Rock out with the Bitcoin all-star band. Live music from the Satoshi Shredders.',
-        date: 'Thursday June 8th, 8pm Doors',
-        location: 'Futurum Zborovska 7 150 00 Praha 5, Prague'
+        title: 'BitBlockBoom',
+        date: 'August 24-27 2023',
+        location: 'Austin, Texas',
+        url: 'https://bitblockboom.com/'
     },
     {
-        image1: '/images/events/rockamoto-miami2.webp',
-        image2: '/images/events/satoshi-rockamoto2.webp',
-        title: 'Satoshi Rockamoto: Bitcoin 2023',
-        description:
-            'Rock out with the Bitcoin all-star band. Live music from the Satoshi Shredders.',
-        date: 'Wednesday May 17th, 8pm Doors',
-        location: '222 Española Way Miami Beach, FL'
+        title: 'Baltic Honeybadger',
+        date: 'September 2-3 2023',
+        location: 'Riga, Latvia',
+        url: 'https://baltichoneybadger.com/'
+    },
+    {
+        title: 'TABConf',
+        date: 'September 6-9 2023',
+        location: 'Atlanta, Georgia',
+        url: 'https://2023.tabconf.com/'
+    },
+    {
+        title: 'Pacific Bitcoin',
+        date: 'October 5-6 2023',
+        location: 'Los Angeles, California',
+        url: 'https://www.pacificbitcoin.com/'
+    },
+    {
+        title: 'Bitcoin Amsterdam',
+        date: 'October 12-13 2023',
+        location: 'Amsterdam, The Netherlands',
+        url: 'https://b.tc/conference/amsterdam'
+    },
+    {
+        title: 'Adopting Bitcoin',
+        date: 'November 7-9 2023',
+        location: 'San Salvador, El Salvador',
+        url: 'https://adoptingbitcoin.org/2023/'
+    },
+    {
+        title: 'Unconfiscatable',
+        date: 'December 7-8 2023',
+        location: 'Las Vegas, Nevada',
+        url: 'https://unconfiscatable.com/'
     }
 ];

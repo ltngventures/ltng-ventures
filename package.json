@@ -39,6 +39,8 @@
 	"dependencies": {
 		"@sendgrid/mail": "^7.7.0",
 		"google-auth-library": "^9.0.0",
-		"google-spreadsheet": "^4.0.2"
+		"google-spreadsheet": "^4.0.2",
+		"photoswipe": "^5.3.8",
+		"svelte-photoswipe": "^0.0.2"
 	}
 }
