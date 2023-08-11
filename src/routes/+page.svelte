@@ -66,7 +66,7 @@
                 <p>Yo… Let’s hang IRL! That’s right. We be out here. This list of stellar Bitcoin-only conferences is “Lightning Ventures approved” and will surely be a grand ole time.</p>
                 <p>To schedule some face time with us, reach out in advance and let us know. Be there or be square.</p>
             </div>
-            <div class="flex flex-col gap-2">
+            <div class="flex flex-col gap-2 text-sm md:text-lg">
                 {#each events as event}
                     <div class='grid grid-cols-3 gap-2 auto-cols-max border-b border-ltngWhite/30 pb-1 mb-2'>
                         <div><a href={event.url} class='text-btcOrange hover:text-ltngYellow font-semibold'>{event.title}</a></div>
