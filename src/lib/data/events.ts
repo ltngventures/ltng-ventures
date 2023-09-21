@@ -1,17 +1,5 @@
 export const events: App.Event[] = [
     {
-        title: "BitBlockBoom",
-        date: "Aug 24-27 2023",
-        location: "Austin, Texas",
-        url: "https://bitblockboom.com/",
-    },
-    {
-        title: "Baltic Honeybadger",
-        date: "Sept 2-3 2023",
-        location: "Riga, Latvia",
-        url: "https://baltichoneybadger.com/",
-    },
-    {
         title: "TABConf",
         date: "Sept 6-9 2023",
         location: "Atlanta, Georgia",

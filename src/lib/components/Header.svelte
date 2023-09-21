@@ -1,5 +1,4 @@
 <script lang="ts">
-    import BoltMarkOrangeIcon from '$lib/elements/icons/BoltMarkOrange.svelte';
     import BoltMarkOrangeDarkIcon from '$lib/elements/icons/BoltMarkOrangeDark.svelte';
     import BarsIcon from '$lib/elements/icons/Bars.svelte';
     import { Menu, MenuButton, MenuItems, MenuItem } from '@rgossiaux/svelte-headlessui';
