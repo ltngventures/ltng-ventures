@@ -1,6 +1,6 @@
-import { spreadsheet } from '$lib/server/googleSheets';
-import { sendgrid } from '$lib/server/sendgrid';
-import { json } from '@sveltejs/kit';
+import { spreadsheet } from "$lib/server/googleSheets";
+import { sendgrid } from "$lib/server/sendgrid";
+import { json } from "@sveltejs/kit";
 
 /**
  * POST a form submission for the contact form
@@ -9,33 +9,33 @@ import { json } from '@sveltejs/kit';
 
 export const POST = async ({ request }) => {
     const body = await request.json();
-    const submissionTime = new Date().toLocaleString('en-US');
+    const submissionTime = new Date().toLocaleString("en-US");
     try {
         // Add the submission to the right google sheet
-        const contactWorksheet = spreadsheet.sheetsById['1362471646'];
+        const contactWorksheet = spreadsheet.sheetsById["1362471646"];
         await contactWorksheet.addRow({
-            'Submission Date': submissionTime,
+            "Submission Date": submissionTime,
             Name: body.name,
-            'Email Address': body.email,
-            Message: body.message
+            "Email Address": body.email,
+            Message: body.message,
         });
 
         // Send email notification
         const email = {
-            to: ['mike@ltng.ventures', 'vivek@ltng.ventures', 'erskingardner@gmail.com'],
-            from: 'Lightning Ventures Website <hello@ltng.ventures>',
-            templateId: 'd-0d44bba65a074d6c87765ac69932b566',
+            to: ["mike@ltng.ventures", "vivek@ltng.ventures", "erskingardner@gmail.com"],
+            from: "Lightning Ventures Website <hello@ltng.ventures>",
+            templateId: "d-0d44bba65a074d6c87765ac69932b566",
             dynamicTemplateData: {
                 name: body.name,
                 email: body.email,
                 message: body.message,
-                submissionTime: submissionTime
-            }
+                submissionTime: submissionTime,
+            },
         };
 
         await sendgrid.send(email);
 
-        return json({ message: 'Success' }, { status: 200 });
+        return json({ message: "Success" }, { status: 200 });
     } catch (error: any) {
         console.log(error);
         return json({ error: error.message });

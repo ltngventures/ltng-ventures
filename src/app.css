@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'josefin sans';
-    src: url('/fonts/JosefinSans-VariableFont_wght.ttf');
+    font-family: "josefin sans";
+    src: url("/fonts/JosefinSans-VariableFont_wght.ttf");
 }
 
 @font-face {
-    font-family: 'josefin sans italic';
-    src: url('/fonts/JosefinSans-Italic-VariableFont_wght.ttf');
+    font-family: "josefin sans italic";
+    src: url("/fonts/JosefinSans-Italic-VariableFont_wght.ttf");
 }
 
 a {
@@ -88,8 +88,8 @@ a.navLink {
     @apply flex flex-col gap-4;
 }
 
-input[type='text'],
-input[type='checkbox'],
+input[type="text"],
+input[type="checkbox"],
 select,
 textarea {
     @apply bg-slate-700/50;

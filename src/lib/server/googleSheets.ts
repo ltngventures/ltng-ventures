@@ -1,14 +1,14 @@
-import { JWT } from 'google-auth-library';
-import { GoogleSpreadsheet } from 'google-spreadsheet';
+import { JWT } from "google-auth-library";
+import { GoogleSpreadsheet } from "google-spreadsheet";
 import {
     GOOGLE_SERVICE_ACCOUNT_EMAIL,
     GOOGLE_PRIVATE_KEY,
-    GOOGLE_SHEET_ID
-} from '$env/static/private';
+    GOOGLE_SHEET_ID,
+} from "$env/static/private";
 
 const SCOPES = [
-    'https://www.googleapis.com/auth/spreadsheets',
-    'https://www.googleapis.com/auth/drive.file'
+    "https://www.googleapis.com/auth/spreadsheets",
+    "https://www.googleapis.com/auth/drive.file",
 ];
 
 // Initialize auth - see https://theoephraim.github.io/node-google-spreadsheet/#/guides/authentication
@@ -17,7 +17,7 @@ const jwt = new JWT({
     // see "Authentication" section in docs for more info
     email: GOOGLE_SERVICE_ACCOUNT_EMAIL,
     key: GOOGLE_PRIVATE_KEY,
-    scopes: SCOPES
+    scopes: SCOPES,
 });
 
 const sheet = new GoogleSpreadsheet(GOOGLE_SHEET_ID, jwt);
