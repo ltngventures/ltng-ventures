@@ -2,7 +2,7 @@
     import TwitterIcon from "$lib/elements/icons/Twitter.svelte";
     import LinkedinIcon from "$lib/elements/icons/Linkedin.svelte";
     import VidaIcon from "$lib/elements/icons/vida.svelte";
-    import Vida from "$lib/elements/icons/vida.svelte";
+    import GithubIcon from '$lib/elements/icons/Github.svelte'
     export let social: App.SocialLink;
 
 </script>
@@ -16,5 +16,7 @@
         <LinkedinIcon />
     {:else if  social.type === 'vida'}
         <VidaIcon />
+    {:else if  social.type === 'github'}
+        <GithubIcon />
     {/if}
 </a>

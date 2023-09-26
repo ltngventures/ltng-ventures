@@ -15,19 +15,19 @@ export function getRandomSubarray(arr: unknown[], size: number): unknown[] {
 export function setFormSubmitted(event: Event) {
     const button = event.target as HTMLElement;
     const form = button.parentElement?.parentElement;
-    form?.classList.add('submitted');
+    form?.classList.add("submitted");
 }
 
 export function formattedDateForForms(): string {
     const event = new Date();
     const options = {
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric',
-        hour: 'numeric',
-        minute: 'numeric',
-        timeZoneName: 'short',
-        timeZone: 'UTC'
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+        hour: "numeric",
+        minute: "numeric",
+        timeZoneName: "short",
+        timeZone: "UTC",
     };
-    return event.toLocaleString('en-US', options);
+    return event.toLocaleString("en-US", options);
 }
