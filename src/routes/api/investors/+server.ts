@@ -25,7 +25,12 @@ export const POST = async ({ request }) => {
                 ? "d-af288684f969412eacb6748c25238561"
                 : "d-dd1e3266a4f14176923cb918687befd3";
         const email = {
-            to: ["mike@ltng.ventures", "vivek@ltng.ventures", "erskingardner@gmail.com"],
+            to: [
+                "mike@ltng.ventures",
+                "seb@ltng.ventures",
+                "vivek@ltng.ventures",
+                "erskingardner@gmail.com",
+            ],
             from: "Lightning Ventures Website <hello@ltng.ventures>",
             templateId: emailTemplateId,
             dynamicTemplateData: body,
