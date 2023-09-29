@@ -1,3 +1,4 @@
+import { EMAIL_RECIPIENTS_GENERAL } from "$lib/data/emailRecipients.js";
 import { spreadsheet } from "$lib/server/googleSheets";
 import { sendgrid } from "$lib/server/sendgrid";
 import { json } from "@sveltejs/kit";
@@ -22,7 +23,7 @@ export const POST = async ({ request }) => {
 
         // Send email notification
         const email = {
-            to: ["mike@ltng.ventures", "vivek@ltng.ventures", "erskingardner@gmail.com"],
+            to: EMAIL_RECIPIENTS_GENERAL,
             from: "Lightning Ventures Website <hello@ltng.ventures>",
             templateId: "d-0d44bba65a074d6c87765ac69932b566",
             dynamicTemplateData: {

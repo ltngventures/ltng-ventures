@@ -1,6 +1,7 @@
 import { spreadsheet } from "$lib/server/googleSheets";
 import { sendgrid } from "$lib/server/sendgrid";
 import { json } from "@sveltejs/kit";
+import { EMAIL_RECIPIENTS_GENERAL } from "$lib/data/emailRecipients.js";
 
 /**
  * POST a form submission for the investors/scout form
@@ -25,12 +26,7 @@ export const POST = async ({ request }) => {
                 ? "d-af288684f969412eacb6748c25238561"
                 : "d-dd1e3266a4f14176923cb918687befd3";
         const email = {
-            to: [
-                "mike@ltng.ventures",
-                "seb@ltng.ventures",
-                "vivek@ltng.ventures",
-                "erskingardner@gmail.com",
-            ],
+            to: EMAIL_RECIPIENTS_GENERAL,
             from: "Lightning Ventures Website <hello@ltng.ventures>",
             templateId: emailTemplateId,
             dynamicTemplateData: body,

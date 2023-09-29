@@ -1,6 +1,7 @@
 import { spreadsheet } from "$lib/server/googleSheets";
 import { sendgrid } from "$lib/server/sendgrid";
 import { json } from "@sveltejs/kit";
+import { EMAIL_RECIPIENTS_GENERAL, EMAIL_RECIPIENTS_MINING } from "$lib/data/emailRecipients.js";
 
 /**
  * POST a form submission for the founders/mining form
@@ -24,8 +25,12 @@ export const POST = async ({ request }) => {
             body.companySector === "Mining & Energy"
                 ? "d-889aa0c885214e6aaf4187af6d5a646c"
                 : "d-cae640e6663349b4a7a8e5d2448cd9ea";
+        const emailRecipients =
+            body.companySector === "Mining & Energy"
+                ? EMAIL_RECIPIENTS_MINING
+                : EMAIL_RECIPIENTS_GENERAL;
         const email = {
-            to: ["mike@ltng.ventures", "vivek@ltng.ventures", "erskingardner@gmail.com"],
+            to: emailRecipients,
             from: "Lightning Ventures Website <hello@ltng.ventures>",
             templateId: emailTemplateId,
             dynamicTemplateData: body,
