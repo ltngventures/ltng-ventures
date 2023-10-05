@@ -11,31 +11,36 @@ export const mike: App.Teammate = {
             url: "https://primal.net/profile/npub1q3kyx6e22fg9npnmgrypu35mdkpsq9zzl3jnzty85l88404sytlstdg0vl",
         },
         {
-            type: "linkedin", url: "https://www.linkedin.com/in/mike-jarmuz-573b5658",
+            type: "linkedin",
+            url: "https://www.linkedin.com/in/mike-jarmuz-573b5658",
         },
         {
-            type: "vida", url: "https://vida.page/mikejarmuz",
+            type: "vida",
+            url: "https://vida.page/mikejarmuz",
         },
     ],
-}
+};
 
 export const teammates: App.Teammate[] = [
     {
         name: "&ldquo;UNCLE&rdquo; R0CKSTAR DEV",
         img: "/images/team/rockstar.webp",
         title: "Technical Advisor",
-        description: "Everyone’s favorite Uncle. BTCPayserver contributor. Philosopher, Cypherpunk, Unifier. Advising Primal, LNBits, Hifumi, and others. Formerly Strike.",
+        description:
+            "Everyone’s favorite Uncle. BTCPayserver contributor. Philosopher, Cypherpunk, Unifier. Advising Primal, LNBits, Hifumi, and others. Formerly Strike.",
         socials: [
             {
-                type: "twitter", url: "https://twitter.com/r0ckstardev"
+                type: "twitter",
+                url: "https://twitter.com/r0ckstardev",
             },
             {
                 type: "nostr",
                 url: "https://primal.net/profile/npub1j8y6tcdfw3q3f3h794s6un0gyc5742s0k5h5s2yqj0r70cpklqeqjavrvg",
             },
             {
-                type: "github", url: "https://github.com/rockstardev"
-            }
+                type: "github",
+                url: "https://github.com/rockstardev",
+            },
         ],
     },
     {
@@ -55,8 +60,16 @@ export const teammates: App.Teammate[] = [
         name: "Chris Hunter",
         img: "/images/team/chris.webp",
         title: "Venture Partner",
-        description: "Co-Founder: Satoshi Money, Galoy, and Blink (Bitcoin Beach Wallet). Co-creator of The Adopting Bitcoin Summit in El Salvador and an Angel Investor in over 35 Bitcoin companies.",
-        socials: [{ type: "twitter", url: "https://twitter.com/btcnyc" }, {type: 'nostr', url: 'https://primal.net/profile/npub1l7rscwegcz8sxcww2dld7f0jlfuqza5umgyqzhfe6zrhve3jgyxqtd8jlt'}, {type: 'linkedin', url: 'https://www.linkedin.com/in/hunterchris/'}],
+        description:
+            "Co-Founder: Satoshi Money, Galoy, and Blink (Bitcoin Beach Wallet). Co-creator of The Adopting Bitcoin Summit in El Salvador and an Angel Investor in over 35 Bitcoin companies.",
+        socials: [
+            { type: "twitter", url: "https://twitter.com/btcnyc" },
+            {
+                type: "nostr",
+                url: "https://primal.net/profile/npub1l7rscwegcz8sxcww2dld7f0jlfuqza5umgyqzhfe6zrhve3jgyxqtd8jlt",
+            },
+            { type: "linkedin", url: "https://www.linkedin.com/in/hunterchris/" },
+        ],
     },
     {
         name: "Alex McShane",
@@ -85,7 +98,7 @@ export const teammates: App.Teammate[] = [
             },
         ],
     },
-    
+
     {
         name: "Nate Burry",
         img: "/images/team/nate.webp",
@@ -94,10 +107,11 @@ export const teammates: App.Teammate[] = [
         socials: [],
     },
     {
-        name: "Sebastian R",
+        name: "Seb R",
         img: "/images/team/stoshi.webp",
-        title: "Senior Analyst",
-        description: "With experience in gaming and traditional VC, Seb is Lightning Ventures Senior Analyst. Reviewing 100% of our deals, memos, data rooms, and all that fun stuff.",
+        title: "Scouting",
+        description:
+            "With experience in traditional VC, Seb reviews 100% of our deals, memos, data rooms, and all that fun stuff.",
         socials: [
             {
                 type: "nostr",
