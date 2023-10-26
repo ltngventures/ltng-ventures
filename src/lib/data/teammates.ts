@@ -27,7 +27,7 @@ export const teammates: App.Teammate[] = [
         img: "/images/team/rockstar.webp",
         title: "Technical Advisor",
         description:
-            "Everyone’s favorite Uncle. BTCPayserver contributor. Philosopher, Cypherpunk, Unifier. Advising Primal, LNBits, Hifumi, and others. Formerly Strike.",
+            "Everyone's favorite Uncle. BTCPayserver contributor. Philosopher, Cypherpunk, Unifier. Advising Primal, LNBits, Hifumi, and others. Formerly Strike.",
         socials: [
             {
                 type: "twitter",
@@ -72,39 +72,34 @@ export const teammates: App.Teammate[] = [
         ],
     },
     {
-        name: "Alex McShane",
+        name: "McShane",
         img: "/images/team/mcshane.webp",
         title: "Venture Partner",
         description:
-            "<p>Alex McShane is a Venture Partner for Lightning Ventures Node 2 Fund. He is also the Director of Programming for The Bitcoin Conference, the largest Bitcoin & finance conference in the world.</p>",
+            "Director of Programming for The Bitcoin Conference. Organizer of the global NOSTR.WORLD conferences. Co-host of the daily Bitcoin Q&A show, MMA fighter, and editor of multiple best-selling books by Saifedean Amnmous.",
         socials: [
             { type: "twitter", url: "https://twitter.com/mcshane_writes" },
             {
                 type: "nostr",
                 url: "https://primal.net/profile/npub16vrkgd28wq6n0h77lqgu8h4fdu0eapxgyj0zqq6ngfvjf2vs3nuq5mp2va",
             },
+            { type: "linkedin", url: "https://www.linkedin.com/in/alex-mcshane-a487a8205/" },
         ],
     },
     {
         name: "Joe Dillon",
         img: "/images/team/joedillon.webp",
         title: "Head of Mining & Energy",
-        description: null,
+        description:
+            "All things mining and energy! Powered up with over 20 years of experience. CEO and Founder of Adakon Energy. Consulting on-site development, with approximately 1 GW of projects under development.",
         socials: [
             { type: "twitter", url: "https://twitter.com/joe_tulane" },
             {
                 type: "nostr",
                 url: "https://primal.net/profile/npub1j0etu2hzy4jnswlu7k5jp5grq55aja2zvstxe9ep4ts0c6k53vqs7rhzem",
             },
+            { type: "linkedin", url: "https://www.linkedin.com/in/josephdillon/" },
         ],
-    },
-
-    {
-        name: "Nate Burry",
-        img: "/images/team/nate.webp",
-        title: "Retired Co-founder",
-        description: null,
-        socials: [],
     },
     {
         name: "Seb",
@@ -123,7 +118,19 @@ export const teammates: App.Teammate[] = [
         name: "Vivek Sen",
         img: "/images/team/vivek.webp",
         title: "Operations",
-        description: null,
-        socials: [{ type: "twitter", url: "https://twitter.com/Vivek4real_" }],
+        description:
+            "Meme warrior and all things social. Growth hacking wiz supporting portfolio companies. In the trenches with operations and back office. Scouting new opportunities. Intakes, triage, and all things prospecting.",
+        socials: [
+            { type: "twitter", url: "https://twitter.com/Vivek4real_" },
+            { type: "linkedin", url: "https://www.linkedin.com/in/vivek-sen-26b313151/" },
+        ],
+    },
+    {
+        name: "Nate Burry",
+        img: "/images/team/nate.webp",
+        title: "Retired Co-founder",
+        description:
+            "Original Co-founder, currently retired and loving life. 20+ years in the music business, including merchandise and music distribution. An avid golfer and a dedicated Bitcoiner.",
+        socials: [],
     },
 ];
