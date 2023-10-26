@@ -11,15 +11,15 @@ export const POST = async ({ request }) => {
     const submissionTime = new Date().toLocaleString("en-US");
     try {
         // Add the submission to the right google sheet
-        const contactWorksheet = spreadsheet.sheetsById["0"];
-        const newRow = await contactWorksheet.addRow({
+        const contactWorksheet = spreadsheet.sheetsById["798756342"];
+        await contactWorksheet.addRow({
             "Submission Date": submissionTime,
             Email: body.email,
         });
 
         return json({ message: "Success" }, { status: 200 });
-    } catch (error: any) {
+    } catch (error: unknown) {
         console.log(error);
-        return json({ error: error.message });
+        return json({ error: error });
     }
 };
