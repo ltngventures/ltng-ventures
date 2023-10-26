@@ -190,6 +190,26 @@ export const investments: App.Investment[] = [
         alt: "zaprite",
     },
     {
+        url: "https://wasabiwallet.app/",
+        img: "/images/portcos/svg/wasabi.svg",
+        alt: "wasabi wallet",
+    },
+    {
+        url: "https://www.fountain.fm/",
+        img: "/images/portcos/svg/fountain.svg",
+        alt: "fountain",
+    },
+    {
+        url: "https://ordinalsbot.com/",
+        img: "/images/portcos/svg/ordinalsbot.svg",
+        alt: "ordinals bot",
+    },
+    {
+        url: "https://satoshi.money",
+        img: "/images/portcos/svg/satoshi.svg",
+        alt: "satoshi",
+    },
+    {
         url: "https://pnkfrg.com/",
         img: "/images/portcos/svg/pnkfrg.svg",
         alt: "pnkfrg studios",
