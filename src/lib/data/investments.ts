@@ -210,6 +210,11 @@ export const investments: App.Investment[] = [
         alt: "satoshi",
     },
     {
+        url: "https://en.osmowallet.com/",
+        img: "/images/portcos/svg/osmo.svg",
+        alt: "osmo",
+    },
+    {
         url: "https://pnkfrg.com/",
         img: "/images/portcos/svg/pnkfrg.svg",
         alt: "pnkfrg studios",
