@@ -190,11 +190,6 @@ export const investments: App.Investment[] = [
         alt: "zaprite",
     },
     {
-        url: "https://wasabiwallet.app/",
-        img: "/images/portcos/svg/wasabi.svg",
-        alt: "wasabi wallet",
-    },
-    {
         url: "https://www.fountain.fm/",
         img: "/images/portcos/svg/fountain.svg",
         alt: "fountain",
