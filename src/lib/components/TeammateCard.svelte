@@ -1,9 +1,9 @@
 <script lang="ts">
-    import BoltMarkIcon from '$lib/elements/icons/BoltMark.svelte';
-    import TeammateSocialLink from '$lib/components/TeammateSocialLink.svelte';
+    import BoltMarkIcon from "$lib/elements/icons/BoltMark.svelte";
+    import TeammateSocialLink from "$lib/components/TeammateSocialLink.svelte";
 
     export let teammate: App.Teammate;
-    export let double: boolean;
+    export let double: boolean = false;
 </script>
 
 <div class="p-4 md:p-8 border hoverCard flex flex-col gap-4 md:gap-8">

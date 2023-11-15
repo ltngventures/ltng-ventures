@@ -23,6 +23,39 @@ export const mike: App.Teammate = {
 
 export const teammates: App.Teammate[] = [
     {
+        name: "Michael Jarmuz",
+        img: "/images/team/muzz.webp",
+        title: "Managing Partner",
+        description:
+            "Mike Jarmuz (Muzz) is Lightning Ventures's Managing Partner and Co-Founder. From punk rock to venture capital, the dude's got some stories. Previously an angel investing in over 1,500 companies, with involvement in two nine-figure Healthcare acquisitions. From owning a bar to slinging apartments or even living like a rolling stone on a tour with the band. A longtime music business veteran, he's done a lot of stuff. A proud advisor to Azteco, Slice, and Cloaked Wireless. Chat him up; he's here to help.",
+        socials: [
+            { type: "twitter", url: "https://twitter.com/MikeJarmuz" },
+            {
+                type: "nostr",
+                url: "https://primal.net/profile/npub1q3kyx6e22fg9npnmgrypu35mdkpsq9zzl3jnzty85l88404sytlstdg0vl",
+            },
+            {
+                type: "linkedin",
+                url: "https://www.linkedin.com/in/mike-jarmuz-573b5658",
+            },
+            {
+                type: "vida",
+                url: "https://vida.page/mikejarmuz",
+            },
+        ],
+    },
+    {
+        name: "Sandeep Goenka",
+        img: "/images/team/sandeep.webp",
+        title: "Partner",
+        description:
+            "Sandeep Goenka is a Bitcoin OG - A trusted Venture Partner and Advisor to our Node 2 Fund. Ex-founder of a top Indian exchange, Bitcoin podcaster, and evangelist. He's a leader in the Bitcoin community, speaking on TV and advising startups. A true Bitcoin believer, he spreads the gospel everywhere, from conferences to YouTube.",
+        socials: [
+            { type: "linkedin", url: "https://www.linkedin.com/in/goenkas/" },
+            { type: "twitter", url: "https://twitter.com/sandeep21btc" },
+        ],
+    },
+    {
         name: "&ldquo;UNCLE&rdquo; R0CKSTAR DEV",
         img: "/images/team/rockstar.webp",
         title: "Technical Advisor",
