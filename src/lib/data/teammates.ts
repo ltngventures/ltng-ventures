@@ -80,7 +80,8 @@ export const teammates: App.Teammate[] = [
         name: "Giacomo Zucco",
         img: "/images/team/giacomo.webp",
         title: "Technical Advisor",
-        description: null,
+        description:
+            "Giacomo is a Bitcoin and Lightning Network protocol consultant/teacher. He spends his time supporting projects that he feels might be relevant to the future of Bitcoin, be it as an educator, consultant, entrepreneur, maximalist, or troll. Previously, he was involved in GreenAddress, AssoBIT, BlockchainLab, and Bitcoin Magazine. Currently, he's advancing Bitcoin via BHB Network, BTCTimes, Relai, BCademy, and Notarify. He is also a Satoshi Rockamoto all-star and does magical things with Bitfinex, Tether, and other fancy folks. Super secret. Shhhhhh.",
         socials: [
             { type: "twitter", url: "https://twitter.com/giacomozucco" },
             {
