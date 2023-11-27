@@ -149,16 +149,26 @@ export const teammates: App.Teammate[] = [
         ],
     },
     {
-        name: "Vivek Sen",
-        img: "/images/team/vivek.webp",
-        title: "Operations",
-        description:
-            "Meme warrior and all things social. Growth hacking wiz supporting portfolio companies. In the trenches with operations and back office. Scouting new opportunities. Intakes, triage, and all things prospecting.",
+        name: "Jeff Gardner",
+        img: "/images/team/jeff.webp",
+        title: "Technical Advisor & Webmaster",
+        description: `Jeff Gardner has been building software and working in high-growth startups for more than 15 years. These days he's focused on Nostr, building and experimenting with all the "other stuff".`,
         socials: [
-            { type: "twitter", url: "https://twitter.com/Vivek4real_" },
-            { type: "linkedin", url: "https://www.linkedin.com/in/vivek-sen-26b313151/" },
+            { type: "twitter", url: "https://twitter.com/erskingardner" },
+            { type: "nostr", url: "https://primal.net/jeffg" },
         ],
     },
+    // {
+    //     name: "Vivek Sen",
+    //     img: "/images/team/vivek.webp",
+    //     title: "Operations",
+    //     description:
+    //         "Meme warrior and all things social. Growth hacking wiz supporting portfolio companies. In the trenches with operations and back office. Scouting new opportunities. Intakes, triage, and all things prospecting.",
+    //     socials: [
+    //         { type: "twitter", url: "https://twitter.com/Vivek4real_" },
+    //         { type: "linkedin", url: "https://www.linkedin.com/in/vivek-sen-26b313151/" },
+    //     ],
+    // },
     {
         name: "Nate Burry",
         img: "/images/team/nate.webp",

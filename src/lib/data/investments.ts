@@ -54,11 +54,11 @@ export const investments: App.Investment[] = [
         img: "/images/portcos/svg/amber-app.svg",
         alt: "amber",
     },
-    {
-        url: "https://betterfuturetech.co/",
-        img: "/images/portcos/svg/BFT-logo-white.svg",
-        alt: "better future",
-    },
+    // {
+    //     url: "https://betterfuturetech.co/",
+    //     img: "/images/portcos/svg/BFT-logo-white.svg",
+    //     alt: "better future",
+    // },
     {
         url: "https://thebitcoincompany.com/",
         img: "/images/portcos/svg/TBC.svg",
