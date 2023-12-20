@@ -1,23 +1,5 @@
 export const events: App.Event[] = [
     {
-        title: "NostrAsia",
-        date: "Nov 1-4 2023",
-        location: "Tokyo, Japan",
-        url: "https://nostr.world",
-    },
-    {
-        title: "Adopting Bitcoin",
-        date: "Nov 7-9 2023",
-        location: "San Salvador, El Salvador",
-        url: "https://adoptingbitcoin.org/2023/",
-    },
-    {
-        title: "Unconfiscatable",
-        date: "Dec 7-8 2023",
-        location: "Las Vegas, Nevada",
-        url: "https://unconfiscatable.com/",
-    },
-    {
         title: "Bitcoin Freedom Festival",
         date: "Jan 18-20 2024",
         location: "Uvita, Costa Rica",
@@ -36,10 +18,40 @@ export const events: App.Event[] = [
         url: "https://adoptingbitcoin.org/capetown-2024",
     },
     {
+        title: "Dubai Oasis",
+        date: "Feb 7-9 2024",
+        location: "Dubai, UAE",
+        url: "https://bitcoin-oasis.com/",
+    },
+    {
+        title: "Bitcoin++",
+        date: "Feb 22-24 2024",
+        location: "Buenos Aires, Argentina",
+        url: "https://bitcoin-oasis.com/",
+    },
+    {
         title: "Bitcoin Atlantis",
         date: "Mar 1-3 2024",
         location: "Maderia Island, Portugal",
         url: "https://bitcoinatlantis.com/",
+    },
+    {
+        title: "Advancing Bitcoin",
+        date: "Mar 14-15 2024",
+        location: "London, UK",
+        url: "https://www.advancingbitcoin.com/",
+    },
+    {
+        title: "Bitcoin Alive",
+        date: "Mar 23 2024",
+        location: "Sydney, Australia",
+        url: "https://bitcoinalive.io/",
+    },
+    {
+        title: "Bitcoin Policy Institute Summit",
+        date: "Apr 9 2024",
+        location: "Washington DC",
+        url: "https://www.btcpolicysummit.org/",
     },
     {
         title: "BitBlockBoom",
@@ -48,9 +60,45 @@ export const events: App.Event[] = [
         url: "https://bitblockboom.com/?coupon=ltngventures",
     },
     {
+        title: "Northern Lightning",
+        date: "Jun 7-8 2024",
+        location: "Berlin, Germany",
+        url: "https://kongerik.et/",
+    },
+    {
         title: "BTC Prague",
         date: "June 13-15 2024",
         location: "Prague, Czech Republic",
         url: "https://www.btcprague.com/",
+    },
+    {
+        title: "Bitcoin 2024",
+        date: "July 25-27 2024",
+        location: "Nashville, Tennessee",
+        url: "https://b.tc/conference/2024",
+    },
+    {
+        title: "Baltic Honeybadger",
+        date: "Aug 24-25 2024",
+        location: "Riga, Latvia",
+        url: "https://baltichoneybadger.com/",
+    },
+    {
+        title: "Pacific Bitcoin",
+        date: "Oct 18-19 2024",
+        location: "Los Angeles, California",
+        url: "https://www.pacificbitcoin.com/",
+    },
+    {
+        title: "TABConf",
+        date: "Oct 23-26 2024",
+        location: "Atlanta, Georgia",
+        url: "https://tabconf.com",
+    },
+    {
+        title: "Plan B Forum",
+        date: "Oct 25-26 2024",
+        location: "Lugano, Switzerland",
+        url: "https://planb.lugano.ch/planb-forum/",
     },
 ];
