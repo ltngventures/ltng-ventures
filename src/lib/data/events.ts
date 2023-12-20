@@ -61,7 +61,7 @@ export const events: App.Event[] = [
     },
     {
         title: "Northern Lightning",
-        date: "Jun 7-8 2024",
+        date: "June 7-8 2024",
         location: "Berlin, Germany",
         url: "https://kongerik.et/",
     },
