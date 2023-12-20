@@ -25,6 +25,11 @@ export const investments: App.Investment[] = [
         alt: "thndr",
     },
     {
+        url: "https://www.getbit.money/",
+        img: "/images/portcos/svg/getbit.svg",
+        alt: "getbit",
+    },
+    {
         url: "https://azte.co/",
         img: "/images/portcos/svg/azteco.svg",
         alt: "azteco",
