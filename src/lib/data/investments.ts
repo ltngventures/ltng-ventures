@@ -156,7 +156,7 @@ export const investments: App.Investment[] = [
     },
     {
         url: "https://www.beaverbitcoin.com/",
-        img: "/images/portcos/svg/beaver_bitcoin.svg",
+        img: "/images/portcos/svg/beaver.svg",
         alt: "beaver bitcoin",
     },
     {
