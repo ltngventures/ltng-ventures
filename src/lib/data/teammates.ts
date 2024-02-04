@@ -22,37 +22,82 @@ export const mike: App.Teammate = {
 };
 
 export const teammates: App.Teammate[] = [
+    // {
+    //     name: "Michael Jarmuz",
+    //     img: "/images/team/muzz.webp",
+    //     title: "Managing Partner",
+    //     description:
+    //         "Mike Jarmuz (Muzz) is Lightning Ventures's Managing Partner and Co-Founder. From punk rock to venture capital, the dude's got some stories. Previously an angel investing in over 1,500 companies, with involvement in two nine-figure Healthcare acquisitions. From owning a bar to slinging apartments or even living like a rolling stone on a tour with the band. A longtime music business veteran, he's done a lot of stuff. A proud advisor to Azteco, Slice, and Cloaked Wireless. Chat him up; he's here to help.",
+    //     socials: [
+    //         { type: "twitter", url: "https://twitter.com/MikeJarmuz" },
+    //         {
+    //             type: "nostr",
+    //             url: "https://primal.net/profile/npub1q3kyx6e22fg9npnmgrypu35mdkpsq9zzl3jnzty85l88404sytlstdg0vl",
+    //         },
+    //         {
+    //             type: "linkedin",
+    //             url: "https://www.linkedin.com/in/mike-jarmuz-573b5658",
+    //         },
+    //         {
+    //             type: "vida",
+    //             url: "https://vida.page/mikejarmuz",
+    //         },
+    //     ],
+    // },
     {
-        name: "Michael Jarmuz",
-        img: "/images/team/muzz.webp",
-        title: "Managing Partner",
+        name: "Chris Hunter",
+        img: "/images/team/chris.webp",
+        title: "Venture Partner",
         description:
-            "Mike Jarmuz (Muzz) is Lightning Ventures's Managing Partner and Co-Founder. From punk rock to venture capital, the dude's got some stories. Previously an angel investing in over 1,500 companies, with involvement in two nine-figure Healthcare acquisitions. From owning a bar to slinging apartments or even living like a rolling stone on a tour with the band. A longtime music business veteran, he's done a lot of stuff. A proud advisor to Azteco, Slice, and Cloaked Wireless. Chat him up; he's here to help.",
+            "Co-Founder: Satoshi Money, Galoy, and Blink (Bitcoin Beach Wallet). Co-creator of The Adopting Bitcoin Summit in El Salvador and an Angel Investor in over 35 Bitcoin companies.",
         socials: [
-            { type: "twitter", url: "https://twitter.com/MikeJarmuz" },
+            { type: "twitter", url: "https://twitter.com/btcnyc" },
             {
                 type: "nostr",
-                url: "https://primal.net/profile/npub1q3kyx6e22fg9npnmgrypu35mdkpsq9zzl3jnzty85l88404sytlstdg0vl",
+                url: "https://primal.net/profile/npub1l7rscwegcz8sxcww2dld7f0jlfuqza5umgyqzhfe6zrhve3jgyxqtd8jlt",
             },
+            { type: "linkedin", url: "https://www.linkedin.com/in/hunterchris/" },
+        ],
+    },
+    {
+        name: "McShane",
+        img: "/images/team/mcshane.webp",
+        title: "Venture Partner",
+        description:
+            "Director of Programming for The Bitcoin Conference. Organizer of the global NOSTR.WORLD conferences. Co-host of the daily Bitcoin Q&A show, MMA fighter, and editor of multiple best-selling books by Saifedean Amnmous.",
+        socials: [
+            { type: "twitter", url: "https://twitter.com/mcshane_writes" },
             {
-                type: "linkedin",
-                url: "https://www.linkedin.com/in/mike-jarmuz-573b5658",
+                type: "nostr",
+                url: "https://primal.net/profile/npub16vrkgd28wq6n0h77lqgu8h4fdu0eapxgyj0zqq6ngfvjf2vs3nuq5mp2va",
             },
-            {
-                type: "vida",
-                url: "https://vida.page/mikejarmuz",
-            },
+            { type: "linkedin", url: "https://www.linkedin.com/in/alex-mcshane-a487a8205/" },
         ],
     },
     {
         name: "Sandeep Goenka",
         img: "/images/team/sandeep.webp",
-        title: "Partner",
+        title: "Venture Partner",
         description:
-            "Sandeep Goenka is a Bitcoin OG - A trusted Venture Partner and Advisor to our Node 2 Fund. Ex-founder of a top Indian exchange, Bitcoin podcaster, and evangelist. He's a leader in the Bitcoin community, speaking on TV and advising startups. A true Bitcoin believer, he spreads the gospel everywhere, from conferences to YouTube.",
+            "Sandeep Goenka is a Bitcoin OG - Ex-founder of a top Indian exchange, Bitcoin podcaster, and evangelist.",
         socials: [
             { type: "linkedin", url: "https://www.linkedin.com/in/goenkas/" },
             { type: "twitter", url: "https://twitter.com/sandeep21btc" },
+        ],
+    },
+    {
+        name: "Joe Dillon",
+        img: "/images/team/joedillon.webp",
+        title: "Head of Mining & Energy",
+        description:
+            "All things mining and energy! Powered up with over 20 years of experience. CEO and Founder of Adakon Energy. Consulting on-site development, with approximately 1 GW of projects under development.",
+        socials: [
+            { type: "twitter", url: "https://twitter.com/joe_tulane" },
+            {
+                type: "nostr",
+                url: "https://primal.net/profile/npub1j0etu2hzy4jnswlu7k5jp5grq55aja2zvstxe9ep4ts0c6k53vqs7rhzem",
+            },
+            { type: "linkedin", url: "https://www.linkedin.com/in/josephdillon/" },
         ],
     },
     {
@@ -91,48 +136,18 @@ export const teammates: App.Teammate[] = [
         ],
     },
     {
-        name: "Chris Hunter",
-        img: "/images/team/chris.webp",
-        title: "Venture Partner",
+        name: "Vivek Patel",
+        img: "/images/team/vivek-patel.webp",
+        title: "Head of Special Projects",
         description:
-            "Co-Founder: Satoshi Money, Galoy, and Blink (Bitcoin Beach Wallet). Co-creator of The Adopting Bitcoin Summit in El Salvador and an Angel Investor in over 35 Bitcoin companies.",
+            "Bitcoin angel investor, formerly with PrimeTrust. Building the next galaxy of the Lightning Ventures universe.",
         socials: [
-            { type: "twitter", url: "https://twitter.com/btcnyc" },
-            {
-                type: "nostr",
-                url: "https://primal.net/profile/npub1l7rscwegcz8sxcww2dld7f0jlfuqza5umgyqzhfe6zrhve3jgyxqtd8jlt",
-            },
-            { type: "linkedin", url: "https://www.linkedin.com/in/hunterchris/" },
-        ],
-    },
-    {
-        name: "McShane",
-        img: "/images/team/mcshane.webp",
-        title: "Venture Partner",
-        description:
-            "Director of Programming for The Bitcoin Conference. Organizer of the global NOSTR.WORLD conferences. Co-host of the daily Bitcoin Q&A show, MMA fighter, and editor of multiple best-selling books by Saifedean Amnmous.",
-        socials: [
-            { type: "twitter", url: "https://twitter.com/mcshane_writes" },
-            {
-                type: "nostr",
-                url: "https://primal.net/profile/npub16vrkgd28wq6n0h77lqgu8h4fdu0eapxgyj0zqq6ngfvjf2vs3nuq5mp2va",
-            },
-            { type: "linkedin", url: "https://www.linkedin.com/in/alex-mcshane-a487a8205/" },
-        ],
-    },
-    {
-        name: "Joe Dillon",
-        img: "/images/team/joedillon.webp",
-        title: "Head of Mining & Energy",
-        description:
-            "All things mining and energy! Powered up with over 20 years of experience. CEO and Founder of Adakon Energy. Consulting on-site development, with approximately 1 GW of projects under development.",
-        socials: [
-            { type: "twitter", url: "https://twitter.com/joe_tulane" },
-            {
-                type: "nostr",
-                url: "https://primal.net/profile/npub1j0etu2hzy4jnswlu7k5jp5grq55aja2zvstxe9ep4ts0c6k53vqs7rhzem",
-            },
-            { type: "linkedin", url: "https://www.linkedin.com/in/josephdillon/" },
+            // { type: "twitter", url: "https://twitter.com/mcshane_writes" },
+            // {
+            //     type: "nostr",
+            //     url: "https://primal.net/profile/npub16vrkgd28wq6n0h77lqgu8h4fdu0eapxgyj0zqq6ngfvjf2vs3nuq5mp2va",
+            // },
+            // { type: "linkedin", url: "https://www.linkedin.com/in/alex-mcshane-a487a8205/" },
         ],
     },
     {
@@ -151,7 +166,7 @@ export const teammates: App.Teammate[] = [
     {
         name: "Jeff Gardner",
         img: "/images/team/jeff.webp",
-        title: "Technical Advisor & Webmaster",
+        title: "Technical Advisor & Developer",
         description: `Jeff Gardner has been building software and working in high-growth startups for more than 15 years. These days he's focused on Nostr, building and experimenting with all the "other stuff".`,
         socials: [
             { type: "twitter", url: "https://twitter.com/erskingardner" },
