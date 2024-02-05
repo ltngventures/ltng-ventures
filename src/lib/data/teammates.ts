@@ -45,6 +45,41 @@ export const teammates: App.Teammate[] = [
     //     ],
     // },
     {
+        name: "&ldquo;UNCLE&rdquo; R0CKSTAR DEV",
+        img: "/images/team/rockstar.webp",
+        title: "Technical Advisor",
+        description:
+            "Everyone's favorite Uncle. BTCPayserver contributor. Philosopher, Cypherpunk, Unifier. Advising Primal, LNBits, Hifumi, and others. Formerly Strike.",
+        socials: [
+            {
+                type: "twitter",
+                url: "https://twitter.com/r0ckstardev",
+            },
+            {
+                type: "nostr",
+                url: "https://primal.net/profile/npub1j8y6tcdfw3q3f3h794s6un0gyc5742s0k5h5s2yqj0r70cpklqeqjavrvg",
+            },
+            {
+                type: "github",
+                url: "https://github.com/rockstardev",
+            },
+        ],
+    },
+    {
+        name: "Giacomo Zucco",
+        img: "/images/team/giacomo.webp",
+        title: "Technical Advisor",
+        description:
+            "Giacomo is a Bitcoin and Lightning Network protocol consultant/teacher. He spends his time supporting projects that he feels might be relevant to the future of Bitcoin, be it as an educator, consultant, entrepreneur, maximalist, or troll. Previously, he was involved in GreenAddress, AssoBIT, BlockchainLab, and Bitcoin Magazine. Currently, he's advancing Bitcoin via BHB Network, BTCTimes, Relai, BCademy, and Notarify. He is also a Satoshi Rockamoto all-star and does magical things with Bitfinex, Tether, and other fancy folks. Super secret. Shhhhhh.",
+        socials: [
+            { type: "twitter", url: "https://twitter.com/giacomozucco" },
+            {
+                type: "nostr",
+                url: "https://primal.net/profile/npub1au23c73cpaq2whtazjf6cdrmvam6nkd4lg928nwmgl78374kn29sq9t53j",
+            },
+        ],
+    },
+    {
         name: "Chris Hunter",
         img: "/images/team/chris.webp",
         title: "Venture Partner",
@@ -86,56 +121,6 @@ export const teammates: App.Teammate[] = [
         ],
     },
     {
-        name: "Joe Dillon",
-        img: "/images/team/joedillon.webp",
-        title: "Head of Mining & Energy",
-        description:
-            "All things mining and energy! Powered up with over 20 years of experience. CEO and Founder of Adakon Energy. Consulting on-site development, with approximately 1 GW of projects under development.",
-        socials: [
-            { type: "twitter", url: "https://twitter.com/joe_tulane" },
-            {
-                type: "nostr",
-                url: "https://primal.net/profile/npub1j0etu2hzy4jnswlu7k5jp5grq55aja2zvstxe9ep4ts0c6k53vqs7rhzem",
-            },
-            { type: "linkedin", url: "https://www.linkedin.com/in/josephdillon/" },
-        ],
-    },
-    {
-        name: "&ldquo;UNCLE&rdquo; R0CKSTAR DEV",
-        img: "/images/team/rockstar.webp",
-        title: "Technical Advisor",
-        description:
-            "Everyone's favorite Uncle. BTCPayserver contributor. Philosopher, Cypherpunk, Unifier. Advising Primal, LNBits, Hifumi, and others. Formerly Strike.",
-        socials: [
-            {
-                type: "twitter",
-                url: "https://twitter.com/r0ckstardev",
-            },
-            {
-                type: "nostr",
-                url: "https://primal.net/profile/npub1j8y6tcdfw3q3f3h794s6un0gyc5742s0k5h5s2yqj0r70cpklqeqjavrvg",
-            },
-            {
-                type: "github",
-                url: "https://github.com/rockstardev",
-            },
-        ],
-    },
-    {
-        name: "Giacomo Zucco",
-        img: "/images/team/giacomo.webp",
-        title: "Technical Advisor",
-        description:
-            "Giacomo is a Bitcoin and Lightning Network protocol consultant/teacher. He spends his time supporting projects that he feels might be relevant to the future of Bitcoin, be it as an educator, consultant, entrepreneur, maximalist, or troll. Previously, he was involved in GreenAddress, AssoBIT, BlockchainLab, and Bitcoin Magazine. Currently, he's advancing Bitcoin via BHB Network, BTCTimes, Relai, BCademy, and Notarify. He is also a Satoshi Rockamoto all-star and does magical things with Bitfinex, Tether, and other fancy folks. Super secret. Shhhhhh.",
-        socials: [
-            { type: "twitter", url: "https://twitter.com/giacomozucco" },
-            {
-                type: "nostr",
-                url: "https://primal.net/profile/npub1au23c73cpaq2whtazjf6cdrmvam6nkd4lg928nwmgl78374kn29sq9t53j",
-            },
-        ],
-    },
-    {
         name: "Vivek Patel",
         img: "/images/team/vivek-patel.webp",
         title: "Head of Special Projects",
@@ -148,6 +133,21 @@ export const teammates: App.Teammate[] = [
             //     url: "https://primal.net/profile/npub16vrkgd28wq6n0h77lqgu8h4fdu0eapxgyj0zqq6ngfvjf2vs3nuq5mp2va",
             // },
             // { type: "linkedin", url: "https://www.linkedin.com/in/alex-mcshane-a487a8205/" },
+        ],
+    },
+    {
+        name: "Joe Dillon",
+        img: "/images/team/joedillon.webp",
+        title: "Head of Mining & Energy",
+        description:
+            "All things mining and energy! Powered up with over 20 years of experience. CEO and Founder of Adakon Energy. Consulting on-site development, with approximately 1 GW of projects under development.",
+        socials: [
+            { type: "twitter", url: "https://twitter.com/joe_tulane" },
+            {
+                type: "nostr",
+                url: "https://primal.net/profile/npub1j0etu2hzy4jnswlu7k5jp5grq55aja2zvstxe9ep4ts0c6k53vqs7rhzem",
+            },
+            { type: "linkedin", url: "https://www.linkedin.com/in/josephdillon/" },
         ],
     },
     {
