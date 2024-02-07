@@ -153,7 +153,7 @@ export const teammates: App.Teammate[] = [
     {
         name: 'Khushboo "Khush" Khullar',
         img: "/images/team/khush.webp",
-        title: "Venture Associate",
+        title: "Venture Partner",
         description:
             "Dr. Khushboo Khullar is a Bitcoin angel investor and an economist with 9+ years of professional experience. She loves being a super connector for early-stage founders of deep-tech startups. She has a PhD in economics and a Masters in Entrepreneurship from The National University of Singapore.",
         socials: [
