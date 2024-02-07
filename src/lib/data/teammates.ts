@@ -70,7 +70,7 @@ export const teammates: App.Teammate[] = [
         img: "/images/team/giacomo.webp",
         title: "Technical Advisor",
         description:
-            "Giacomo is a Bitcoin and Lightning Network protocol consultant/teacher. He spends his time supporting projects that he feels might be relevant to the future of Bitcoin, be it as an educator, consultant, entrepreneur, maximalist, or troll. Previously, he was involved in GreenAddress, AssoBIT, BlockchainLab, and Bitcoin Magazine. Currently, he's advancing Bitcoin via BHB Network, BTCTimes, Relai, BCademy, and Notarify. He is also a Satoshi Rockamoto all-star and does magical things with Bitfinex, Tether, and other fancy folks. Super secret. Shhhhhh.",
+            "Giacomo is a Bitcoin and Lightning Network protocol consultant and teacher. He spends his time supporting projects that he feels are relevant to the future of Bitcoin. An educator, consultant, entrepreneur, maximalist, and legendary troll. Giacomo is also a Satoshi Rockamoto all-star, Bitcoin OG, rad dude, and absolute badass.",
         socials: [
             { type: "twitter", url: "https://twitter.com/giacomozucco" },
             {
@@ -148,6 +148,19 @@ export const teammates: App.Teammate[] = [
                 url: "https://primal.net/profile/npub1j0etu2hzy4jnswlu7k5jp5grq55aja2zvstxe9ep4ts0c6k53vqs7rhzem",
             },
             { type: "linkedin", url: "https://www.linkedin.com/in/josephdillon/" },
+        ],
+    },
+    {
+        name: 'Khushboo "Khush" Khullar',
+        img: "/images/team/khush.webp",
+        title: "Venture Associate",
+        description:
+            "Dr. Khushboo Khullar is a Bitcoin angel investor and an economist with 9+ years of professional experience. She loves being a super connector for early-stage founders of deep-tech startups. She has a PhD in economics and a Masters in Entrepreneurship from The National University of Singapore.",
+        socials: [
+            {
+                type: "linkedin",
+                url: "https://www.linkedin.com/in/dr-khushboo-khullar-38251b43/",
+            },
         ],
     },
     {
