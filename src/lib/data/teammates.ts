@@ -109,17 +109,17 @@ export const teammates: App.Teammate[] = [
             { type: "linkedin", url: "https://www.linkedin.com/in/alex-mcshane-a487a8205/" },
         ],
     },
-    {
-        name: "Sandeep Goenka",
-        img: "/images/team/sandeep.webp",
-        title: "Venture Partner",
-        description:
-            "Sandeep Goenka is a Bitcoin OG - Ex-founder of a top Indian exchange, Bitcoin podcaster, and evangelist.",
-        socials: [
-            { type: "linkedin", url: "https://www.linkedin.com/in/goenkas/" },
-            { type: "twitter", url: "https://twitter.com/sandeep21btc" },
-        ],
-    },
+    // {
+    //     name: "Sandeep Goenka",
+    //     img: "/images/team/sandeep.webp",
+    //     title: "Venture Partner",
+    //     description:
+    //         "Sandeep Goenka is a Bitcoin OG - Ex-founder of a top Indian exchange, Bitcoin podcaster, and evangelist.",
+    //     socials: [
+    //         { type: "linkedin", url: "https://www.linkedin.com/in/goenkas/" },
+    //         { type: "twitter", url: "https://twitter.com/sandeep21btc" },
+    //     ],
+    // },
     {
         name: "Vivek Patel",
         img: "/images/team/vivek-patel.webp",
