@@ -12,6 +12,12 @@ export const events: App.Event[] = [
         url: "https://bitcoinalive.io/",
     },
     {
+        title: "Bitcoin Layer 2 Conference",
+        date: "Apr 8 2024",
+        location: "Hong Kong",
+        url: "https://www.btcl2conf.com/",
+    },
+    {
         title: "Bitcoin Policy Institute Summit",
         date: "Apr 9 2024",
         location: "Washington DC",
@@ -22,6 +28,24 @@ export const events: App.Event[] = [
         date: "Apr 11-15 2024",
         location: "Dallas, Texas",
         url: "https://bitblockboom.com/?coupon=ltngventures",
+    },
+    {
+        title: "Swiss Bitcoin Conference",
+        date: "Apr 25-28 2024",
+        location: "Kreuzlingen, Switzerland",
+        url: "https://swiss-bitcoin-conference.com/",
+    },
+    {
+        title: "Bitcoin Asia Conference",
+        date: "May 9-10 2024",
+        location: "Hong Kong",
+        url: "https://b.tc/conference/asia",
+    },
+    {
+        title: "Bitcoin Seoul Conference",
+        date: "May 29-31 2024",
+        location: "Seoul, South Korea",
+        url: "https://www.bitcoinseoul.kr/en/",
     },
     {
         title: "Northern Lightning",
@@ -46,6 +70,12 @@ export const events: App.Event[] = [
         date: "Aug 24-25 2024",
         location: "Riga, Latvia",
         url: "https://baltichoneybadger.com/",
+    },
+    {
+        title: "Thailand Bitcoin Conference",
+        date: "Sept 14-15 2024",
+        location: "Bangkok, Thailand",
+        url: "https://www.thailandbitcoinconference.com/",
     },
     {
         title: "Pacific Bitcoin",
