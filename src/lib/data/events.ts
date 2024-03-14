@@ -1,41 +1,5 @@
 export const events: App.Event[] = [
     {
-        title: "Bitcoin Freedom Festival",
-        date: "Jan 18-20 2024",
-        location: "Uvita, Costa Rica",
-        url: "https://www.bitcoinfreedomfestival.com",
-    },
-    {
-        title: "BitcoinDay",
-        date: "Jan 20 2024",
-        location: "Naples Florida",
-        url: "https://bitcoinday.io/",
-    },
-    {
-        title: "Adopting Bitcoin (Cape Town)",
-        date: "Jan 26-28 2024",
-        location: "Cape Town, South Africa",
-        url: "https://adoptingbitcoin.org/capetown-2024",
-    },
-    {
-        title: "Dubai Oasis",
-        date: "Feb 7-9 2024",
-        location: "Dubai, UAE",
-        url: "https://bitcoin-oasis.com/",
-    },
-    {
-        title: "Bitcoin++",
-        date: "Feb 22-24 2024",
-        location: "Buenos Aires, Argentina",
-        url: "https://bitcoin-oasis.com/",
-    },
-    {
-        title: "Bitcoin Atlantis",
-        date: "Mar 1-3 2024",
-        location: "Maderia Island, Portugal",
-        url: "https://bitcoinatlantis.com/",
-    },
-    {
         title: "Advancing Bitcoin",
         date: "Mar 14-15 2024",
         location: "London, UK",
