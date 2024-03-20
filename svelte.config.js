@@ -15,6 +15,7 @@ const config = {
         prerender: {
             crawl: true,
             entries: ["*"],
+            handleMissingId: "ignore",
         },
     },
 };
