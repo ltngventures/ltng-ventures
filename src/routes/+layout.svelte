@@ -1,10 +1,16 @@
 <script>
-    import '../app.css';
-    import Footer from '$lib/components/Footer.svelte';
-    import Header from '$lib/components/Header.svelte';
-    import Hero from '$lib/components/Hero.svelte';
-    // import BoltIcon from '$lib/elements/icons/Bolt.svelte';
-    import { page } from '$app/stores';
+    import "../app.css";
+    import Footer from "$lib/components/Footer.svelte";
+    import Header from "$lib/components/Header.svelte";
+    import Hero from "$lib/components/Hero.svelte";
+    import { onMount } from "svelte";
+    import { page } from "$app/stores";
+
+    onMount(() => {
+        const { hash } = document.location;
+        const scrollTo = hash && document.getElementById(hash.slice(1));
+        if (scrollTo) scrollTo.scrollIntoView();
+    });
 </script>
 
 <!-- {#if $page.url.pathname !== '/'}
