@@ -1,5 +1,9 @@
-import { spreadsheet } from "$lib/server/googleSheets";
 import { json } from "@sveltejs/kit";
+import {
+    baserowClient,
+    type BaserowNewsletterItem,
+    newsletterTableId,
+} from "$lib/server/baserow.js";
 
 /**
  * POST a form submission for the newsletter form
@@ -8,18 +12,15 @@ import { json } from "@sveltejs/kit";
 
 export const POST = async ({ request }) => {
     const body = await request.json();
-    const submissionTime = new Date().toLocaleString("en-US");
-    try {
-        // Add the submission to the right google sheet
-        const contactWorksheet = spreadsheet.sheetsById["798756342"];
-        await contactWorksheet.addRow({
-            "Submission Date": submissionTime,
-            Email: body.email,
-        });
-
+    const submissionTime = new Date().toISOString();
+    const data: BaserowNewsletterItem = { field_46: body.email, field_47: submissionTime };
+    const response = await baserowClient.createRow(newsletterTableId, data);
+    if (response.status !== 200) {
+        return json(
+            { error: response.data.error, detail: response.data.detail },
+            { status: response.status }
+        );
+    } else {
         return json({ message: "Success" }, { status: 200 });
-    } catch (error: unknown) {
-        console.log(error);
-        return json({ error: error });
     }
 };

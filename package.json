@@ -40,8 +40,9 @@
     },
     "type": "module",
     "dependencies": {
-        "@sendgrid/mail": "^8.1.1",
+        "@sendgrid/mail": "^8.1.2",
         "@sveltejs/vite-plugin-svelte": "^3.0.2",
+        "axios": "^1.6.8",
         "google-auth-library": "^9.7.0",
         "google-spreadsheet": "^4.1.1",
         "svelte-photoswipe": "^0.0.2"

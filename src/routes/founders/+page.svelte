@@ -19,8 +19,12 @@
         const rawFormData = new FormData(form);
         const formData = Object.fromEntries(rawFormData);
 
-        const miningSituationCheckboxes = document.getElementsByName("miningSituation");
-        const miningNeedsCheckboxes = document.getElementsByName("miningNeeds");
+        const miningSituationCheckboxes = document.getElementsByName(
+            "miningSituation"
+        ) as NodeListOf<HTMLInputElement>;
+        const miningNeedsCheckboxes = document.getElementsByName(
+            "miningNeeds"
+        ) as NodeListOf<HTMLInputElement>;
         const miningSituationValues: string[] = [];
         const miningNeedsValues: string[] = [];
 
@@ -37,6 +41,7 @@
         payload.miningNeeds = miningNeedsValues.join(", ");
         payload.miningSituation = miningSituationValues.join(", ");
         payload.submissionTime = new Date().toLocaleString("en-US");
+        payload.submissionTimeIso = new Date().toISOString();
 
         const jsonData = JSON.stringify(payload);
         fetch("/api/founders", {
