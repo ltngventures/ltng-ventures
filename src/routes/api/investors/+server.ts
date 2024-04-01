@@ -60,7 +60,7 @@ function buildInvestorRow(jsonBody: any) {
         field_89: jsonBody.submissionTimeIso,
         field_90: jsonBody.email,
         field_91: jsonBody.investmentInterest,
-        field_92: jsonBody.syndicateInvestor,
+        field_92: jsonBody.syndicateInvestor as boolean,
         field_93: jsonBody.socialLink,
         field_94: jsonBody.source,
         field_95: jsonBody.previousInvestments,
