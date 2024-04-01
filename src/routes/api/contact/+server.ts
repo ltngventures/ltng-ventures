@@ -1,7 +1,7 @@
 import { EMAIL_RECIPIENTS_GENERAL } from "$lib/data/emailRecipients.js";
-import { spreadsheet } from "$lib/server/googleSheets";
 import { sendgrid } from "$lib/server/sendgrid";
 import { json } from "@sveltejs/kit";
+import { baserowClient, contactTableId, type BaserowContactItem } from "$lib/server/baserow.js";
 
 /**
  * POST a form submission for the contact form
@@ -11,32 +11,42 @@ import { json } from "@sveltejs/kit";
 export const POST = async ({ request }) => {
     const body = await request.json();
     const submissionTime = new Date().toLocaleString("en-US");
+    const submissionTimeIso = new Date().toISOString();
+
+    const data: BaserowContactItem = {
+        field_49: body.name,
+        field_50: body.email,
+        field_51: submissionTimeIso,
+        field_52: body.message,
+    };
+
     try {
-        // Add the submission to the right google sheet
-        const contactWorksheet = spreadsheet.sheetsById["1362471646"];
-        await contactWorksheet.addRow({
-            "Submission Date": submissionTime,
-            Name: body.name,
-            "Email Address": body.email,
-            Message: body.message,
-        });
+        const response = await baserowClient.createRow(contactTableId, data);
 
-        // Send email notification
-        const email = {
-            to: EMAIL_RECIPIENTS_GENERAL,
-            from: "Lightning Ventures Website <hello@ltng.ventures>",
-            templateId: "d-0d44bba65a074d6c87765ac69932b566",
-            dynamicTemplateData: {
-                name: body.name,
-                email: body.email,
-                message: body.message,
-                submissionTime: submissionTime,
-            },
-        };
+        if (response.status !== 200) {
+            return json(
+                { error: response.data.error, detail: response.data.detail },
+                { status: response.status }
+            );
+        } else {
+            // Send email notification
+            const email = {
+                to: EMAIL_RECIPIENTS_GENERAL,
+                from: "Lightning Ventures Website <hello@ltng.ventures>",
+                templateId: "d-0d44bba65a074d6c87765ac69932b566",
+                dynamicTemplateData: {
+                    name: body.name,
+                    email: body.email,
+                    message: body.message,
+                    submissionTime: submissionTime,
+                },
+            };
 
-        await sendgrid.send(email);
+            await sendgrid.send(email);
 
-        return json({ message: "Success" }, { status: 200 });
+            return json({ message: "Success" }, { status: 200 });
+        }
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (error: any) {
         console.log(error);
         return json({ error: error.message });

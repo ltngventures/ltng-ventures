@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { setFormSubmitted, formattedDateForForms } from "$lib/utils/helpers";
+    import { setFormSubmitted } from "$lib/utils/helpers";
 
     let isSubmitting = false;
     let showSuccess = false;
@@ -12,41 +12,41 @@
 
         const form = event.target as HTMLFormElement;
         const formData = new FormData(form);
-        const payload = Object.fromEntries(formData)
+        const payload = Object.fromEntries(formData);
         const jsonData = JSON.stringify(payload);
 
         fetch("/api/contact", {
             method: "POST",
-            headers: { "Accept": "application/json" },
-            body: jsonData
+            headers: { Accept: "application/json" },
+            body: jsonData,
         })
-        .then(() => {
-            form.classList.remove('submitted');
-            form.reset();
-            isSubmitting = false;
-            showSuccess = true;
-            setTimeout(() => {
-                showSuccess = false;
-            }, 3500);
-        })
-        .catch((error) => {
-            isSubmitting = false;
-            showError = true;
-            errorMessage = error;
-        });
+            .then(() => {
+                form.classList.remove("submitted");
+                form.reset();
+                isSubmitting = false;
+                showSuccess = true;
+                setTimeout(() => {
+                    showSuccess = false;
+                }, 3500);
+            })
+            .catch((error) => {
+                isSubmitting = false;
+                showError = true;
+                errorMessage = error;
+            });
     }
-
 </script>
 
 <svelte:head>
     <title>Contact Us | Lightning Ventures</title>
-    <meta name="description" content="Have a general enquiry? Get in touch with the team at Lightning Ventures." />
+    <meta
+        name="description"
+        content="Have a general enquiry? Get in touch with the team at Lightning Ventures."
+    />
 </svelte:head>
 
 <div class="mb-16 pt-32 pb-12 max-w-6xl mx-auto px-8 prose prose-invert md:prose-xl">
-    <h2 class="pageHeader gradientHeader">
-        Get in touch
-    </h2>
+    <h2 class="pageHeader gradientHeader">Get in touch</h2>
     <p>Have a general enquiry? Get in touch and we'll get back to you as soon as we can.</p>
 
     <div>
@@ -58,15 +58,15 @@
         >
             <fieldset class="formGroup">
                 <label for="name">Full name *</label>
-                <input type="text" name="name" id="name" required/>
+                <input type="text" name="name" id="name" required />
             </fieldset>
             <fieldset class="formGroup">
                 <label for="email">Email *</label>
-                <input type="text" name="email" id="email" required/>
+                <input type="text" name="email" id="email" required />
             </fieldset>
             <fieldset class="formGroup md:col-span-2">
                 <label for="role">Message *</label>
-                <textarea name="message" id="message" required/>
+                <textarea name="message" id="message" required />
             </fieldset>
             <fieldset class="formGroup md:col-span-2">
                 <button
