@@ -10,13 +10,13 @@ import { baserowClient, contactTableId, type BaserowContactItem } from "$lib/ser
 
 export const POST = async ({ request }) => {
     const body = await request.json();
-    const submissionTimeFormatted = new Date().toLocaleString("en-US");
-    const submissionTime = new Date().toISOString();
+    const submissionTime = new Date().toLocaleString("en-US");
+    const submissionTimeIso = new Date().toISOString();
 
     const data: BaserowContactItem = {
         field_49: body.name,
         field_50: body.email,
-        field_51: submissionTime,
+        field_51: submissionTimeIso,
         field_52: body.message,
     };
 
@@ -38,7 +38,7 @@ export const POST = async ({ request }) => {
                     name: body.name,
                     email: body.email,
                     message: body.message,
-                    submissionTime: submissionTimeFormatted,
+                    submissionTime: submissionTime,
                 },
             };
 

@@ -57,7 +57,7 @@ export const POST = async ({ request }) => {
 function buildInvestorRow(jsonBody: any) {
     const row: BaserowInvestorItem = {
         field_88: jsonBody.name,
-        field_89: jsonBody.submissionTime,
+        field_89: jsonBody.submissionTimeIso,
         field_90: jsonBody.email,
         field_91: jsonBody.investmentInterest,
         field_92: jsonBody.syndicateInvestor,
@@ -75,7 +75,7 @@ function buildInvestorRow(jsonBody: any) {
 function buildScoutRow(jsonBody: any) {
     const row: BaserowScoutItem = {
         field_99: jsonBody.name,
-        field_100: jsonBody.submissionTime,
+        field_100: jsonBody.submissionTimeIso,
         field_101: jsonBody.email,
         field_102: jsonBody.investmentInterest,
         field_104: jsonBody.socialLink,

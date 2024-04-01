@@ -16,8 +16,12 @@
         const rawFormData = new FormData(form);
         const formData = Object.fromEntries(rawFormData);
 
-        const bitcoinerCheckboxes = document.getElementsByName("bitcoiner");
-        const skillsCheckboxes = document.getElementsByName("skills");
+        const bitcoinerCheckboxes = document.getElementsByName(
+            "bitcoiner"
+        ) as NodeListOf<HTMLInputElement>;
+        const skillsCheckboxes = document.getElementsByName(
+            "skills"
+        ) as NodeListOf<HTMLInputElement>;
         const bitcoinerValues: string[] = [];
         const skillsValues: string[] = [];
 
@@ -28,6 +32,7 @@
         const payload = {
             formName: formData.investmentInterest === "Scout" ? "Scout Intake" : "Investor Intake",
             submissionTime: new Date().toLocaleString("en-US"),
+            submissionTimeIso: new Date().toISOString(),
             name: formData.name,
             email: formData.email,
             investmentInterest: formData.investmentInterest,
