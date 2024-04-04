@@ -213,7 +213,7 @@
 
 <div class="mb-16 pb-12 max-w-6xl mx-auto px-8 prose prose-invert md:prose-xl">
     <div>
-        <h3>Investing with Lightning Ventures</h3>
+        <h3>Join the Lightning Ventures Fold</h3>
         <form
             name="Investor Contact"
             id="investor-contact"
@@ -231,6 +231,7 @@
                     <option value="Syndicate">Invest via the Syndicate</option>
                     <option value="Node 2 Fund">Become an LP in Node 2 Fund</option>
                     <option value="Scout">Submit a Scout Deal</option>
+                    <option value="Learn">Learn more about Lightning Ventures</option>
                     <option value="Other">Other</option>
                 </select>
             </fieldset>
