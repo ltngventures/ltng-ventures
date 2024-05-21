@@ -6,8 +6,8 @@ export const investors: App.Testimonial[] = [
     },
     {
         img: "/images/investors/brad-investor.webp",
-        blurb: "As a well-connected early bitcoiner doing angel investing, I didn't feel the need to participate in Lightning Ventures. However, after watching Mike allocate capital over the years, I've been extremely impressed at his incredible strides in the early-stage bitcoin-only entrepreneur space.",
-        nameAndRole: "Brad Mills, Bitcoiner & Angel Investor",
+        blurb: "As a well-connected early practioner doing angel investing, I didn't feel the need to participate in Lightning Ventures. However, after watching Mike allocate capital over the years, I've been extremely impressed at his incredible strides in the early-stage FOSS-only entrepreneur space.",
+        nameAndRole: "Brad Mills, Free and Open Source Angel Investor",
     },
     {
         img: "/images/investors/delly-investor.webp",

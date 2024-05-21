@@ -79,7 +79,7 @@
     <title>Join Us | Lightning Ventures</title>
     <meta
         name="description"
-        content="Learn how to invest with Lighting Ventures in the best Bitcoin companies."
+        content="Learn how to invest with Lighting Ventures in the best Free & Open Source companies."
     />
 </svelte:head>
 
@@ -93,19 +93,19 @@
         </h2>
 
         <p>
-            The newest flagship fund from Lightning Ventures. The future of Bitcoin venture capital
-            looks bright. Lightning Ventures' <a
+            The newest flagship fund from Lightning Ventures. The future of Free & Open Source
+            venture capital looks bright. Lightning Ventures' <a
                 href="https://venture.angellist.com/funds/node-2-fund">Node 2 Fund</a
-            > is uniquely positioned to invest in the emerging Bitcoin-native landscape, with an exclusive
-            focus on Bitcoin and an extensive network of industry connections. We are committed to supporting
-            and fostering innovation in the Bitcoin ecosystem, aiming to capitalize on the unparalleled
-            opportunities presented by this transformative technology. Lightning Ventures aims to foster
-            innovation in the space, helping to shape the future of finance and technology while creating
-            value for our investors and the broader ecosystem.
+            > is uniquely positioned to invest in the emerging Free & Open Source-native landscape, with
+            an exclusive focus on Free & Open Source and an extensive network of industry connections.
+            We are committed to supporting and fostering innovation in the Free & Open Source ecosystem,
+            aiming to capitalize on the unparalleled opportunities presented by this transformative technology.
+            Lightning Ventures aims to foster innovation in the space, helping to shape the future of
+            finance and technology while creating value for our investors and the broader ecosystem.
         </p>
 
         <p>
-            If you want to invest in the next generation of Bitcoin companies with us, <a
+            If you want to invest in the next generation of Free & Open Source companies with us, <a
                 href="#investor-contact">apply to invest here</a
             >.
         </p>
@@ -124,11 +124,11 @@
         <p>
             In addition to our Node Series funds, Lightning Ventures manages an active syndicate of
             accomplished, talented, and unique investors. This group, which includes founders of
-            successful Bitcoin companies and influential figures in the Bitcoin ecosystem, further
-            enhances our ability to support founders and portfolio companies. This robust network
-            provides value-added resources, mentorship, and connections that can propel our
-            investments. We provide our startups with access to strategic partnerships, market
-            insights, and growth opportunities.
+            successful Free & Open Source companies and influential figures in the Free & Open
+            Source ecosystem, further enhances our ability to support founders and portfolio
+            companies. This robust network provides value-added resources, mentorship, and
+            connections that can propel our investments. We provide our startups with access to
+            strategic partnerships, market insights, and growth opportunities.
         </p>
 
         <p>
@@ -143,9 +143,9 @@
             The Syndicate is managed through Angellist. You can join our syndicate and start
             receiving dealflow for free <a href="#investor-contact"
                 >by filling out this short form</a
-            >. If we're offering a Bitcoin deal you like, and you decide you want to invest, the
-            minimum investment is $1,000. Be impactful, add value and join our network. If you are
-            already on AngelList you can simply
+            >. If we're offering a Free & Open Source deal you like, and you decide you want to
+            invest, the minimum investment is $1,000. Be impactful, add value and join our network.
+            If you are already on AngelList you can simply
             <a href="https://venture.angellist.com/lightningventures/syndicate"
                 >apply to join our syndicate here</a
             >.
@@ -169,7 +169,7 @@
         <p>
             We will share 20% of our carry in that investment with you. Find a great startup! Hook
             us up with them! Earn carry on that deal if we end up investing. Learn about Venture
-            Capital and break into Bitcoin VC with our new program.
+            Capital and break into Free & Open Source VC with our new program.
         </p>
         <p>
             Don't hesitate to <a href="#investor-contact">get in touch</a> below to tell us more about
@@ -188,22 +188,21 @@
         </h2>
 
         <p>
-            Our Node 1 Fund portfolio companies include: Strike, Swan Bitcoin, Azteco, CoinCorner,
-            Breez, Unchained Capital, Relai, Satsback.com, Bold, THNDR Games, Moon, Bitnob, Scarce
-            City, Bitcoin Beach Wallet, Impervious.ai, Start9, Bitstack, DIGTL, Slice, Cloaked
-            Wireless, Beaver Bitcoin, Wavlake, Federated Computer, Geyser, Orange Pill App, Fuji
-            Labs, Vida Global, Jan3, and Ibex.
+            Our Node 1 Fund portfolio companies include: Strike, Swan, Azteco, CoinCorner, Breez,
+            Unchained Capital, Relai, Satsback.com, Bold, THNDR Games, Moon, Bitnob, Scarce City,
+            Beach Wallet, Impervious.ai, Start9, Bitstack, DIGTL, Slice, Cloaked Wireless, Beaver,
+            Wavlake, Federated Computer, Geyser, Orange Pill App, Fuji Labs, Vida Global, Jan3, and
+            Ibex.
         </p>
         <p>
-            This fund invests in Bitcoin companies with an emphasis on Lightning Network technology.
-            This fund has a strict thesis of investing in the Bitcoin ecosystem, with tremendous
-            focus and interest specifically in companies who are building on the Lightning Network.
-            We are investing in passionate, charismatic founders who are building real companies,
-            potentially behemoths and ultimately are on a mission to make a sizable impact in the
-            world and future. Through this fund, we have an opportunity to have an allocation or
-            direct ownership of leading companies in this exciting and lucrative space. <strong
-                >Node 1 Fund is closed.</strong
-            >
+            This fund invests in Free & Open Source companies with an emphasis on Lightning Network
+            technology. This fund has a strict thesis of investing in the Free & Open Source
+            ecosystem, with tremendous focus and interest specifically in companies who are building
+            on the Lightning Network. We are investing in passionate, charismatic founders who are
+            building real companies, potentially behemoths and ultimately are on a mission to make a
+            sizable impact in the world and future. Through this fund, we have an opportunity to
+            have an allocation or direct ownership of leading companies in this exciting and
+            lucrative space. <strong>Node 1 Fund is closed.</strong>
         </p>
         <p>
             Please see <a href="#node-2-fund">Node 2 Fund</a> for current investment opportunities.
@@ -313,11 +312,11 @@
             {:else}
                 <fieldset class="formGroup md:col-span-2">
                     <label for="previousInvestments"
-                        >Have you previously invested in Bitcoin companies? If so, which? *</label
+                        >Have you previously invested in FOSS companies? If so, which? *</label
                     >
                     <textarea name="previousInvestments" id="previousInvestments" required />
                 </fieldset>
-                <fieldset class="formGroup">
+                <!-- <fieldset class="formGroup">
                     <legend class="">Which kind of Bitcoiner are you? *</legend>
                     <span class="text-base italic">Check all that apply</span>
                     <div class="flex flex-row gap-4 items-center">
@@ -344,7 +343,7 @@
                             >I love Crypto, NFTs, Web3, and Blockchain tech</label
                         >
                     </div>
-                </fieldset>
+                </fieldset> -->
                 <fieldset class="formGroup">
                     <legend class="">How can you help our portfolio? *</legend>
                     <span class="text-base italic">Check all that apply</span>

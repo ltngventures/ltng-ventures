@@ -70,7 +70,7 @@ export const teammates: App.Teammate[] = [
         img: "/images/team/giacomo.webp",
         title: "Technical Advisor",
         description:
-            "Giacomo is a Bitcoin and Lightning Network protocol consultant and teacher. He spends his time supporting projects that he feels are relevant to the future of Bitcoin. An educator, consultant, entrepreneur, maximalist, and legendary troll. Giacomo is also a Satoshi Rockamoto all-star, Bitcoin OG, rad dude, and absolute badass.",
+            "Giacomo is a Free & Open Source protocol consultant and teacher. He spends his time supporting projects that he feels are relevant to the future of Free & Open Source. An educator, consultant, entrepreneur, maximalist, and legendary troll. Giacomo is also a Satoshi Rockamoto all-star, Free & Open Source OG, rad dude, and absolute badass.",
         socials: [
             { type: "twitter", url: "https://twitter.com/giacomozucco" },
             {
@@ -84,7 +84,7 @@ export const teammates: App.Teammate[] = [
         img: "/images/team/chris.webp",
         title: "Venture Partner",
         description:
-            "Co-Founder: Satoshi Money, Galoy, and Blink (Bitcoin Beach Wallet). Co-creator of The Adopting Bitcoin Summit in El Salvador and an Angel Investor in over 35 Bitcoin companies.",
+            "Co-Founder: Satoshi Money, Galoy, and Blink. Co-creator of The Adopting Free & Open Source Summit in El Salvador and an Angel Investor in over 35 Free & Open Source companies.",
         socials: [
             { type: "twitter", url: "https://twitter.com/btcnyc" },
             {
@@ -99,7 +99,7 @@ export const teammates: App.Teammate[] = [
         img: "/images/team/mcshane.webp",
         title: "Venture Partner",
         description:
-            "Director of Programming for The Bitcoin Conference. Organizer of the global NOSTR.WORLD conferences. Co-host of the daily Bitcoin Q&A show, MMA fighter, and editor of multiple best-selling books by Saifedean Amnmous.",
+            "Director of Programming for The Free & Open Source Conference. Organizer of the global NOSTR.WORLD conferences. Co-host of the daily Free & Open Source Q&A show, MMA fighter, and editor of multiple best-selling books by Saifedean Amnmous.",
         socials: [
             { type: "twitter", url: "https://twitter.com/mcshane_writes" },
             {
@@ -109,23 +109,12 @@ export const teammates: App.Teammate[] = [
             { type: "linkedin", url: "https://www.linkedin.com/in/alex-mcshane-a487a8205/" },
         ],
     },
-    // {
-    //     name: "Sandeep Goenka",
-    //     img: "/images/team/sandeep.webp",
-    //     title: "Venture Partner",
-    //     description:
-    //         "Sandeep Goenka is a Bitcoin OG - Ex-founder of a top Indian exchange, Bitcoin podcaster, and evangelist.",
-    //     socials: [
-    //         { type: "linkedin", url: "https://www.linkedin.com/in/goenkas/" },
-    //         { type: "twitter", url: "https://twitter.com/sandeep21btc" },
-    //     ],
-    // },
     {
         name: "Vivek Patel",
         img: "/images/team/vivek-patel.webp",
         title: "Head of Special Projects",
         description:
-            "Bitcoin angel investor, formerly with PrimeTrust. Building the next galaxy of the Lightning Ventures universe.",
+            "Free & Open Source angel investor, formerly with PrimeTrust. Building the next galaxy of the Lightning Ventures universe.",
         socials: [
             // { type: "twitter", url: "https://twitter.com/mcshane_writes" },
             // {
@@ -155,7 +144,7 @@ export const teammates: App.Teammate[] = [
         img: "/images/team/khush.webp",
         title: "Venture Partner",
         description:
-            "Dr. Khushboo Khullar is a Bitcoin angel investor and an economist with 9+ years of professional experience. She loves being a super connector for early-stage founders of deep-tech startups. She has a PhD in economics and a Masters in Entrepreneurship from The National University of Singapore.",
+            "Dr. Khushboo Khullar is a Free & Open Source angel investor and an economist with 9+ years of professional experience. She loves being a super connector for early-stage founders of deep-tech startups. She has a PhD in economics and a Masters in Entrepreneurship from The National University of Singapore.",
         socials: [
             {
                 type: "linkedin",
@@ -202,7 +191,7 @@ export const teammates: App.Teammate[] = [
         img: "/images/team/nate.webp",
         title: "Retired Co-founder",
         description:
-            "Original Co-founder, currently retired and loving life. 20+ years in the music business, including merchandise and music distribution. An avid golfer and a dedicated Bitcoiner.",
+            "Original Co-founder, currently retired and loving life. 20+ years in the music business, including merchandise and music distribution. An avid golfer and a dedicated FOSSer.",
         socials: [],
     },
 ];

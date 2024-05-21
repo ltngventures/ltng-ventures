@@ -70,7 +70,7 @@
     <title>Pitch Us | Lightning Ventures</title>
     <meta
         name="description"
-        content="Are you a Bitcoin founder looking for early stage funding? Get in touch with Lightning Ventures."
+        content="Are you a FOSS founder looking for early stage funding? Get in touch with Lightning Ventures."
     />
 </svelte:head>
 
@@ -119,7 +119,7 @@
                     <option value="Gaming / Art">Gaming / Art</option>
                     <option value="Infrastructure">Infrastructure</option>
                     <option value="Lending / Credit">Lending / Credit</option>
-                    <option value="Mining & Energy">Mining & Energy</option>
+                    <!-- <option value="Mining & Energy">Mining & Energy</option> -->
                     <option value="Payments / Rewards">Payments / Rewards</option>
                     <option value="Social">Social</option>
                     <option value="Wallets">Wallets</option>
