@@ -39,11 +39,11 @@ export const investments: App.Investment[] = [
         img: "/images/portcos/svg/bitnob.svg",
         alt: "bitnob",
     },
-    {
-        url: "https://bbw.sv/",
-        img: "/images/portcos/svg/blink.svg",
-        alt: "blink",
-    },
+    // {
+    //     url: "https://bbw.sv/",
+    //     img: "/images/portcos/svg/blink.svg",
+    //     alt: "blink",
+    // },
     {
         url: "https://geyser.fund/",
         img: "/images/portcos/svg/geyser.svg",
@@ -64,11 +64,11 @@ export const investments: App.Investment[] = [
     //     img: "/images/portcos/svg/BFT-logo-white.svg",
     //     alt: "better future",
     // },
-    {
-        url: "https://thebitcoincompany.com/",
-        img: "/images/portcos/svg/TBC.svg",
-        alt: "the bitcoin company",
-    },
+    // {
+    //     url: "https://thebitcoincompany.com/",
+    //     img: "/images/portcos/svg/TBC.svg",
+    //     alt: "the bitcoin company",
+    // },
     {
         url: "https://www.bitstack-app.com/en",
         img: "/images/portcos/svg/bitstack.svg",

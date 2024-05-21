@@ -6,18 +6,18 @@
     <div class="px-4 md:px-8 max-w-6xl mx-auto w-full mt-24 mb-12 md:my-32">
         <div class="tracking-tight text-2xl md:text-5xl text-ltngWhite font-bold mb-6">
             <p>
-                <span class="gradientHeader font-bold">Building on Bitcoin?</span><br />We can't
-                wait to hear more.
+                <span class="gradientHeader font-bold">Building on Free & Open Source?</span><br
+                />We can't wait to hear more.
             </p>
         </div>
         <div class="prose prose-2xl prose-invert font-medium">
             <p>
-                Lightning Ventures is actively seeking companies who are building on Bitcoin or who
-                are involved in the Bitcoin mining and/or energy space.
+                Lightning Ventures is actively seeking companies who are building on Free & Open
+                Source or who are involved in the Free & Open Source energy space.
             </p>
             <p>
                 If you are a startup or early-stage company that is building on or integrating with
-                Bitcoin or the Lightning Network please <a href="#founders-intake">fill this out</a>
+                Free & Open Source please <a href="#founders-intake">fill this out</a>
                 so we can learn more.
             </p>
         </div>

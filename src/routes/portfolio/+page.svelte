@@ -1,12 +1,15 @@
 <script lang="ts">
-    import PortfolioGrid from '$lib/components/PortfolioGrid.svelte';
-    import Carousel from '$lib/components/Carousel.svelte';
-    import { founders } from '$lib/data/founders';
+    import PortfolioGrid from "$lib/components/PortfolioGrid.svelte";
+    import Carousel from "$lib/components/Carousel.svelte";
+    import { founders } from "$lib/data/founders";
 </script>
 
 <svelte:head>
     <title>Investments | Lightning Ventures</title>
-    <meta name="description" content="A list of all the cutting edge Bitcoin companies that Lightning Ventures has invested in." />
+    <meta
+        name="description"
+        content="A list of all the cutting edge Free & Open Source companies that Lightning Ventures has invested in."
+    />
 </svelte:head>
 
 <div class="mb-16 pt-24 pb-12 bg-slate-50/30 innerShadow">

@@ -1,7 +1,7 @@
 export const founders: App.Testimonial[] = [
     {
         img: "/images/founders/matt-start9.webp",
-        blurb: "Lightning Venture's vision of a future where Bitcoin and Lightning are central to global monetary systems and finance aligns with our own.",
+        blurb: "Lightning Venture's vision of a future where Free and Open Source software are central to global monetary systems and finance aligns with our own.",
         nameAndRole: "Matt Hill, CEO & Co-founder Start9 Labs",
     },
     {
@@ -31,7 +31,7 @@ export const founders: App.Testimonial[] = [
     },
     {
         img: "/images/founders/akin-azteco.webp",
-        blurb: "Mike Jarmuz and Lightning Ventures are the future of Bitcoin Venture Capital firms.",
+        blurb: "Mike Jarmuz and Lightning Ventures are the future of Free and Open Source Venture Capital firms.",
         nameAndRole: "Akin Fernandez, Co-founder Azteco",
     },
     {
@@ -41,7 +41,7 @@ export const founders: App.Testimonial[] = [
     },
     {
         img: "/images/founders/noah-vida.webp",
-        blurb: "Mike is among the most well-connected investors in the Bitcoin space. Collaborating with him has been a remarkable experience, as he and LV bring the same passion typically found in fellow founders.",
+        blurb: "Mike is among the most well-connected investors in the Free and Open Source space. Collaborating with him has been a remarkable experience, as he and LV bring the same passion typically found in fellow founders.",
         nameAndRole: "Noah Hayes, CPO & Co-founder Vida",
     },
     {

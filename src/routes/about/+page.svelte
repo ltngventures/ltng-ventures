@@ -5,7 +5,7 @@
     <title>About Us | Lightning Ventures</title>
     <meta
         name="description"
-        content="Learn more about Lightning Ventures unique approach to investing in Bitcoin companies."
+        content="Learn more about Lightning Ventures unique approach to investing in Free & Open Source companies."
     />
 </svelte:head>
 
@@ -13,22 +13,22 @@
     <span></span>
     <h3 class="">Our Vision</h3>
     <p>
-        Our mission is to support and accelerate the growth of innovative Bitcoin-native companies
-        through which the future of finance and technology is being built. We invest <strong
+        Our mission is to support and accelerate the growth of innovative Free & Open Source-native
+        companies through which the future of finance and technology is being built. We invest <strong
             >exclusively</strong
         >
-        in startups focused on Bitcoin and its ecosystem, <strong>completely ignoring</strong> other
-        cryptocurrencies, tokens, or coin offerings.
+        in startups focused on Free & Open Source and its ecosystem,
+        <strong>completely ignoring</strong> other cryptocurrencies, tokens, or coin offerings.
     </p>
 
     <p>
-        Everyone who has sought to truly understand Bitcoin knows that that the rabbit hole is deep.
-        If you're interested in going deeper on Bitcoin and why we've built our entire investment
-        strategy around it, you'll find more below.
+        Everyone who has sought to truly understand Free & Open Source knows that that the rabbit
+        hole is deep. If you're interested in going deeper on Free & Open Source and why we've built
+        our entire investment strategy around it, you'll find more below.
     </p>
 
     <ul class="md:prose-lg">
-        <li><a href="#bitcoins-promise">Bitcoin's Promise</a></li>
+        <li><a href="#foss-promise">Free & Open Source's Promise</a></li>
         <li><a href="#our-investment-thesis">Our Investment Thesis</a></li>
         <li><a href="#investment-focus">Investment Focus</a></li>
         <li><a href="#market-opportunity">The Market Opportunity</a></li>
@@ -39,21 +39,22 @@
 <div class="mb-4 pt-4 pb-12 bg-btcOrange/20 innerShadow">
     <div class="max-w-6xl mx-auto px-4 md:px-8 mt-8 prose prose-invert md:prose-xl">
         <h2
-            id="bitcoins-promise"
+            id="foss-promise"
             class="tracking-tight pb-1 mb-12 text-3xl md:text-4xl text-ltngWhite font-bold gradientHeader inline-block scroll-mt-24"
         >
-            Bitcoin's Promise
+            Free & Open Source's Promise
         </h2>
 
         <p>
-            Bitcoin is the next logical progression in our monetary evolution, fundamentally
-            re-architecting the traditional monetary network to become more efficient, cheap, and
-            open. This culminates in history's most secure, resilient, censorship-resistant monetary
-            network. With its robust security, irreversible transactions, permissionless nature,
-            distributed network, and capacity for instant borderless micropayments, Bitcoin is
-            disrupting the global financial system and redefining property rights while financially
-            empowering users worldwide and has already become essential in many emerging markets,
-            serving as a store of value and a medium of exchange.
+            Free & Open Source is the next logical progression in our monetary evolution,
+            fundamentally re-architecting the traditional monetary network to become more efficient,
+            cheap, and open. This culminates in history's most secure, resilient,
+            censorship-resistant monetary network. With its robust security, irreversible
+            transactions, permissionless nature, distributed network, and capacity for instant
+            borderless micropayments, Bitcoin is disrupting the global financial system and
+            redefining property rights while financially empowering users worldwide and has already
+            become essential in many emerging markets, serving as a store of value and a medium of
+            exchange.
         </p>
 
         <p>
@@ -167,8 +168,8 @@
         <p>
             Major financial institutions, corporations, and investors increasingly recognize
             Bitcoin's value as a long-term investment and store of value, driving more capital into
-            the ecosystem. Consider the following stats for Bitcoin startups in 2022, deep in a bear
-            market driven by the fastest tightning cycle in over 40 years:
+            the ecosystem. Consider the following stats for Free & Open Source startups in 2022,
+            deep in a bear market driven by the fastest tightning cycle in over 40 years:
         </p>
         <ul>
             <li>The number of funding rounds increased by over 50%</li>
@@ -183,8 +184,8 @@
         </ul>
 
         <p>
-            We're still early. Growth in founding and funding of Bitcoin startups continues is
-            accelerating. <a href="/investors">Ready to invest?</a>
+            We're still early. Growth in founding and funding of Free & Open Source startups
+            continues is accelerating. <a href="/investors">Ready to invest?</a>
         </p>
     </div>
 </div>
@@ -201,10 +202,10 @@
         <p>
             The General Partners of the <a href="https://venture.angellist.com/funds/node-2-fund"
                 >Node 2 Fund</a
-            >, Mike Jarmuz and Sandeep Goenka, bring unique expertise and dedication to the Bitcoin
-            ecosystem. Their elite team of Advisors and supporting staff bring unmatched hustle and
-            unwavering commitment to Bitcoin. This positions Lightning Ventures as a strong force in
-            supporting Bitcoin startups. Have a general question?
+            >, Mike Jarmuz brings unique expertise and dedication to the Bitcoin ecosystem.
+            Lightning Ventures elite team of Advisors and supporting staff bring unmatched hustle
+            and unwavering commitment to Bitcoin. This positions Lightning Ventures as a strong
+            force in supporting Bitcoin startups. Have a general question?
             <a href="/contact">Get in touch</a>.
         </p>
 
@@ -221,19 +222,6 @@
             wife, Anastasia, while their ragdoll cat Cannoli patiently awaits their return.
         </p>
 
-        <p>
-            <strong>Sandeep Goenka</strong> is an experienced Bitcoin entrepreneur and investor. He co-founded
-            one of India&rsquo;s first Bitcoin exchanges, operating in over 130 countries. Sandeep is
-            a Certified Bitcoin Professional who completed Jimmy Song&rsquo;s Programming Bitcoin course.
-            He served as President of India's Blockchain and Cryptocurrency Committee, leading the industry&rsquo;s
-            interactions with government regulators. Sandeep is an active angel investor in Bitcoin startups
-            and an evangelist for Bitcoin adoption. He has spoken at events for YPO chapters across the
-            globe to share his expertise. Sandeep has been profiled in Forbes India magazine and frequently
-            appears on Indian television as a bitcoin expert. He leverages his extensive network in the
-            Bitcoin industry to source promising early-stage investments. Sandeep is passionate about
-            identifying entrepreneurs building the future of finance and brings hands-on experience scaling
-            a Bitcoin business across global markets.
-        </p>
         <div class="w-full flex flex-row items-center justify-center pt-10">
             <a
                 href="/team"

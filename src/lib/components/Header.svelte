@@ -1,8 +1,8 @@
 <script lang="ts">
-    import BoltMarkOrangeDarkIcon from '$lib/elements/icons/BoltMarkOrangeDark.svelte';
-    import BarsIcon from '$lib/elements/icons/Bars.svelte';
-    import { Menu, MenuButton, MenuItems, MenuItem } from '@rgossiaux/svelte-headlessui';
-    import { page } from '$app/stores';
+    import BoltMarkOrangeDarkIcon from "$lib/elements/icons/BoltMarkOrangeDark.svelte";
+    import BarsIcon from "$lib/elements/icons/Bars.svelte";
+    import { Menu, MenuButton, MenuItems, MenuItem } from "@rgossiaux/svelte-headlessui";
+    import { page } from "$app/stores";
 </script>
 
 <div
@@ -24,9 +24,9 @@
         <nav
             class="hidden md:flex flex-row items-center gap-4 justify-center font-josefin-sans-italic text-base uppercase font-semibold text-btcOrange"
         >
-            <a href="/about" class="hover {$page.url.pathname === '/about' ? 'active' : ''}">
+            <!-- <a href="/about" class="hover {$page.url.pathname === '/about' ? 'active' : ''}">
                 About
-            </a>
+            </a> -->
             <a
                 href="/portfolio"
                 class="hover {$page.url.pathname === '/portfolio' ? 'active' : ''}"
@@ -55,9 +55,9 @@
             <MenuItems
                 class="absolute top-10 right-0 font-josefin-sans-italic uppercase bold text-btcOrange bg-slate-900 p-6 border border-slate-900 shadow-md flex flex-col gap-4 z-50"
             >
-                <MenuItem>
+                <!-- <MenuItem>
                     <a href="/about" class="navLink">About</a>
-                </MenuItem>
+                </MenuItem> -->
                 <MenuItem>
                     <a href="/portfolio" class="navLink">Portfolio</a>
                 </MenuItem>
