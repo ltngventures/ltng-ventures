@@ -26,6 +26,7 @@ export default {
                 beach1: "url('/images/hero/beach1.webp')",
                 field1: "url('/images/hero/field1.webp')",
                 patagonia1: "url('/images/hero/patagonia1.webp')",
+                "mt-fuji": "url('/images/hero/mt-fuji.png')",
                 "mt-fuji240": "url('/images/hero/sunset-mt-fuji-2-a40.webp')",
                 "mt-fuji240mobile": "url('/images/hero/sunset-mt-fuji-2-a40-mobile.webp')",
             },
