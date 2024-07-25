@@ -4,7 +4,7 @@ import type { AxiosResponse } from "axios";
 
 // Founder intake form
 // https://baserow.ltng.ventures/database/2/table/3/3
-export const founderTableId = 2;
+export const founderTableId = 3;
 export type BaserowFounderItem = {
     field_8: string; // Name
     field_9: string; // Submission Date
