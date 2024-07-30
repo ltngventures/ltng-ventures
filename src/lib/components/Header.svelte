@@ -1,13 +1,18 @@
 <script lang="ts">
-    import BoltMarkOrangeDarkIcon from '$lib/elements/icons/BoltMarkOrangeDark.svelte';
-    import BarsIcon from '$lib/elements/icons/Bars.svelte';
-    import { Menu, MenuButton, MenuItems, MenuItem } from '@rgossiaux/svelte-headlessui';
-    import { page } from '$app/stores';
+    import BoltMarkOrangeDarkIcon from "$lib/elements/icons/BoltMarkOrangeDark.svelte";
+    import BarsIcon from "$lib/elements/icons/Bars.svelte";
+    import { Menu, MenuButton, MenuItems, MenuItem } from "@rgossiaux/svelte-headlessui";
+    import { page } from "$app/stores";
 </script>
 
 <div
     class="w-full bg-slate-900/20 py-2 backdrop-blur-lg border-b border-slate-900 fixed top-0 left-1/2 -translate-x-1/2 z-40"
 >
+    <div class="-mt-2 mb-2 left-0 w-full py-2 text-center bg-btcOrange z-10 font-bold text-white">
+        Check out <a class="border-b hover:border-dashed" href="https://thunderfunder.com"
+            >Thunder Funder</a
+        >, our new equity crowdfunding platform.
+    </div>
     <div class="flex flex-row gap-6 items-center justify-between max-w-6xl mx-auto px-4 md:px-8">
         <div class="flex flex-row items-end">
             <!-- <img src="/images/ltng.png" alt="Lightning Ventures" class="w-[133px] h-[74px]" /> -->
