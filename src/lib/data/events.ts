@@ -18,10 +18,22 @@ export const events: App.Event[] = [
         url: "https://bitcoinconference.tokyo/en/",
     },
     {
+        title: "Bitcoin Oasis 2.1",
+        date: "Oct 3-4 2024",
+        location: "Amsterdam, Netherlands",
+        url: "https://tabconf.com",
+    },
+    {
         title: "Bitcoin Amsterdam",
         date: "Oct 9-10 2024",
         location: "Amsterdam, Netherlands",
         url: "https://tabconf.com",
+    },
+    {
+        title: "bitcoin++ mints ecash",
+        date: "Oct 11-13 2024",
+        location: "Amsterdam, Netherlands",
+        url: "https://btcpp.dev",
     },
     {
         title: "TABConf",
@@ -34,6 +46,12 @@ export const events: App.Event[] = [
         date: "Oct 25-26 2024",
         location: "Lugano, Switzerland",
         url: "https://planb.lugano.ch/planb-forum/",
+    },
+    {
+        title: "La Bitconf",
+        date: "Nov 1-2 2024",
+        location: "Buenos Aires, Argentina",
+        url: "https://labitconf.com",
     },
     {
         title: "Adopting Bitcoin",
@@ -58,6 +76,12 @@ export const events: App.Event[] = [
         date: "Jan 24-25 2024",
         location: "Cape Town, South Africa",
         url: "https://za25.adoptingbitcoin.org",
+    },
+    {
+        title: "Bitcoin Freedom Festival",
+        date: "Fed 13-15 2024",
+        location: "Uvita, Costa Rica",
+        url: "https://www.bitcoinfreedomfestival.com",
     },
     {
         title: "BitBlockBoom",
