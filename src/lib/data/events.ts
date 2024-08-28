@@ -73,19 +73,19 @@ export const events: App.Event[] = [
     },
     {
         title: "Adopting Bitcoin, Cape Town",
-        date: "Jan 24-25 2024",
+        date: "Jan 24-25 2025",
         location: "Cape Town, South Africa",
         url: "https://za25.adoptingbitcoin.org",
     },
     {
         title: "Bitcoin Freedom Festival",
-        date: "Fed 13-15 2024",
+        date: "Fed 13-15 2025",
         location: "Uvita, Costa Rica",
         url: "https://www.bitcoinfreedomfestival.com",
     },
     {
         title: "BitBlockBoom",
-        date: "Apr 3-6 2024",
+        date: "Apr 3-6 2025",
         location: "Dallas, Texas",
         url: "https://bitblockboom.com",
     },
