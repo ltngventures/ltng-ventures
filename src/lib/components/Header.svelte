@@ -15,13 +15,8 @@
     </div>
     <div class="flex flex-row gap-6 items-center justify-between max-w-6xl mx-auto px-4 md:px-8">
         <div class="flex flex-row items-end">
-            <!-- <img src="/images/ltng.png" alt="Lightning Ventures" class="w-[133px] h-[74px]" /> -->
-            <BoltMarkOrangeDarkIcon klass="w-12 h-16" />
-            <a
-                href="/"
-                class="text-btcOrange font-bold tracking-tight uppercase leading-none font-josefin-sans-italic text-2xl"
-            >
-                Lightning<br />Ventures
+            <a href="/">
+                <img src="/images/ltng.png" alt="Lightning Ventures" class="w-[200px] h-[76px]" />
             </a>
         </div>
 
