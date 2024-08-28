@@ -45,6 +45,21 @@ export const teammates: App.Teammate[] = [
     //     ],
     // },
     {
+        name: "Vivek Patel",
+        img: "/images/team/vivek-patel.webp",
+        title: "Chief Operating Officer",
+        description:
+            "Bitcoin angel investor, formerly with PrimeTrust. Building the next galaxy of the Lightning Ventures universe.",
+        socials: [
+            // { type: "twitter", url: "https://twitter.com/mcshane_writes" },
+            // {
+            //     type: "nostr",
+            //     url: "https://primal.net/profile/npub16vrkgd28wq6n0h77lqgu8h4fdu0eapxgyj0zqq6ngfvjf2vs3nuq5mp2va",
+            // },
+            // { type: "linkedin", url: "https://www.linkedin.com/in/alex-mcshane-a487a8205/" },
+        ],
+    },
+    {
         name: "&ldquo;UNCLE&rdquo; R0CKSTAR DEV",
         img: "/images/team/rockstar.webp",
         title: "Technical Advisor",
@@ -80,6 +95,19 @@ export const teammates: App.Teammate[] = [
         ],
     },
     {
+        name: 'Khushboo "Khush" Khullar',
+        img: "/images/team/khush.webp",
+        title: "Venture Partner",
+        description:
+            "Dr. Khushboo Khullar is a Bitcoin angel investor and an economist with 9+ years of professional experience. She loves being a super connector for early-stage founders of deep-tech startups. She has a PhD in economics and a Masters in Entrepreneurship from The National University of Singapore.",
+        socials: [
+            {
+                type: "linkedin",
+                url: "https://www.linkedin.com/in/dr-khushboo-khullar-38251b43/",
+            },
+        ],
+    },
+    {
         name: "Chris Hunter",
         img: "/images/team/chris.webp",
         title: "Venture Partner",
@@ -109,58 +137,14 @@ export const teammates: App.Teammate[] = [
             { type: "linkedin", url: "https://www.linkedin.com/in/alex-mcshane-a487a8205/" },
         ],
     },
-    // {
-    //     name: "Sandeep Goenka",
-    //     img: "/images/team/sandeep.webp",
-    //     title: "Venture Partner",
-    //     description:
-    //         "Sandeep Goenka is a Bitcoin OG - Ex-founder of a top Indian exchange, Bitcoin podcaster, and evangelist.",
-    //     socials: [
-    //         { type: "linkedin", url: "https://www.linkedin.com/in/goenkas/" },
-    //         { type: "twitter", url: "https://twitter.com/sandeep21btc" },
-    //     ],
-    // },
     {
-        name: "Vivek Patel",
-        img: "/images/team/vivek-patel.webp",
-        title: "Head of Special Projects",
-        description:
-            "Bitcoin angel investor, formerly with PrimeTrust. Building the next galaxy of the Lightning Ventures universe.",
+        name: "Jeff Gardner",
+        img: "/images/team/jeff.webp",
+        title: "Technical Advisor & Developer",
+        description: `Jeff Gardner has been building software and working in high-growth startups for more than 15 years. These days he's focused on Nostr, building and experimenting with all the "other stuff".`,
         socials: [
-            // { type: "twitter", url: "https://twitter.com/mcshane_writes" },
-            // {
-            //     type: "nostr",
-            //     url: "https://primal.net/profile/npub16vrkgd28wq6n0h77lqgu8h4fdu0eapxgyj0zqq6ngfvjf2vs3nuq5mp2va",
-            // },
-            // { type: "linkedin", url: "https://www.linkedin.com/in/alex-mcshane-a487a8205/" },
-        ],
-    },
-    {
-        name: "Joe Dillon",
-        img: "/images/team/joedillon.webp",
-        title: "Head of Mining & Energy",
-        description:
-            "All things mining and energy! Powered up with over 20 years of experience. CEO and Founder of Adakon Energy. Consulting on-site development, with approximately 1 GW of projects under development.",
-        socials: [
-            { type: "twitter", url: "https://twitter.com/joe_tulane" },
-            {
-                type: "nostr",
-                url: "https://primal.net/profile/npub1j0etu2hzy4jnswlu7k5jp5grq55aja2zvstxe9ep4ts0c6k53vqs7rhzem",
-            },
-            { type: "linkedin", url: "https://www.linkedin.com/in/josephdillon/" },
-        ],
-    },
-    {
-        name: 'Khushboo "Khush" Khullar',
-        img: "/images/team/khush.webp",
-        title: "Venture Partner",
-        description:
-            "Dr. Khushboo Khullar is a Bitcoin angel investor and an economist with 9+ years of professional experience. She loves being a super connector for early-stage founders of deep-tech startups. She has a PhD in economics and a Masters in Entrepreneurship from The National University of Singapore.",
-        socials: [
-            {
-                type: "linkedin",
-                url: "https://www.linkedin.com/in/dr-khushboo-khullar-38251b43/",
-            },
+            { type: "twitter", url: "https://twitter.com/erskingardner" },
+            { type: "nostr", url: "https://primal.net/jeffg" },
         ],
     },
     {
@@ -175,34 +159,5 @@ export const teammates: App.Teammate[] = [
                 url: "https://primal.net/profile/npub1nc3tcnvz8k6ldmwu8s3mxus25lnh54h8a0csk25hlrl3fynedeusqqexyn",
             },
         ],
-    },
-    {
-        name: "Jeff Gardner",
-        img: "/images/team/jeff.webp",
-        title: "Technical Advisor & Developer",
-        description: `Jeff Gardner has been building software and working in high-growth startups for more than 15 years. These days he's focused on Nostr, building and experimenting with all the "other stuff".`,
-        socials: [
-            { type: "twitter", url: "https://twitter.com/erskingardner" },
-            { type: "nostr", url: "https://primal.net/jeffg" },
-        ],
-    },
-    // {
-    //     name: "Vivek Sen",
-    //     img: "/images/team/vivek.webp",
-    //     title: "Operations",
-    //     description:
-    //         "Meme warrior and all things social. Growth hacking wiz supporting portfolio companies. In the trenches with operations and back office. Scouting new opportunities. Intakes, triage, and all things prospecting.",
-    //     socials: [
-    //         { type: "twitter", url: "https://twitter.com/Vivek4real_" },
-    //         { type: "linkedin", url: "https://www.linkedin.com/in/vivek-sen-26b313151/" },
-    //     ],
-    // },
-    {
-        name: "Nate Burry",
-        img: "/images/team/nate.webp",
-        title: "Retired Co-founder",
-        description:
-            "Original Co-founder, currently retired and loving life. 20+ years in the music business, including merchandise and music distribution. An avid golfer and a dedicated Bitcoiner.",
-        socials: [],
-    },
+    }
 ];
