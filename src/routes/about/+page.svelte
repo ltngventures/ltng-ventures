@@ -199,10 +199,10 @@
         </h2>
 
         <p>
-            The General Partners of the <a href="https://venture.angellist.com/funds/node-2-fund"
+            The General Partner of the <a href="https://venture.angellist.com/funds/node-2-fund"
                 >Node 2 Fund</a
-            >, Mike Jarmuz and Sandeep Goenka, bring unique expertise and dedication to the Bitcoin
-            ecosystem. Their elite team of Advisors and supporting staff bring unmatched hustle and
+            >, Mike Jarmuz brings unique expertise and dedication to the Bitcoin
+            ecosystem. With elite team of Advisors and supporting staff bring unmatched hustle and
             unwavering commitment to Bitcoin. This positions Lightning Ventures as a strong force in
             supporting Bitcoin startups. Have a general question?
             <a href="/contact">Get in touch</a>.
@@ -221,19 +221,6 @@
             wife, Anastasia, while their ragdoll cat Cannoli patiently awaits their return.
         </p>
 
-        <p>
-            <strong>Sandeep Goenka</strong> is an experienced Bitcoin entrepreneur and investor. He co-founded
-            one of India&rsquo;s first Bitcoin exchanges, operating in over 130 countries. Sandeep is
-            a Certified Bitcoin Professional who completed Jimmy Song&rsquo;s Programming Bitcoin course.
-            He served as President of India's Blockchain and Cryptocurrency Committee, leading the industry&rsquo;s
-            interactions with government regulators. Sandeep is an active angel investor in Bitcoin startups
-            and an evangelist for Bitcoin adoption. He has spoken at events for YPO chapters across the
-            globe to share his expertise. Sandeep has been profiled in Forbes India magazine and frequently
-            appears on Indian television as a bitcoin expert. He leverages his extensive network in the
-            Bitcoin industry to source promising early-stage investments. Sandeep is passionate about
-            identifying entrepreneurs building the future of finance and brings hands-on experience scaling
-            a Bitcoin business across global markets.
-        </p>
         <div class="w-full flex flex-row items-center justify-center pt-10">
             <a
                 href="/team"
