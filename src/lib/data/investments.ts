@@ -140,9 +140,9 @@ export const investments: App.Investment[] = [
         alt: "slice",
     },
     {
-        url: "https://app.getcurrent.io/",
-        img: "/images/portcos/svg/current.svg",
-        alt: "current",
+        url: "https://bipa.app/",
+        img: "/images/portcos/bipa.png",
+        alt: "bipa",
     },
     {
         url: "https://start9.com/",
