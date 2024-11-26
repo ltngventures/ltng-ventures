@@ -14,7 +14,7 @@ export const events: App.Event[] = [
     {
         title: "Bitcoin Medellin",
         date: "Jan 17-18 2025",
-        location: "Nairobi, Kenya",
+        location: "Medellin, Colombia",
         url: "https://bitcoinmedellin.com",
     },
     {
@@ -68,12 +68,12 @@ export const events: App.Event[] = [
     {
         title: "Adopting Bitcoin Arnhem",
         date: "May 25 2025",
-        location: "Austin, Texas",
+        location: "Arnhem, Netherlands",
         url: "https://www.adoptingbitcoinarnhem.com",
     },
     {
         title: "Bitcoin 2025",
-        date: "May 27-29, 2025",
+        date: "May 27-29 2025",
         location: "Las Vegas, Nevada",
         url: "https://b.tc/conference/2025",
     },
@@ -82,5 +82,5 @@ export const events: App.Event[] = [
         date: "Jun 19-21, 2025",
         location: "Prague, Czechia",
         url: "https://btcprague.com/",
-    },
+    }
 ];
