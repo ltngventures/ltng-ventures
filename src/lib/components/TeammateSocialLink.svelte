@@ -3,6 +3,7 @@
     import LinkedinIcon from "$lib/elements/icons/Linkedin.svelte";
     import VidaIcon from "$lib/elements/icons/vida.svelte";
     import GithubIcon from '$lib/elements/icons/Github.svelte'
+    import TelegramIcon from '$lib/elements/icons/Telegram.svelte'
     export let social: App.SocialLink;
 
 </script>
