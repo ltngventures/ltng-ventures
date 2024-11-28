@@ -18,5 +18,7 @@
         <VidaIcon />
     {:else if  social.type === 'github'}
         <GithubIcon />
+    {:else if  social.type === 'telegram'}
+        <TelegramIcon />
     {/if}
 </a>
