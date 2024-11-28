@@ -123,18 +123,20 @@ export const teammates: App.Teammate[] = [
         ],
     },
     {
-        name: "McShane",
-        img: "/images/team/mcshane.webp",
+        name: "Seb",
+        img: "/images/team/seb.webp",
         title: "Venture Partner",
         description:
-            "Director of Programming for The Bitcoin Conference. Organizer of the global NOSTR.WORLD conferences. Co-host of the daily Bitcoin Q&A show, MMA fighter, and editor of multiple best-selling books by Saifedean Amnmous.",
+            "With previous VC experience in the gaming space, Seb reviews 100% of our deals, memos, data rooms, and all that fun stuff.",
         socials: [
-            { type: "twitter", url: "https://twitter.com/mcshane_writes" },
             {
-                type: "nostr",
-                url: "https://primal.net/profile/npub16vrkgd28wq6n0h77lqgu8h4fdu0eapxgyj0zqq6ngfvjf2vs3nuq5mp2va",
+                type: "telegram",
+                url: "https://t.me/sevutxo"
             },
-            { type: "linkedin", url: "https://www.linkedin.com/in/alex-mcshane-a487a8205/" },
+            {
+                type: "linkedin",
+                url: "https://www.linkedin.com/in/sebastian96/"
+            }
         ],
     },
     {
@@ -148,16 +150,18 @@ export const teammates: App.Teammate[] = [
         ],
     },
     {
-        name: "Seb",
-        img: "/images/team/stoshi.webp",
-        title: "Scouting",
+        name: "McShane",
+        img: "/images/team/mcshane.webp",
+        title: "Venture Partner",
         description:
-            "With experience in traditional VC, Seb reviews 100% of our deals, memos, data rooms, and all that fun stuff.",
+            "Director of Programming for The Bitcoin Conference. Organizer of the global NOSTR.WORLD conferences. Co-host of the daily Bitcoin Q&A show, MMA fighter, and editor of multiple best-selling books by Saifedean Amnmous.",
         socials: [
+            { type: "twitter", url: "https://twitter.com/mcshane_writes" },
             {
                 type: "nostr",
-                url: "https://primal.net/profile/npub1nc3tcnvz8k6ldmwu8s3mxus25lnh54h8a0csk25hlrl3fynedeusqqexyn",
+                url: "https://primal.net/profile/npub16vrkgd28wq6n0h77lqgu8h4fdu0eapxgyj0zqq6ngfvjf2vs3nuq5mp2va",
             },
+            { type: "linkedin", url: "https://www.linkedin.com/in/alex-mcshane-a487a8205/" },
         ],
     }
 ];
