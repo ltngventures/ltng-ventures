@@ -1,17 +1,5 @@
 export const events: App.Event[] = [
     {
-        title: "Bitcoin Mena",
-        date: "Dec 9-10 2024",
-        location: "Adnec Centre, Abu Dhabi",
-        url: "https://b.tc/conference/mena",
-    },
-    {
-        title: "Africa Bitcoin Conference",
-        date: "Dec 9-11 2024",
-        location: "Nairobi, Kenya",
-        url: "https://afrobitcoin.org",
-    },
-    {
         title: "Bitcoin Medellin",
         date: "Jan 17-18 2025",
         location: "Medellin, Colombia",
