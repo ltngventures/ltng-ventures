@@ -1,35 +1,5 @@
 export const events: App.Event[] = [
     {
-        title: "BitBlockBoom!",
-        date: "Apr 3-6 2025",
-        location: "Dallas, TX, USA",
-        url: "https://bitblockboom.com/"
-    },
-    {
-        title: "MIT Bitcoin Expo",
-        date: "Apr 5-6 2025",
-        location: "Cambridge, MA, USA",
-        url: "https://mitbtcexpo.org/"
-    },
-    {
-        title: "Bitcoin Strategic Reserve Summit",
-        date: "Apr 15 2025",
-        location: "Online",
-        url: "https://bitcoinreservesummit.com/"
-    },
-    {
-        title: "OPNEXT",
-        date: "Apr 11-12 2025",
-        location: "Tysons, VA, USA",
-        url: "https://opnext.dev/"
-    },
-    {
-        title: "CheatCode Conference",
-        date: "Apr 11-13 2025",
-        location: "Bedford, UK",
-        url: "https://www.cheatcode.co.uk/"
-    },
-    {
         title: "Swiss Bitcoin Conference",
         date: "Apr 24-27 2025",
         location: "Kreuzlingen, Switzerland",
@@ -121,8 +91,80 @@ export const events: App.Event[] = [
     },
     {
         title: "BTC Prague 2025",
-        date: "Jun 19-21, 2025",
-        location: "Prague, Czechia",
-        url: "https://btcprague.com/",
+        date: "Jun 19-21 2025",
+        location: "Prague, Czech Republic",
+        url: "https://btcprague.com/"
+    },
+    {
+        title: "Bitcoin Policy Institute Summit",
+        date: "Jun 25 2025",
+        location: "Washington DC, USA",
+        url: "https://www.btcpolicysummit.org/"
+    },
+    {
+        title: "The Bitcoin Rodeo",
+        date: "Jun 28-29 2025",
+        location: "Calgary, AB, Canada",
+        url: "https://bitcoinrodeo.com/"
+    },
+    {
+        title: "Mallorca Blockchain Days V",
+        date: "Jul 10-13 2025",
+        location: "Palma, Spain",
+        url: "https://mallorcablockchaindays.com/"
+    },
+    {
+        title: "Bitcoin Zitadelle",
+        date: "Jul 24-27 2025",
+        location: "Hannover, Germany",
+        url: "https://x.com/BTCZitadelle"
+    },
+    {
+        title: "Bitcoin is for Everyone",
+        date: "Aug 1 2025",
+        location: "Portland, OR, USA",
+        url: "http://www.bitcoinisforeveryone.com/"
+    },
+    {
+        title: "Lake Satoshi Campout",
+        date: "Aug 2 2025",
+        location: "Lansing, MI, USA",
+        url: "https://twitter.com/LakeSatoshi"
+    },
+    {
+        title: "bitcoin++ goes private",
+        date: "Aug 7-8 2025",
+        location: "Riga, Latvia",
+        url: "https://btcplusplus.dev/conf/riga"
+    },
+    {
+        title: "Budapest Bitcoin",
+        date: "Aug 8-9 2025",
+        location: "Budapest, Hungary",
+        url: "https://budapestbitcoin.com/"
+    },
+    {
+        title: "Baltic Honeybadger",
+        date: "Aug 9-10 2025",
+        location: "Riga, Latvia",
+        url: "https://baltichoneybadger.com/"
+    },
+    {
+        title: "₿TCHEL",
+        date: "Aug 15-16 2025",
+        location: "Helsinki, Finland",
+        url: "https://btchel.com/"
+    },
+    {
+        title: "Learning Bitcoin",
+        date: "Aug 16-17 2025",
+        location: "Vancouver, Canada",
+        url: "https://www.learningbitcoin.ca/"
+    },
+    {
+        title: "Bitcoin Asia",
+        date: "Aug 28-29 2025",
+        location: "Hong Kong, China",
+        url: "https://b.tc/conference/asia"
     }
 ];
