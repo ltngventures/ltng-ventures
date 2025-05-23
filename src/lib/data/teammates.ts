@@ -45,21 +45,6 @@ export const teammates: App.Teammate[] = [
     //     ],
     // },
     {
-        name: "Vivek Patel",
-        img: "/images/team/vivek-patel.webp",
-        title: "Business Development",
-        description:
-            "Bitcoin angel investor, formerly with PrimeTrust. Building the next galaxy of the Lightning Ventures universe.",
-        socials: [
-            // { type: "twitter", url: "https://twitter.com/mcshane_writes" },
-            // {
-            //     type: "nostr",
-            //     url: "https://primal.net/profile/npub16vrkgd28wq6n0h77lqgu8h4fdu0eapxgyj0zqq6ngfvjf2vs3nuq5mp2va",
-            // },
-            // { type: "linkedin", url: "https://www.linkedin.com/in/alex-mcshane-a487a8205/" },
-        ],
-    },
-    {
         name: "&ldquo;UNCLE&rdquo; R0CKSTAR DEV",
         img: "/images/team/rockstar.webp",
         title: "Technical Advisor",
@@ -92,6 +77,21 @@ export const teammates: App.Teammate[] = [
                 type: "nostr",
                 url: "https://primal.net/profile/npub1au23c73cpaq2whtazjf6cdrmvam6nkd4lg928nwmgl78374kn29sq9t53j",
             },
+        ],
+    },
+    {
+        name: "Vivek Patel",
+        img: "/images/team/vivek-patel.webp",
+        title: "Business Development",
+        description:
+            "Bitcoin angel investor, formerly with PrimeTrust. Building the next galaxy of the Lightning Ventures universe.",
+        socials: [
+            // { type: "twitter", url: "https://twitter.com/mcshane_writes" },
+            // {
+            //     type: "nostr",
+            //     url: "https://primal.net/profile/npub16vrkgd28wq6n0h77lqgu8h4fdu0eapxgyj0zqq6ngfvjf2vs3nuq5mp2va",
+            // },
+            // { type: "linkedin", url: "https://www.linkedin.com/in/alex-mcshane-a487a8205/" },
         ],
     },
     {
