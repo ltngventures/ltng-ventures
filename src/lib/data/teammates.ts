@@ -47,7 +47,7 @@ export const teammates: App.Teammate[] = [
     {
         name: "Vivek Patel",
         img: "/images/team/vivek-patel.webp",
-        title: "Chief Operating Officer",
+        title: "Business Development",
         description:
             "Bitcoin angel investor, formerly with PrimeTrust. Building the next galaxy of the Lightning Ventures universe.",
         socials: [
@@ -105,6 +105,10 @@ export const teammates: App.Teammate[] = [
                 type: "linkedin",
                 url: "https://www.linkedin.com/in/dr-khushboo-khullar-38251b43/",
             },
+            {
+                type: "email",
+                url: "mailto:khushboo@ltng.ventures"
+            }
         ],
     },
     {
@@ -123,21 +127,12 @@ export const teammates: App.Teammate[] = [
         ],
     },
     {
-        name: "Seb",
-        img: "/images/team/seb.webp",
-        title: "Venture Partner",
+        name: "Dani",
+        img: "/images/team/dani.webp",
+        title: "Engineering Director",
         description:
-            "With previous VC experience in the gaming space, Seb reviews 100% of our deals, memos, data rooms, and all that fun stuff.",
-        socials: [
-            {
-                type: "telegram",
-                url: "https://t.me/sevutxo"
-            },
-            {
-                type: "linkedin",
-                url: "https://www.linkedin.com/in/sebastian96/"
-            }
-        ],
+            "Dani Go is a multidisciplinary creator and developer with a rich background in filmmaking, computer science, and Bitcoin technology.",
+        socials: [],
     },
     {
         name: "Jeff Gardner",

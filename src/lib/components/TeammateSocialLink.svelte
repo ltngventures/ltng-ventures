@@ -4,11 +4,12 @@
     import VidaIcon from "$lib/elements/icons/vida.svelte";
     import GithubIcon from '$lib/elements/icons/Github.svelte'
     import TelegramIcon from '$lib/elements/icons/Telegram.svelte'
+    import EnvelopeIcon from '$lib/elements/icons/Envelope.svelte';
     export let social: App.SocialLink;
 
 </script>
 
-<a href={social.url} target="_blank" class="w-5 h-5 hover:opacity-70">
+<a href={social.url} target="_blank" rel="noopener noreferrer" class="w-5 h-5 hover:opacity-70">
     {#if social.type === 'twitter'}
         <TwitterIcon />
     {:else if  social.type === 'nostr'}
@@ -21,5 +22,7 @@
         <GithubIcon />
     {:else if  social.type === 'telegram'}
         <TelegramIcon />
+    {:else if  social.type === 'email'}
+        <EnvelopeIcon klass="w-5 h-5 text-white" />
     {/if}
 </a>
