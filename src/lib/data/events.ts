@@ -1,170 +1,176 @@
 export const events: App.Event[] = [
     {
+        title: "Bitcoin Medellin",
+        date: "Jan 16-17 2026",
+        location: "Medellin, Colombia",
+        url: "https://btcmedellin.com/"
+    },
+    {
+        title: "Plan B Forum",
+        date: "Jan 30-31 2026",
+        location: "San Salvador, El Salvador",
+        url: "https://planb.sv/"
+    },
+    {
+        title: "Bitcoin Investor Week",
+        date: "Feb 9-13 2026",
+        location: "New York City, NY, USA",
+        url: "https://www.bitcoininvestorweek.com/"
+    },
+    {
+        title: "bitcoin++ get exploited",
+        date: "Feb 26-28 2026",
+        location: "Florianópolis, Brazil",
+        url: "https://btcplusplus.dev/conf/floripa26"
+    },
+    {
+        title: "BitBlockBoom",
+        date: "Apr 9-12 2026",
+        location: "Ft Worth, TX, USA",
+        url: "https://bitblockboom.com/"
+    },
+    {
+        title: "bitcoin++ stirs controversy",
+        date: "Apr 23-24 2026",
+        location: "Hoover Dam, NV, USA",
+        url: "https://btcplusplus.dev/conf/vegas"
+    },
+    {
         title: "Swiss Bitcoin Conference",
-        date: "Apr 24-27 2025",
+        date: "Apr 23-26 2026",
         location: "Kreuzlingen, Switzerland",
         url: "https://swiss-bitcoin-conference.com/"
     },
     {
-        title: "Bitcoin Oasis",
-        date: "Apr 28-29 2025",
-        location: "Dubai, UAE",
-        url: "https://www.bitcoin-oasis.com/"
-    },
-    {
-        title: "Bitcoin for Corporations [MicroStrategy World]",
-        date: "May 6-7 2025",
+        title: "Bitcoin 2026",
+        date: "Apr 27-29 2026",
         location: "Las Vegas, NV, USA",
-        url: "https://www.microstrategy.com/en/resources/events/world-2025/bitcoin-for-corporations"
+        url: "https://b.tc/conference/2026"
     },
     {
-        title: "Tuscany Lightning Summit",
-        date: "May 7-8 2025",
-        location: "Viareggio, Italy",
-        url: "https://tuscanysummit.com/"
+        title: "Labitconf B2B CDMX",
+        date: "May 8-9 2026",
+        location: "Mexico City, Mexico",
+        url: "https://labitcoinf.com"
     },
     {
-        title: "bitcoin++ dives deep",
-        date: "May 7-9 2025",
-        location: "Austin, TX, USA",
-        url: "https://btcplusplus.dev/conf/atx25"
+        title: "MAD Bitcoin Summit",
+        date: "May 9-12 2026",
+        location: "Madrid, Spain",
+        url: "https://MadBitcoinSummit.com"
     },
     {
-        title: "BitCare Forum",
-        date: "May 10 2025",
-        location: "Brescia, Italy",
-        url: "https://bitcareforum.it/"
+        title: "Bitcoin Bay Bash",
+        date: "May 15-17 2026",
+        location: "Byron Bay, Australia",
+        url: "https://bitcoinbushbash.info/byron-bay/"
     },
     {
-        title: "Pizza Day Prague",
-        date: "May 17-18 2025",
-        location: "Prague, Czech Republic",
-        url: "https://pizzaday.cz/"
-    },
-    {
-        title: "Bitcoin Filmfest 2025",
-        date: "May 22-25 2025",
-        location: "Warsaw, Poland",
-        url: "https://bitcoinfilmfest.com/"
-    },
-    {
-        title: "Bitcoin Ireland Conference",
-        date: "May 24 2025",
+        title: "Bitcoin Ireland",
+        date: "May 22-25 2026",
         location: "Dublin, Ireland",
-        url: "https://www.bitcoinireland.eu/"
+        url: "https://www.bitcoinireland.eu"
+    },
+    {
+        title: "bitcoin++ talks economically",
+        date: "May 27-28 2026",
+        location: "Vienna, Austria",
+        url: "https://btcplusplus.dev/conf/vienna"
     },
     {
         title: "Oslo Freedom Forum",
-        date: "May 26-28 2025",
+        date: "Jun 1-3 2026",
         location: "Oslo, Norway",
         url: "https://oslofreedomforum.com/"
     },
     {
-        title: "Bitcoin 2025 Conference (BTC Inc.)",
-        date: "May 27-29 2025",
-        location: "Las Vegas, NV, USA",
-        url: "https://b.tc/conference/2025"
-    },
-    {
-        title: "Bitcoin Economic Forum",
-        date: "May 30-Jun 1 2025",
-        location: "Bretagne, France",
-        url: "https://www.breizhbitcoin.com/bitcoin-economic-forum/"
-    },
-    {
-        title: "Bitcoin Seoul Conference",
-        date: "Jun 4-6 2025",
-        location: "Seoul, South Korea",
-        url: "http://bitcoinseoul.kr/"
-    },
-    {
-        title: "Bitcoin Day Tampa",
-        date: "Jun 14 2025",
-        location: "Tampa, FL, USA",
-        url: "https://bitcoinday.io/"
-    },
-    {
-        title: "Sound Money Soiree",
-        date: "Jun 14 2025",
-        location: "Tampa, FL, USA",
-        url: "https://www.bitcoinbay.live/sound-money-soiree"
-    },
-    {
-        title: "BTC Prague 2025",
-        date: "Jun 19-21 2025",
+        title: "BTC Prague 2026",
+        date: "Jun 11-13 2026",
         location: "Prague, Czech Republic",
         url: "https://btcprague.com/"
     },
     {
-        title: "Bitcoin Policy Institute Summit",
-        date: "Jun 25 2025",
-        location: "Washington DC, USA",
-        url: "https://www.btcpolicysummit.org/"
+        title: "bitcoin++ works in public",
+        date: "Jun 17-20 2026",
+        location: "Nairobi, Kenya",
+        url: "https://btcplusplus.dev/conf/nairobi"
     },
     {
-        title: "The Bitcoin Rodeo",
-        date: "Jun 28-29 2025",
-        location: "Calgary, AB, Canada",
-        url: "https://bitcoinrodeo.com/"
-    },
-    {
-        title: "Mallorca Blockchain Days V",
-        date: "Jul 10-13 2025",
+        title: "Mallorca Blockchain Days",
+        date: "Jul 9-12 2026",
         location: "Palma, Spain",
         url: "https://mallorcablockchaindays.com/"
     },
     {
-        title: "Bitcoin Zitadelle",
-        date: "Jul 24-27 2025",
-        location: "Hannover, Germany",
-        url: "https://x.com/BTCZitadelle"
+        title: "Mining Disrupt",
+        date: "Jul 21-23 2026",
+        location: "Miami, FL, USA",
+        url: "https://miningdisrupt.com/"
     },
     {
-        title: "Bitcoin is for Everyone",
-        date: "Aug 1 2025",
-        location: "Portland, OR, USA",
-        url: "http://www.bitcoinisforeveryone.com/"
+        title: "bitcoin++ finds consensus",
+        date: "Jul 22-24 2026",
+        location: "Toronto, Canada",
+        url: "https://btcplusplus.dev/conf/toronto"
     },
     {
-        title: "Lake Satoshi Campout",
-        date: "Aug 2 2025",
-        location: "Lansing, MI, USA",
-        url: "https://twitter.com/LakeSatoshi"
+        title: "Bitcoin Bush Bash",
+        date: "Jul 24-26 2026",
+        location: "Palm Cove, Australia",
+        url: "https://bitcoinbushbash.info/palm-cove/"
     },
     {
-        title: "bitcoin++ goes private",
-        date: "Aug 7-8 2025",
-        location: "Riga, Latvia",
-        url: "https://btcplusplus.dev/conf/riga"
+        title: "Acelerando Bitcoin",
+        date: "Aug 12-13 2026",
+        location: "Asunción, Paraguay",
+        url: "https://acelerandobitcoin.com/"
     },
     {
-        title: "Budapest Bitcoin",
-        date: "Aug 8-9 2025",
-        location: "Budapest, Hungary",
-        url: "https://budapestbitcoin.com/"
+        title: "Bitcoin Asia",
+        date: "Aug 27-28 2026",
+        location: "Hong Kong, China",
+        url: "https://asia.b.tc/2026"
     },
     {
-        title: "Baltic Honeybadger",
-        date: "Aug 9-10 2025",
-        location: "Riga, Latvia",
-        url: "https://baltichoneybadger.com/"
+        title: "Bitcoin Indonesia Conference",
+        date: "Sep 4-5 2026",
+        location: "Indonesia",
+        url: ""
     },
     {
-        title: "₿TCHEL",
-        date: "Aug 15-16 2025",
+        title: "Midwest Bitcoin Summit",
+        date: "Sep 23-24 2026",
+        location: "Columbus, OH, USA",
+        url: "https://midwestbtc.com"
+    },
+    {
+        title: "BTC HEL",
+        date: "Sep 25-26 2026",
         location: "Helsinki, Finland",
         url: "https://btchel.com/"
     },
     {
-        title: "Learning Bitcoin",
-        date: "Aug 16-17 2025",
-        location: "Vancouver, Canada",
-        url: "https://www.learningbitcoin.ca/"
+        title: "bitcoin++ gets paid",
+        date: "Oct 1-3 2026",
+        location: "Berlin, Germany",
+        url: "https://btcplusplus.dev/conf/berlin26"
     },
     {
-        title: "Bitcoin Asia",
-        date: "Aug 28-29 2025",
-        location: "Hong Kong, China",
-        url: "https://b.tc/conference/asia"
+        title: "Lugano Plan B Forum",
+        date: "Oct 23-24 2026",
+        location: "Lugano, Switzerland",
+        url: "https://planb.lugano.ch/planb-forum/"
+    },
+    {
+        title: "Bitcoin Amsterdam",
+        date: "Nov 5-6 2026",
+        location: "Amsterdam, Netherlands",
+        url: "https://www.bitcoin.amsterdam/2026"
+    },
+    {
+        title: "LABITCONF",
+        date: "Nov 7-8 2026",
+        location: "Buenos Aires, Argentina",
+        url: "https://labitconf.com/"
     }
 ];
